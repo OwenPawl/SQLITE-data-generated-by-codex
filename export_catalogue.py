@@ -110,6 +110,32 @@ def attach_simple_group(
         entity[label] = grouped.get(entity.get("rowId"), [])
 
 
+def index_containers(
+    metadata: List[Dict[str, Any]],
+    localizations: List[Dict[str, Any]],
+    synonyms: List[Dict[str, Any]],
+) -> Dict[Any, Dict[str, Any]]:
+    loc_by_id = group_by(localizations, lambda row: row["containerId"])
+    syn_by_id = group_by(synonyms, lambda row: row["containerId"])
+
+    indexed: Dict[Any, Dict[str, Any]] = {}
+    for row in metadata:
+        container_id = row.get("rowId")
+        indexed[container_id] = {
+            **row,
+            "localizations": loc_by_id.get(container_id, []),
+            "synonyms": syn_by_id.get(container_id, []),
+        }
+
+    return indexed
+
+
+def resolve_container(index: Mapping[Any, Dict[str, Any]], key: Any) -> Optional[Dict[str, Any]]:
+    if key is None:
+        return None
+    return index.get(key) or index.get(str(key))
+
+
 def build_catalogue(conn: sqlite3.Connection) -> Dict[str, Any]:
     catalogue: Dict[str, Any] = {
         "generatedAt": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
@@ -156,13 +182,34 @@ def build_catalogue(conn: sqlite3.Connection) -> Dict[str, Any]:
         )
         catalogue["triggers"] = sorted(triggers, key=lambda trg: trg.get("id", ""))
 
+    container_metadata = load_table(conn, "ContainerMetadata")
+    container_localizations = load_table(conn, "ContainerMetadataLocalizations")
+    container_synonyms = load_table(conn, "ContainerMetadataSynonyms")
+    container_index = index_containers(
+        container_metadata, container_localizations, container_synonyms
+    )
+    additional_attribution = load_table(conn, "AdditionalToolAttributionContainers")
+
+    additional_by_tool = group_by(additional_attribution, lambda row: row["toolId"])
+    for tool in tools:
+        tool["sourceContainer"] = resolve_container(
+            container_index, tool.get("sourceContainerId")
+        )
+        tool["attributionContainer"] = resolve_container(
+            container_index, tool.get("attributionContainerId")
+        )
+        extra = []
+        for entry in additional_by_tool.get(tool.get("rowId"), []):
+            container = resolve_container(container_index, entry.get("containerId"))
+            if container:
+                extra.append(container)
+        tool["additionalAttributionContainers"] = extra
+
     catalogue["containers"] = {
-        "metadata": load_table(conn, "ContainerMetadata"),
-        "localizations": load_table(conn, "ContainerMetadataLocalizations"),
-        "synonyms": load_table(conn, "ContainerMetadataSynonyms"),
-        "additionalAttribution": load_table(
-            conn, "AdditionalToolAttributionContainers"
-        ),
+        "metadata": container_metadata,
+        "localizations": container_localizations,
+        "synonyms": container_synonyms,
+        "additionalAttribution": additional_attribution,
     }
 
     catalogue["types"] = {
