@@ -1,22 +1,32 @@
-# SQLITE-data-generated-by-codex
+# ToolKit SQLite Protobuf Decoding
 
-This repository bundles two SQLite databases that catalog automation tools (Shortcuts-style actions, intents, triggers, and related metadata). Use them as reference snapshots for inspecting tool definitions, parameters, and type information.
+This repository contains the complete evidence and tooling from the focused
+reverse-engineering run over macOS Shortcuts `Tools-active` database version
+78.
 
-## Contents
+## Results
 
-- `raw.sqlite` – Larger snapshot with classic Shortcuts actions and intents.
-- `Tools-prod 2.sqlite` – Production-focused snapshot that includes trigger tables and app-intent entries.
+- 87,795 populated BLOB instances accounted for.
+- 87,255 instances decoded through native ToolKit/InternalSwiftProtobuf.
+- 540 flattened native `bytes` fields reconstructed and verified.
+- 12,986 unique native messages with zero decode errors, unknown fields, or
+  binary round-trip mismatches.
+- 216 messages, 868 fields, 43 oneofs, 48 enums, and 262 enum values mapped.
+- Six flag domains verified against live ToolKit models with no unknown bits.
+- Final source-drift and coverage validator passed 90 of 90 checks.
 
-See [`docs/database_overview.md`](docs/database_overview.md) for schema inventories, record counts, and tips on exploring each file with `sqlite3`.
+Start with:
 
-## Export a full catalogue
+- [Concise report](reports/toolkit_protobuf_decoding_report.md)
+- [Complete schema and semantic ledger](reports/protobuf_schema_ledger.md)
+- [Machine-readable report](reports/toolkit_protobuf_decoding_report.json)
+- [Reproduction guide](reports/reproduction.md)
+- [Final validation](evidence/final_validation.json)
+- [Artifact hash manifest](evidence/final_artifact_manifest.json)
 
-Generate a complete JSON catalogue for either snapshot (including tools, parameters, types, triggers, and localizations) with the included exporter:
+Large databases, exhaustive instance ledgers, and ToolKit static exports use
+Git LFS. Run `git lfs pull` after cloning.
 
-```bash
-python export_catalogue.py --database raw.sqlite --output raw_catalogue.json --pretty
-python export_catalogue.py --database 'Tools-prod 2.sqlite' --output tools_prod_catalogue.json
-```
-
-- The output bundles every table relevant to actions/shortcuts, including trigger metadata when present.
-- Binary columns (e.g., `typeInstance`, `outputTypeInstance`, `requirements`) are base64-encoded so the full payload is preserved in JSON.
+The upstream SwiftProtobuf source checkout used to build the compatibility
+module is pinned in [reference/README.md](reference/README.md); generated
+interfaces and runtime artifacts are included here.

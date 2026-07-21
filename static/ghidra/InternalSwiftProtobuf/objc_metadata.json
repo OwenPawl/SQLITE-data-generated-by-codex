@@ -1,0 +1,1904 @@
+{
+  "program_name": "InternalSwiftProtobuf",
+  "objc_sections": [
+    "__objc_classlist",
+    "__objc_const",
+    "__objc_imageinfo",
+    "__objc_selrefs"
+  ],
+  "classes": [
+    "OS_dispatch_queue",
+    "_TtCs12_SwiftObject"
+  ],
+  "interface_classes": [
+    "OS_dispatch_queue",
+    "_TtCs12_SwiftObject"
+  ],
+  "class_source_preference": "interface_classes",
+  "metaclasses": [
+    "_TtCs12_SwiftObject"
+  ],
+  "protocols": [],
+  "recovered_protocols": [],
+  "protocol_source_preference": "protocols",
+  "categories": [],
+  "selectors": [],
+  "ivars": [
+    "__IVARS__TtC21InternalSwiftProtobuf12DoubleParser",
+    "__IVARS__TtC21InternalSwiftProtobuf16MessageExtension",
+    "__IVARS__TtC21InternalSwiftProtobuf17AnyMessageStorage",
+    "__IVARS__TtC21InternalSwiftProtobufP33_4080DC12AFD47C35258F8A9684AEC70E10InternPool",
+    "__IVARS__TtC21InternalSwiftProtobufP33_84C1210DAB1D01186EBEE8C915C004FE24UnsafeMutableTransferBox",
+    "__IVARS__TtCV21InternalSwiftProtobuf18SwiftProtobufErrorP33_0F78BA8633E4971A8B25462A90F3C7127Storage",
+    "__IVARS__TtCV21InternalSwiftProtobuf27Google_Protobuf_FileOptionsP33_BD4C1D1A5DBF5507AE6AF16875FA18AB13_StorageClass",
+    "__IVARS__TtCV21InternalSwiftProtobuf28Google_Protobuf_FieldOptionsP33_BD4C1D1A5DBF5507AE6AF16875FA18AB13_StorageClass",
+    "__IVARS__TtCV21InternalSwiftProtobuf31Google_Protobuf_DescriptorProtoP33_BD4C1D1A5DBF5507AE6AF16875FA18AB13_StorageClass",
+    "__IVARS__TtCV21InternalSwiftProtobuf35Google_Protobuf_EnumDescriptorProtoP33_BD4C1D1A5DBF5507AE6AF16875FA18AB13_StorageClass",
+    "__IVARS__TtCV21InternalSwiftProtobuf40Google_Protobuf_EnumValueDescriptorProtoP33_BD4C1D1A5DBF5507AE6AF16875FA18AB13_StorageClass",
+    "__IVARS__TtCVV21InternalSwiftProtobuf34Google_Protobuf_FeatureSetDefaults24FeatureSetEditionDefaultP33_BD4C1D1A5DBF5507AE6AF16875FA18AB13_StorageClass",
+    "s___IVARS__TtC21InternalSwiftProto_2ccd6897f",
+    "s___IVARS__TtC21InternalSwiftProto_2ccd68b80",
+    "s___IVARS__TtC21InternalSwiftProto_2ccd68c62",
+    "s___IVARS__TtC21InternalSwiftProto_2ccd68cc5",
+    "s___IVARS__TtC21InternalSwiftProto_2ccd69645",
+    "s___IVARS__TtCV21InternalSwiftProt_2ccd68a5a",
+    "s___IVARS__TtCV21InternalSwiftProt_2ccd68da9",
+    "s___IVARS__TtCV21InternalSwiftProt_2ccd68f20",
+    "s___IVARS__TtCV21InternalSwiftProt_2ccd690a4",
+    "s___IVARS__TtCV21InternalSwiftProt_2ccd69225",
+    "s___IVARS__TtCV21InternalSwiftProt_2ccd6938d",
+    "s___IVARS__TtCVV21InternalSwiftPro_2ccd69518"
+  ],
+  "methods": [],
+  "class_refs": [],
+  "selector_refs": [],
+  "protocol_refs": [
+    {
+      "address": "EXTERNAL:00000038",
+      "name": "_swift_conformsToProtocol2",
+      "source": "symbol"
+    },
+    {
+      "address": "1d70ff1b8",
+      "name": "TargetProtocolConformanceDescriptor_1d70ff1b8",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7100070",
+      "name": "TargetProtocolConformanceDescriptor_1d7100070",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7100220",
+      "name": "TargetProtocolConformanceDescriptor_1d7100220",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7100748",
+      "name": "TargetProtocolConformanceDescriptor_1d7100748",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7100770",
+      "name": "TargetProtocolConformanceDescriptor_1d7100770",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71007b0",
+      "name": "TargetProtocolConformanceDescriptor_1d71007b0",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7100818",
+      "name": "$InternalSwiftProtobuf::AsyncIterator->Swift::AsyncIteratorProtocol",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7101e20",
+      "name": "TargetProtocolConformanceDescriptor_1d7101e20",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7101e90",
+      "name": "TargetProtocolConformanceDescriptor_1d7101e90",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109288",
+      "name": "TargetProtocolConformanceDescriptor_1d7109288",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71092b0",
+      "name": "TargetProtocolConformanceDescriptor_1d71092b0",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71093d0",
+      "name": "TargetProtocolConformanceDescriptor_1d71093d0",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71093f0",
+      "name": "TargetProtocolConformanceDescriptor_1d71093f0",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109438",
+      "name": "TargetProtocolConformanceDescriptor_1d7109438",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109448",
+      "name": "TargetProtocolConformanceDescriptor_1d7109448",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109490",
+      "name": "TargetProtocolConformanceDescriptor_1d7109490",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71094a0",
+      "name": "TargetProtocolConformanceDescriptor_1d71094a0",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71094e8",
+      "name": "TargetProtocolConformanceDescriptor_1d71094e8",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71094f8",
+      "name": "TargetProtocolConformanceDescriptor_1d71094f8",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109540",
+      "name": "TargetProtocolConformanceDescriptor_1d7109540",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109550",
+      "name": "TargetProtocolConformanceDescriptor_1d7109550",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109598",
+      "name": "TargetProtocolConformanceDescriptor_1d7109598",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71095a8",
+      "name": "TargetProtocolConformanceDescriptor_1d71095a8",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71095f0",
+      "name": "TargetProtocolConformanceDescriptor_1d71095f0",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109600",
+      "name": "TargetProtocolConformanceDescriptor_1d7109600",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109648",
+      "name": "TargetProtocolConformanceDescriptor_1d7109648",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109658",
+      "name": "TargetProtocolConformanceDescriptor_1d7109658",
+      "source": "symbol"
+    },
+    {
+      "address": "1d71096a8",
+      "name": "TargetProtocolConformanceDescriptor_1d71096a8",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109730",
+      "name": "TargetProtocolConformanceDescriptor_1d7109730",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710974c",
+      "name": "TargetProtocolConformanceDescriptor_1d710974c",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109994",
+      "name": "TargetProtocolConformanceDescriptor_1d7109994",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109a14",
+      "name": "TargetProtocolConformanceDescriptor_1d7109a14",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109ca4",
+      "name": "TargetProtocolConformanceDescriptor_1d7109ca4",
+      "source": "symbol"
+    },
+    {
+      "address": "1d7109f10",
+      "name": "$InternalSwiftProtobuf::protocol_conformance_descriptor_for_InternalSwiftProtobuf.MessageExtension<A,B>_:_InternalSwiftProtobuf.AnyMessageExtension_in_InternalSwiftProtobuf->InternalSwiftProtobuf::AnyMessageExtension",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a1a4",
+      "name": "TargetProtocolConformanceDescriptor_1d710a1a4",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a26c",
+      "name": "TargetProtocolConformanceDescriptor_1d710a26c",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a2a4",
+      "name": "TargetProtocolConformanceDescriptor_1d710a2a4",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a2b4",
+      "name": "TargetProtocolConformanceDescriptor_1d710a2b4",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a528",
+      "name": "TargetProtocolConformanceDescriptor_1d710a528",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a560",
+      "name": "TargetProtocolConformanceDescriptor_1d710a560",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a570",
+      "name": "TargetProtocolConformanceDescriptor_1d710a570",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710a854",
+      "name": "TargetProtocolConformanceDescriptor_1d710a854",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710ad28",
+      "name": "TargetProtocolConformanceDescriptor_1d710ad28",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710ad38",
+      "name": "TargetProtocolConformanceDescriptor_1d710ad38",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710ae1c",
+      "name": "TargetProtocolConformanceDescriptor_1d710ae1c",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710c36c",
+      "name": "TargetProtocolConformanceDescriptor_1d710c36c",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710d4ac",
+      "name": "TargetProtocolConformanceDescriptor_1d710d4ac",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710d674",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.Enum",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710d6c0",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.ExtensibleMessage",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710d704",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.AnyExtensionField",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710d76c",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.ExtensionField",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710da70",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.ExtensionMap",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710dc2c",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.SwiftProtobufContiguousBytes",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710de40",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.Decoder",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710e1d0",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.FieldType",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710e234",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.MapKeyType",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710e268",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.MapValueType",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710e41c",
+      "name": "TargetProtocolDescriptor_1d710e41c",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710f2ac",
+      "name": "TargetProtocolDescriptor_1d710f2ac",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710f33c",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.ProtobufAPIVersionCheck",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710f550",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.Message",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710f5d8",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf._MessageImplementationBase",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710f608",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.AnyMessageExtension",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710f698",
+      "name": "TargetProtocolDescriptor_1d710f698",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710f7b8",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf._ProtoNameProviding",
+      "source": "symbol"
+    },
+    {
+      "address": "1d710fa5c",
+      "name": "$$protocol_requirements_base_descriptor_for_InternalSwiftProtobuf.Visitor",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767aae0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufInt32_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767ab28",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFloat_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767ab88",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufUInt64_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767b400",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufString_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767b468",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufDouble_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767b4b0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufInt64_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767b4f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufUInt32_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e767b540",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufBool_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e7f4f1e8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSInt32_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e7f4f230",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSInt64_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e7f4f278",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFixed32_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e7f4f2c0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFixed64_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e7f4f308",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSFixed32_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e7f4f350",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSFixed64_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1e7f4f398",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufBytes_:_InternalSwiftProtobuf.FieldType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed15ec8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Api_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed15f28",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Api_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed15f48",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Api_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed15f58",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Method_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed15fb8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Method_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed15fd8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Method_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed15fe8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Mixin_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed16048",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Mixin_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed16068",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Mixin_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed16240",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Duration_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed162a0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Duration_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed162c0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Duration_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed163e0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Empty_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed16440",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Empty_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed16460",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Empty_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed165e0",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed165e0",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed16e68",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed16e68",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed171a0",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed171a0",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17368",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.SimpleExtensionMap_:_InternalSwiftProtobuf.ExtensionMap_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17400",
+      "name": "$$protocol_witness_table_for_<A_where_A_==_Swift.UInt8>_[A]_:_InternalSwiftProtobuf.SwiftProtobufContiguousBytes_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17430",
+      "name": "$$protocol_witness_table_for_Foundation.Data_:_InternalSwiftProtobuf.SwiftProtobufContiguousBytes_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17eb0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFloat_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17ec0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufDouble_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17ed0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufInt32_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17ee8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufInt32_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17ef8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufInt64_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f10",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufInt64_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f20",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufUInt32_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f38",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufUInt32_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f48",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufUInt64_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f60",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufUInt64_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f70",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSInt32_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f88",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSInt32_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17f98",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSInt64_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17fb0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSInt64_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17fc0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFixed32_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17fd8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFixed32_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed17fe8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFixed64_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18000",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufFixed64_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18010",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSFixed32_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18028",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSFixed32_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18038",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSFixed64_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18050",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufSFixed64_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18060",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufBool_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18078",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufBool_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18088",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufString_:_InternalSwiftProtobuf.MapKeyType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed180a0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufString_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed180b0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.ProtobufBytes_:_InternalSwiftProtobuf.MapValueType_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed187f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_NullValue_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18828",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_NullValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18838",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Struct_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18898",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Struct_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed188b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Struct_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed188c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Value_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18928",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Value_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18948",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Value_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18958",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ListValue_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed189b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ListValue_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed189d8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ListValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18c88",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldMask_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18ce8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldMask_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed18d08",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldMask_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed192d8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Edition_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19308",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SymbolVisibility_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19338",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileDescriptorSet_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19360",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.VerificationState_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19390",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed193b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.TypeEnum_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed193e8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.Label_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19418",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileOptions.OptimizeMode_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19448",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19470",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MessageOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19498",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.CType_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed194c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.JSType_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed194f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.OptionRetention_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19528",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.OptionTargetType_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19558",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19580",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_OneofOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed195a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed195d0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValueOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed195f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ServiceOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19620",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodOptions.IdempotencyLevel_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19650",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodOptions_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19678",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.FieldPresence_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed196a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.EnumType_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed196d8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.RepeatedFieldEncoding_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19708",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.Utf8Validation_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19738",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.MessageEncoding_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19768",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.JsonFormat_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19798",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.EnforceNamingStyle_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed197c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.VisibilityFeature.DefaultSymbolVisibility_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed197f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19820",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceCodeInfo_:_InternalSwiftProtobuf.ExtensibleMessage_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19848",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19878",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Edition_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19888",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SymbolVisibility_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19898",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileDescriptorSet_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed198f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileDescriptorSet_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19918",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileDescriptorSet_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19928",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileDescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19988",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileDescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed199a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileDescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed199b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19a18",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19a38",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19a48",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto.ExtensionRange_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19aa8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto.ExtensionRange_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19ac8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto.ExtensionRange_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19ad8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto.ReservedRange_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19b38",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto.ReservedRange_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19b58",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DescriptorProto.ReservedRange_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19b68",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19bc8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19be8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19bf8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.VerificationState_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19c08",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.Declaration_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19c68",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.Declaration_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19c88",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.Declaration_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19c98",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldDescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19cf8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldDescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19d18",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldDescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19d28",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.TypeEnum_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19d38",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.Label_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19d48",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_OneofDescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19da8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_OneofDescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19dc8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_OneofDescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19dd8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumDescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19e38",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumDescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19e58",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumDescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19e68",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumDescriptorProto.EnumReservedRange_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19ec8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumDescriptorProto.EnumReservedRange_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19ee8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumDescriptorProto.EnumReservedRange_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19ef8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValueDescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19f58",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValueDescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19f78",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValueDescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19f88",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ServiceDescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed19fe8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ServiceDescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a008",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ServiceDescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a018",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodDescriptorProto_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a078",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodDescriptorProto_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a098",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodDescriptorProto_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a0a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a108",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a128",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a138",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FileOptions.OptimizeMode_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a148",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MessageOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a1a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MessageOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a1c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MessageOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a1d8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a238",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a258",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a268",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.CType_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a278",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.JSType_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a288",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.OptionRetention_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a298",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.OptionTargetType_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a2a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.EditionDefault_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a308",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.EditionDefault_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a328",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.EditionDefault_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a338",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.FeatureSupport_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a398",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.FeatureSupport_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a3b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FieldOptions.FeatureSupport_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a3c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_OneofOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a428",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_OneofOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a448",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_OneofOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a458",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a4b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a4d8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a4e8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValueOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a548",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValueOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a568",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValueOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a578",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ServiceOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a5d8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ServiceOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a5f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_ServiceOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a608",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodOptions_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a668",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodOptions_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a688",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodOptions_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a698",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_MethodOptions.IdempotencyLevel_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a6a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UninterpretedOption_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a708",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UninterpretedOption_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a728",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UninterpretedOption_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a738",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UninterpretedOption.NamePart_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a798",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UninterpretedOption.NamePart_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a7b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UninterpretedOption.NamePart_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a7c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a828",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a848",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a858",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.FieldPresence_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a868",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.EnumType_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a878",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.RepeatedFieldEncoding_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a888",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.Utf8Validation_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a898",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.MessageEncoding_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a8a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.JsonFormat_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a8b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.EnforceNamingStyle_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a8c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.VisibilityFeature_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a928",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.VisibilityFeature_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a948",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.VisibilityFeature_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a958",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSet.VisibilityFeature.DefaultSymbolVisibility_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a968",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSetDefaults_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a9c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSetDefaults_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a9e8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSetDefaults_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1a9f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSetDefaults.FeatureSetEditionDefault_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1aa58",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSetDefaults.FeatureSetEditionDefault_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1aa78",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FeatureSetDefaults.FeatureSetEditionDefault_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1aa88",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceCodeInfo_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1aae8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceCodeInfo_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ab08",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceCodeInfo_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ab18",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceCodeInfo.Location_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ab78",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceCodeInfo.Location_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ab98",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceCodeInfo.Location_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1aba8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ac08",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ac28",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ac38",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1ac98",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1acb8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1acc8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1caf0",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1caf0",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1cec0",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1cec0",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1d108",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1d108",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1d5a8",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1d5a8",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1d948",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.MessageExtension<A,B>_:_InternalSwiftProtobuf.AnyMessageExtension_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1dad8",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1dad8",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1dd60",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1dd60",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e1a0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Any_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e200",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Any_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e220",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Any_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e330",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1e330",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e750",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceContext_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e7b0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceContext_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e7d0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_SourceContext_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1e8f0",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1e8f0",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1f808",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1f808",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1fa60",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed1fa60",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1fde0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Timestamp_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1fe40",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Timestamp_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed1fe60",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Timestamp_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed200f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Syntax_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20128",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Field.Kind_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20158",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Field.Cardinality_:_InternalSwiftProtobuf.Enum_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20188",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Syntax_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20198",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Type_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed201f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Type_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20218",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Type_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20228",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Field_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20288",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Field_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed202a8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Field_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed202b8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Field.Kind_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed202c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Field.Cardinality_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed202d8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Enum_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20338",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Enum_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20358",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Enum_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20368",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValue_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed203c8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValue_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed203e8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_EnumValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed203f8",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Option_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20458",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Option_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20478",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Option_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20a20",
+      "name": "PTR_TargetProtocolConformanceDescriptor_1eed20a20",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20b60",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DoubleValue_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20bc0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DoubleValue_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20be0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_DoubleValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20bf0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FloatValue_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20c50",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FloatValue_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20c70",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_FloatValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20c80",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Int64Value_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20ce0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Int64Value_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20d00",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Int64Value_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20d10",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UInt64Value_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20d70",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UInt64Value_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20d90",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UInt64Value_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20da0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Int32Value_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20e00",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Int32Value_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20e20",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_Int32Value_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20e30",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UInt32Value_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20e90",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UInt32Value_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20eb0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_UInt32Value_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20ec0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_BoolValue_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20f20",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_BoolValue_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20f40",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_BoolValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20f50",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_StringValue_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20fb0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_StringValue_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20fd0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_StringValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed20fe0",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_BytesValue_:_InternalSwiftProtobuf.Message_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed21040",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_BytesValue_:_InternalSwiftProtobuf._MessageImplementationBase_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "1eed21060",
+      "name": "$$protocol_witness_table_for_InternalSwiftProtobuf.Google_Protobuf_BytesValue_:_InternalSwiftProtobuf._ProtoNameProviding_in_InternalSwiftProtobuf",
+      "source": "symbol"
+    },
+    {
+      "address": "2ccd69a67",
+      "name": "s__swift_conformsToProtocol2_2ccd69a67",
+      "source": "symbol"
+    },
+    {
+      "address": "2ccd6cad8",
+      "name": "_swift_conformsToProtocol2",
+      "source": "symbol"
+    }
+  ],
+  "class_names": [],
+  "selector_strings": []
+}

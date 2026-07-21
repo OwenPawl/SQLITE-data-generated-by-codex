@@ -1,0 +1,17 @@
+settings set target.process.thread.step-avoid-regexp ^std::|^Swift|^swift
+settings set target.inline-breakpoint-strategy always
+settings set target.skip-prologue false
+
+process launch --stop-at-entry -o /dev/null -- schema-all
+image list -b -f ToolKit
+image list -b -f InternalSwiftProtobuf
+
+breakpoint set --shlib ToolKit --func-regex 'ToolKitProto.*_protobuf_nameMap.getter' --auto-continue true --breakpoint-name schema_name_map
+breakpoint set --shlib ToolKit --func-regex 'ToolKitProto.*decodeMessage' --auto-continue true --breakpoint-name schema_decode_message
+continue
+
+breakpoint list schema_decode_message
+
+process launch -o /dev/null -- describe-all
+
+breakpoint list schema_name_map

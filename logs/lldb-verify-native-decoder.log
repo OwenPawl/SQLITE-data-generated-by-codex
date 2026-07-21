@@ -1,0 +1,59 @@
+(lldb) command source -s 0 'runtime/verify_native_decoder.lldb'
+Executing commands in '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_native_decoder.lldb'.
+(lldb) settings set auto-confirm true
+(lldb) target create runtime/toolkit_native_decoder
+Current executable set to '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64).
+(lldb) breakpoint set --name '$s7ToolKit0aB17ProtoTypeInstanceV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF'
+Breakpoint 1: where = ToolKit`ToolKitProtoTypeInstance.decodeMessage<A>(decoder:), address = 0x00000002a209d344
+(lldb) breakpoint command add 1
+(lldb) breakpoint set --name '$s21InternalSwiftProtobuf7MessagePAAE10jsonString7optionsSSAA19JSONEncodingOptionsV_tKF'
+Breakpoint 2: where = InternalSwiftProtobuf`Message.jsonString(options:), address = 0x00000001d849c4d0
+(lldb) breakpoint command add 2
+(lldb) run decode ToolKitProtoTypeInstance 1A080A060A040A021000
+(lldb)    script print("RUNTIME_HIT ToolKitProtoTypeInstance.decodeMessage")
+RUNTIME_HIT ToolKitProtoTypeInstance.decodeMessage
+(lldb)    bt 6
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+   * frame #0: 0x00000002a7ab5344 ToolKit`ToolKitProtoTypeInstance.decodeMessage(decoder:)
+     frame #1: 0x00000002a7ab74b4 ToolKit`___lldb_unnamed_symbol_2a209f4a4 + 16
+     frame #2: 0x00000001ddebffd4 InternalSwiftProtobuf`___lldb_unnamed_symbol_1d84a7f6c + 104
+     frame #3: 0x00000001ddecc480 InternalSwiftProtobuf`Message._merge(rawBuffer:extensions:partial:options:) + 176
+     frame #4: 0x00000001dde44de4 InternalSwiftProtobuf`___lldb_unnamed_symbol_1d842cda4 + 64
+     frame #5: 0x00000001dde4488c InternalSwiftProtobuf`___lldb_unnamed_symbol_1d842c870 + 28
+(lldb)    continue
+Process 1569 resuming
+Command #3 '  continue' continued the target.
+(lldb)    script print("RUNTIME_HIT ToolKitProtoTypeInstance.decodeMessage")
+RUNTIME_HIT ToolKitProtoTypeInstance.decodeMessage
+(lldb)    bt 6
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+   * frame #0: 0x00000002a7ab5344 ToolKit`ToolKitProtoTypeInstance.decodeMessage(decoder:)
+     frame #1: 0x00000002a7ab74b4 ToolKit`___lldb_unnamed_symbol_2a209f4a4 + 16
+     frame #2: 0x00000001ddebffd4 InternalSwiftProtobuf`___lldb_unnamed_symbol_1d84a7f6c + 104
+     frame #3: 0x00000001ddebff3c InternalSwiftProtobuf`___lldb_unnamed_symbol_1d84a7dcc + 368
+     frame #4: 0x00000001ddec43b4 InternalSwiftProtobuf`___lldb_unnamed_symbol_1d84ac3a4 + 16
+     frame #5: 0x00000001dde49c58 InternalSwiftProtobuf`dispatch thunk of Decoder.decodeSingularMessageField(value:) + 32
+(lldb)    continue
+Process 1569 resuming
+Command #3 '  continue' continued the target.
+(lldb)    script print("RUNTIME_HIT InternalSwiftProtobuf.Message.jsonString")
+RUNTIME_HIT InternalSwiftProtobuf.Message.jsonString
+(lldb)    bt 6
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 2.1
+   * frame #0: 0x00000001ddeb44d0 InternalSwiftProtobuf`Message.jsonString(options:)
+     frame #1: 0x00000001000029a0 toolkit_native_decoder`closure #1 in NativeMessageType.init(_:_:) + 920
+     frame #2: 0x0000000100002dec toolkit_native_decoder`partial apply for closure #1 in NativeMessageType.init(_:_:) + 44
+     frame #3: 0x0000000100011af4 toolkit_native_decoder`static NativeDecoderCLI.run() + 1560
+     frame #4: 0x0000000100011364 toolkit_native_decoder`static NativeDecoderCLI.main() + 32
+     frame #5: 0x0000000100012660 toolkit_native_decoder`static NativeDecoderCLI.$main() + 12
+(lldb)    continue
+Process 1569 resuming
+Command #3 '  continue' continued the target.
+{"canonicalBinaryHex":"1a080a060a040a021000","json":"{\"optionalVariant\":{\"value\":{\"type\":{\"primitive\":{\"bool\":null}}}}}","protoMessageName":"ToolKit.TypeInstance","swiftType":"ToolKitProtoTypeInstance","unknownFieldsHex":""}
+Process 1569 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64)
+Process 1569 exited with status = 0 (0x00000000)
+(lldb) image list -t -o -f ToolKit
+[  0] arm64e-apple-macosx27.0.0 0x0000000005a18000 /System/Library/PrivateFrameworks/ToolKit.framework/Versions/A/ToolKit
+(lldb) image list -t -o -f InternalSwiftProtobuf
+[  0] arm64e-apple-macosx27.0.0 0x0000000005a18000 /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/Versions/A/InternalSwiftProtobuf
+(lldb) quit

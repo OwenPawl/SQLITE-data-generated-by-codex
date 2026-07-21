@@ -1,0 +1,704 @@
+[
+  {
+    "name": "AdditionalToolAttributionContainers",
+    "sql": "CREATE TABLE \"AdditionalToolAttributionContainers\" (\"toolId\" INTEGER NOT NULL, \"containerId\" TEXT NOT NULL, PRIMARY KEY (\"toolId\", \"containerId\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE, FOREIGN KEY (\"containerId\") REFERENCES \"ContainerMetadata\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "AdditionalToolAttributionContainers",
+    "type": "table"
+  },
+  {
+    "name": "Categories",
+    "sql": "CREATE TABLE \"Categories\" (\"toolId\" INTEGER NOT NULL, \"locale\" TEXT NOT NULL, \"category\" TEXT NOT NULL, PRIMARY KEY (\"toolId\", \"category\", \"locale\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "Categories",
+    "type": "table"
+  },
+  {
+    "name": "ContainerMetadata",
+    "sql": "CREATE TABLE \"ContainerMetadata\" (\"rowId\" INTEGER PRIMARY KEY AUTOINCREMENT, \"id\" TEXT NOT NULL, \"bundleVersion\" TEXT NOT NULL, \"teamId\" TEXT NOT NULL, \"deviceId\" TEXT NOT NULL, \"origin\" INTEGER NOT NULL, \"containerType\" INTEGER NOT NULL, UNIQUE (\"id\", \"bundleVersion\", \"deviceId\"))",
+    "tbl_name": "ContainerMetadata",
+    "type": "table"
+  },
+  {
+    "name": "ContainerMetadataLocalizations",
+    "sql": "CREATE TABLE \"ContainerMetadataLocalizations\" (\"containerId\" INTEGER NOT NULL, \"locale\" TEXT NOT NULL, \"name\" TEXT NOT NULL, PRIMARY KEY (\"containerId\", \"locale\"), FOREIGN KEY (\"containerId\") REFERENCES \"ContainerMetadata\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "ContainerMetadataLocalizations",
+    "type": "table"
+  },
+  {
+    "name": "ContainerMetadataSynonyms",
+    "sql": "CREATE TABLE \"ContainerMetadataSynonyms\" (\"containerId\" INTEGER NOT NULL, \"locale\" TEXT NOT NULL, \"synonym\" TEXT NOT NULL, \"order\" INTEGER NOT NULL, PRIMARY KEY (\"containerId\", \"locale\", \"synonym\"), FOREIGN KEY (\"containerId\") REFERENCES \"ContainerMetadata\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "ContainerMetadataSynonyms",
+    "type": "table"
+  },
+  {
+    "name": "EntityProperties",
+    "sql": "CREATE TABLE \"EntityProperties\" (\"id\" TEXT NOT NULL, \"typeId\" TEXT NOT NULL, \"typeInstance\" BLOB NOT NULL, \"spotlightAttributeKey\" TEXT, \"spotlightCustomAttributeKey\" TEXT, \"authenticationPolicy\" TEXT, PRIMARY KEY (\"id\", \"typeId\"), FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "EntityProperties",
+    "type": "table"
+  },
+  {
+    "name": "EntityPropertyLocalizations",
+    "sql": "CREATE TABLE \"EntityPropertyLocalizations\" (\"typeId\" TEXT NOT NULL, \"propertyId\" TEXT NOT NULL, \"locale\" TEXT NOT NULL, \"displayName\" TEXT NOT NULL, PRIMARY KEY (\"propertyId\", \"locale\", \"typeId\"), FOREIGN KEY (\"propertyId\", \"typeId\") REFERENCES \"EntityProperties\"(\"id\", \"typeId\") ON DELETE CASCADE)",
+    "tbl_name": "EntityPropertyLocalizations",
+    "type": "table"
+  },
+  {
+    "name": "EnumerationCases",
+    "sql": "CREATE TABLE \"EnumerationCases\" (\"typeId\" TEXT NOT NULL, \"locale\" TEXT NOT NULL, \"id\" TEXT NOT NULL, \"title\" TEXT, \"subtitle\" BLOB, \"altText\" BLOB, \"image\" BLOB, \"snippetPluginModel\" BLOB, \"synonyms\" BLOB NOT NULL, PRIMARY KEY (\"typeId\", \"id\", \"locale\"), FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "EnumerationCases",
+    "type": "table"
+  },
+  {
+    "name": "LaunchServicesState",
+    "sql": "CREATE TABLE \"LaunchServicesState\" (\"bundleId\" TEXT PRIMARY KEY NOT NULL, \"persistentIdentifier\" BLOB NOT NULL)",
+    "tbl_name": "LaunchServicesState",
+    "type": "table"
+  },
+  {
+    "name": "LinkActionIdentifiers",
+    "sql": "CREATE TABLE \"LinkActionIdentifiers\" (\"identifier\" TEXT NOT NULL, \"toolId\" INTEGER NOT NULL, UNIQUE (\"toolId\", \"identifier\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "LinkActionIdentifiers",
+    "type": "table"
+  },
+  {
+    "name": "LinkState",
+    "sql": "CREATE TABLE \"LinkState\" (\"containerId\" TEXT PRIMARY KEY NOT NULL, \"installIdentifier\" BLOB NOT NULL)",
+    "tbl_name": "LinkState",
+    "type": "table"
+  },
+  {
+    "name": "Metadata",
+    "sql": "CREATE TABLE \"Metadata\" (\"key\" TEXT PRIMARY KEY NOT NULL, \"value\" BLOB NOT NULL)",
+    "tbl_name": "Metadata",
+    "type": "table"
+  },
+  {
+    "name": "ParameterLocalizations",
+    "sql": "CREATE TABLE \"ParameterLocalizations\" (\"toolId\" INTEGER NOT NULL, \"key\" TEXT NOT NULL, \"locale\" TEXT NOT NULL, \"name\" TEXT NOT NULL, \"description\" TEXT, \"trueString\" TEXT, \"falseString\" TEXT, PRIMARY KEY (\"toolId\", \"key\", \"locale\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE, FOREIGN KEY (\"toolId\", \"key\") REFERENCES \"Parameters\"(\"toolId\", \"key\") ON DELETE CASCADE)",
+    "tbl_name": "ParameterLocalizations",
+    "type": "table"
+  },
+  {
+    "name": "Parameters",
+    "sql": "CREATE TABLE \"Parameters\" (\"typeInstance\" BLOB NOT NULL, \"key\" TEXT NOT NULL, \"sortOrder\" INTEGER NOT NULL, \"relationships\" BLOB NOT NULL, \"flags\" INTEGER NOT NULL, \"toolId\" INTEGER NOT NULL, PRIMARY KEY (\"toolId\", \"key\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "Parameters",
+    "type": "table"
+  },
+  {
+    "name": "PredicateTemplates",
+    "sql": "CREATE TABLE \"PredicateTemplates\" (\"typeId\" TEXT NOT NULL, \"comparison\" BLOB NOT NULL, \"stringSearch\" BLOB, \"valueSearch\" BLOB, \"idSearch\" BLOB, \"searchableItem\" BLOB, \"all\" BLOB, \"unique\" BLOB, \"valid\" BLOB, \"suggested\" BLOB, \"metadata\" BLOB, PRIMARY KEY (\"typeId\"), FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "PredicateTemplates",
+    "type": "table"
+  },
+  {
+    "name": "SampleInvocation",
+    "sql": "CREATE TABLE \"SampleInvocation\" (\"rowId\" INTEGER PRIMARY KEY AUTOINCREMENT, \"toolId\" INTEGER NOT NULL, \"parameterKey\" TEXT, \"expectedResult\" TEXT, FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE, FOREIGN KEY (\"toolId\", \"parameterKey\") REFERENCES \"Parameters\"(\"toolId\", \"key\") ON DELETE CASCADE)",
+    "tbl_name": "SampleInvocation",
+    "type": "table"
+  },
+  {
+    "name": "SampleInvocationPhrase",
+    "sql": "CREATE TABLE \"SampleInvocationPhrase\" (\"rowId\" INTEGER PRIMARY KEY AUTOINCREMENT, \"invocationId\" INTEGER NOT NULL, \"annotation\" INTEGER NOT NULL, \"phrase\" TEXT NOT NULL, FOREIGN KEY (\"invocationId\") REFERENCES \"SampleInvocation\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "SampleInvocationPhrase",
+    "type": "table"
+  },
+  {
+    "name": "SearchKeywords",
+    "sql": "CREATE TABLE \"SearchKeywords\" (\"toolId\" INTEGER NOT NULL, \"locale\" TEXT NOT NULL, \"keyword\" TEXT NOT NULL, \"order\" INTEGER NOT NULL, PRIMARY KEY (\"toolId\", \"locale\", \"keyword\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "SearchKeywords",
+    "type": "table"
+  },
+  {
+    "name": "SystemToolProtocols",
+    "sql": "CREATE TABLE \"SystemToolProtocols\" (\"toolId\" INTEGER NOT NULL, \"identifier\" TEXT NOT NULL, \"protocol\" BLOB NOT NULL, FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "SystemToolProtocols",
+    "type": "table"
+  },
+  {
+    "name": "SystemTypeProtocols",
+    "sql": "CREATE TABLE \"SystemTypeProtocols\" (\"typeId\" INTEGER NOT NULL, \"identifier\" TEXT NOT NULL, \"protocol\" BLOB NOT NULL, PRIMARY KEY (\"typeId\", \"protocol\"), FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "SystemTypeProtocols",
+    "type": "table"
+  },
+  {
+    "name": "ToolCascadeSharedIdentifiers",
+    "sql": "CREATE TABLE \"ToolCascadeSharedIdentifiers\" (\"toolId\" INTEGER NOT NULL, \"cascadeSharedIdentifier\" TEXT NOT NULL, \"deviceId\" INTEGER NOT NULL, UNIQUE (\"toolId\", \"cascadeSharedIdentifier\", \"deviceId\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "ToolCascadeSharedIdentifiers",
+    "type": "table"
+  },
+  {
+    "name": "ToolLocalizations",
+    "sql": "CREATE TABLE \"ToolLocalizations\" (\"toolId\" INTEGER NOT NULL, \"locale\" TEXT NOT NULL, \"name\" TEXT NOT NULL, \"outputResultName\" TEXT, \"descriptionSummary\" TEXT, \"descriptionAttribution\" TEXT, \"descriptionResult\" TEXT, \"descriptionNote\" TEXT, \"descriptionRequires\" TEXT, \"deprecationMessage\" TEXT, \"localizationUsage\" TEXT NOT NULL, PRIMARY KEY (\"toolId\", \"locale\", \"localizationUsage\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "ToolLocalizations",
+    "type": "table"
+  },
+  {
+    "name": "ToolOutputTypes",
+    "sql": "CREATE TABLE \"ToolOutputTypes\" (\"toolId\" INTEGER NOT NULL, \"typeIdentifier\" TEXT NOT NULL, UNIQUE (\"toolId\", \"typeIdentifier\"), FOREIGN KEY (\"toolId\") REFERENCES \"Tools\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "ToolOutputTypes",
+    "type": "table"
+  },
+  {
+    "name": "ToolParameterTypes",
+    "sql": "CREATE TABLE \"ToolParameterTypes\" (\"toolId\" INTEGER NOT NULL, \"key\" TEXT NOT NULL, \"typeId\" INTEGER NOT NULL, PRIMARY KEY (\"toolId\", \"key\", \"typeId\"), FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE, FOREIGN KEY (\"toolId\", \"key\") REFERENCES \"Parameters\"(\"toolId\", \"key\") ON DELETE CASCADE)",
+    "tbl_name": "ToolParameterTypes",
+    "type": "table"
+  },
+  {
+    "name": "Tools",
+    "sql": "CREATE TABLE \"Tools\" (\"rowId\" INTEGER PRIMARY KEY AUTOINCREMENT, \"id\" TEXT NOT NULL, \"toolType\" TEXT NOT NULL, \"flags\" INTEGER NOT NULL, \"visibilityFlags\" INTEGER NOT NULL, \"requirements\" BLOB NOT NULL, \"authenticationPolicy\" TEXT NOT NULL, \"customIcon\" BLOB, \"deprecationReplacementId\" TEXT, \"sourceActionProvider\" TEXT, \"resourceURL\" TEXT, \"pythonName\" TEXT, \"outputTypeInstance\" BLOB, \"sourceContainerId\" INTEGER NOT NULL, \"attributionContainerId\" INTEGER, UNIQUE (\"id\", \"sourceContainerId\"), FOREIGN KEY (\"sourceContainerId\") REFERENCES \"ContainerMetadata\"(\"rowId\") ON DELETE CASCADE, FOREIGN KEY (\"attributionContainerId\") REFERENCES \"ContainerMetadata\"(\"rowId\") ON DELETE SET NULL)",
+    "tbl_name": "Tools",
+    "type": "table"
+  },
+  {
+    "name": "TriggerLocalizations",
+    "sql": "CREATE TABLE \"TriggerLocalizations\" (\"triggerId\" INTEGER NOT NULL, \"locale\" TEXT NOT NULL, \"name\" TEXT NOT NULL, \"outputResultName\" TEXT, \"descriptionSummary\" TEXT, PRIMARY KEY (\"triggerId\", \"locale\"), FOREIGN KEY (\"triggerId\") REFERENCES \"Triggers\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "TriggerLocalizations",
+    "type": "table"
+  },
+  {
+    "name": "TriggerOutputTypes",
+    "sql": "CREATE TABLE \"TriggerOutputTypes\" (\"triggerId\" INTEGER NOT NULL, \"typeIdentifier\" TEXT NOT NULL, UNIQUE (\"triggerId\", \"typeIdentifier\"), FOREIGN KEY (\"triggerId\") REFERENCES \"Triggers\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "TriggerOutputTypes",
+    "type": "table"
+  },
+  {
+    "name": "TriggerParameterLocalizations",
+    "sql": "CREATE TABLE \"TriggerParameterLocalizations\" (\"triggerId\" INTEGER NOT NULL, \"key\" TEXT NOT NULL, \"locale\" TEXT NOT NULL, \"name\" TEXT NOT NULL, \"description\" TEXT, PRIMARY KEY (\"triggerId\", \"key\", \"locale\"), FOREIGN KEY (\"triggerId\") REFERENCES \"Triggers\"(\"rowId\") ON DELETE CASCADE, FOREIGN KEY (\"triggerId\", \"key\") REFERENCES \"TriggerParameters\"(\"triggerId\", \"key\") ON DELETE CASCADE)",
+    "tbl_name": "TriggerParameterLocalizations",
+    "type": "table"
+  },
+  {
+    "name": "TriggerParameters",
+    "sql": "CREATE TABLE \"TriggerParameters\" (\"typeInstance\" BLOB NOT NULL, \"key\" TEXT NOT NULL, \"sortOrder\" INTEGER NOT NULL, \"relationships\" BLOB NOT NULL, \"flags\" INTEGER NOT NULL, \"typeId\" TEXT NOT NULL, \"triggerId\" INTEGER NOT NULL, PRIMARY KEY (\"triggerId\", \"key\"), FOREIGN KEY (\"triggerId\") REFERENCES \"Triggers\"(\"rowId\") ON DELETE CASCADE, FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "TriggerParameters",
+    "type": "table"
+  },
+  {
+    "name": "Triggers",
+    "sql": "CREATE TABLE \"Triggers\" (\"rowId\" INTEGER PRIMARY KEY AUTOINCREMENT, \"id\" TEXT NOT NULL, \"pythonName\" TEXT, \"flags\" INTEGER NOT NULL, \"requirements\" BLOB NOT NULL, \"outputTypeInstance\" BLOB)",
+    "tbl_name": "Triggers",
+    "type": "table"
+  },
+  {
+    "name": "TypeCoercions",
+    "sql": "CREATE TABLE \"TypeCoercions\" (\"typeId\" TEXT NOT NULL, \"coercionDefinition\" BLOB NOT NULL, FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "TypeCoercions",
+    "type": "table"
+  },
+  {
+    "name": "TypeDisplayRepresentations",
+    "sql": "CREATE TABLE \"TypeDisplayRepresentations\" (\"typeId\" TEXT NOT NULL, \"locale\" TEXT NOT NULL, \"name\" TEXT NOT NULL, \"numericFormat\" TEXT, \"synonyms\" BLOB NOT NULL, PRIMARY KEY (\"typeId\", \"locale\"), FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "TypeDisplayRepresentations",
+    "type": "table"
+  },
+  {
+    "name": "Types",
+    "sql": "CREATE TABLE \"Types\" (\"rowId\" TEXT PRIMARY KEY NOT NULL, \"id\" BLOB NOT NULL, \"sourceContainerId\" INTEGER NOT NULL, \"kind\" INTEGER NOT NULL, \"runtimeFlags\" INTEGER, \"runtimeRequirements\" BLOB, \"authenticationPolicy\" TEXT, \"resourceURL\" TEXT, \"pythonName\" TEXT, FOREIGN KEY (\"sourceContainerId\") REFERENCES \"ContainerMetadata\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "Types",
+    "type": "table"
+  },
+  {
+    "name": "UTTypeCoercions",
+    "sql": "CREATE TABLE \"UTTypeCoercions\" (\"typeId\" TEXT NOT NULL, \"coercionIdentifier\" TEXT NOT NULL, PRIMARY KEY (\"typeId\", \"coercionIdentifier\"), FOREIGN KEY (\"typeId\") REFERENCES \"Types\"(\"rowId\") ON DELETE CASCADE)",
+    "tbl_name": "UTTypeCoercions",
+    "type": "table"
+  },
+  {
+    "name": "sqlite_sequence",
+    "sql": "CREATE TABLE sqlite_sequence(name,seq)",
+    "tbl_name": "sqlite_sequence",
+    "type": "table"
+  },
+  {
+    "name": "sqlite_stat1",
+    "sql": "CREATE TABLE sqlite_stat1(tbl,idx,stat)",
+    "tbl_name": "sqlite_stat1",
+    "type": "table"
+  },
+  {
+    "name": "AdditionalToolAttributionContainers_on_containerId",
+    "sql": "CREATE INDEX \"AdditionalToolAttributionContainers_on_containerId\" ON \"AdditionalToolAttributionContainers\"(\"containerId\")",
+    "tbl_name": "AdditionalToolAttributionContainers",
+    "type": "index"
+  },
+  {
+    "name": "AdditionalToolAttributionContainers_on_toolId",
+    "sql": "CREATE INDEX \"AdditionalToolAttributionContainers_on_toolId\" ON \"AdditionalToolAttributionContainers\"(\"toolId\")",
+    "tbl_name": "AdditionalToolAttributionContainers",
+    "type": "index"
+  },
+  {
+    "name": "ContainerMetadataLocalizations_on_containerId",
+    "sql": "CREATE INDEX \"ContainerMetadataLocalizations_on_containerId\" ON \"ContainerMetadataLocalizations\"(\"containerId\")",
+    "tbl_name": "ContainerMetadataLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "ContainerMetadataLocalizations_on_locale",
+    "sql": "CREATE INDEX \"ContainerMetadataLocalizations_on_locale\" ON \"ContainerMetadataLocalizations\"(\"locale\")",
+    "tbl_name": "ContainerMetadataLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "ContainerMetadataSynonyms_locale_containerId",
+    "sql": "CREATE INDEX \"ContainerMetadataSynonyms_locale_containerId\" ON \"ContainerMetadataSynonyms\"(\"locale\", \"containerId\")",
+    "tbl_name": "ContainerMetadataSynonyms",
+    "type": "index"
+  },
+  {
+    "name": "ContainerMetadata_on_containerType",
+    "sql": "CREATE INDEX \"ContainerMetadata_on_containerType\" ON \"ContainerMetadata\"(\"containerType\")",
+    "tbl_name": "ContainerMetadata",
+    "type": "index"
+  },
+  {
+    "name": "ContainerMetadata_on_deviceId",
+    "sql": "CREATE INDEX \"ContainerMetadata_on_deviceId\" ON \"ContainerMetadata\"(\"deviceId\")",
+    "tbl_name": "ContainerMetadata",
+    "type": "index"
+  },
+  {
+    "name": "ContainerMetadata_on_id",
+    "sql": "CREATE INDEX \"ContainerMetadata_on_id\" ON \"ContainerMetadata\"(\"id\")",
+    "tbl_name": "ContainerMetadata",
+    "type": "index"
+  },
+  {
+    "name": "ContainerMetadata_rowId_deviceId",
+    "sql": "CREATE INDEX \"ContainerMetadata_rowId_deviceId\" ON \"ContainerMetadata\"(\"rowId\", \"deviceId\")",
+    "tbl_name": "ContainerMetadata",
+    "type": "index"
+  },
+  {
+    "name": "EntityProperties_on_typeId",
+    "sql": "CREATE INDEX \"EntityProperties_on_typeId\" ON \"EntityProperties\"(\"typeId\")",
+    "tbl_name": "EntityProperties",
+    "type": "index"
+  },
+  {
+    "name": "EnumerationCases_on_locale",
+    "sql": "CREATE INDEX \"EnumerationCases_on_locale\" ON \"EnumerationCases\"(\"locale\")",
+    "tbl_name": "EnumerationCases",
+    "type": "index"
+  },
+  {
+    "name": "LinkActionIdentifiers_on_identifier",
+    "sql": "CREATE INDEX \"LinkActionIdentifiers_on_identifier\" ON \"LinkActionIdentifiers\"(\"identifier\")",
+    "tbl_name": "LinkActionIdentifiers",
+    "type": "index"
+  },
+  {
+    "name": "LinkActionIdentifiers_on_toolId",
+    "sql": "CREATE INDEX \"LinkActionIdentifiers_on_toolId\" ON \"LinkActionIdentifiers\"(\"toolId\")",
+    "tbl_name": "LinkActionIdentifiers",
+    "type": "index"
+  },
+  {
+    "name": "ParameterLocalizations_on_key",
+    "sql": "CREATE INDEX \"ParameterLocalizations_on_key\" ON \"ParameterLocalizations\"(\"key\")",
+    "tbl_name": "ParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "ParameterLocalizations_on_locale",
+    "sql": "CREATE INDEX \"ParameterLocalizations_on_locale\" ON \"ParameterLocalizations\"(\"locale\")",
+    "tbl_name": "ParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "ParameterLocalizations_on_toolId",
+    "sql": "CREATE INDEX \"ParameterLocalizations_on_toolId\" ON \"ParameterLocalizations\"(\"toolId\")",
+    "tbl_name": "ParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "SampleInvocationPhrase_on_invocationId",
+    "sql": "CREATE INDEX \"SampleInvocationPhrase_on_invocationId\" ON \"SampleInvocationPhrase\"(\"invocationId\")",
+    "tbl_name": "SampleInvocationPhrase",
+    "type": "index"
+  },
+  {
+    "name": "SampleInvocation_on_parameterKey",
+    "sql": "CREATE INDEX \"SampleInvocation_on_parameterKey\" ON \"SampleInvocation\"(\"parameterKey\")",
+    "tbl_name": "SampleInvocation",
+    "type": "index"
+  },
+  {
+    "name": "SampleInvocation_on_toolId",
+    "sql": "CREATE INDEX \"SampleInvocation_on_toolId\" ON \"SampleInvocation\"(\"toolId\")",
+    "tbl_name": "SampleInvocation",
+    "type": "index"
+  },
+  {
+    "name": "SystemToolProtocols_on_identifier",
+    "sql": "CREATE INDEX \"SystemToolProtocols_on_identifier\" ON \"SystemToolProtocols\"(\"identifier\")",
+    "tbl_name": "SystemToolProtocols",
+    "type": "index"
+  },
+  {
+    "name": "SystemToolProtocols_on_toolId",
+    "sql": "CREATE INDEX \"SystemToolProtocols_on_toolId\" ON \"SystemToolProtocols\"(\"toolId\")",
+    "tbl_name": "SystemToolProtocols",
+    "type": "index"
+  },
+  {
+    "name": "SystemTypeProtocols_on_identifier",
+    "sql": "CREATE INDEX \"SystemTypeProtocols_on_identifier\" ON \"SystemTypeProtocols\"(\"identifier\")",
+    "tbl_name": "SystemTypeProtocols",
+    "type": "index"
+  },
+  {
+    "name": "SystemTypeProtocols_on_typeId",
+    "sql": "CREATE INDEX \"SystemTypeProtocols_on_typeId\" ON \"SystemTypeProtocols\"(\"typeId\")",
+    "tbl_name": "SystemTypeProtocols",
+    "type": "index"
+  },
+  {
+    "name": "ToolCascadeSharedIdentifiers_on_cascadeSharedIdentifier",
+    "sql": "CREATE INDEX \"ToolCascadeSharedIdentifiers_on_cascadeSharedIdentifier\" ON \"ToolCascadeSharedIdentifiers\"(\"cascadeSharedIdentifier\")",
+    "tbl_name": "ToolCascadeSharedIdentifiers",
+    "type": "index"
+  },
+  {
+    "name": "ToolLocalizations_on_locale",
+    "sql": "CREATE INDEX \"ToolLocalizations_on_locale\" ON \"ToolLocalizations\"(\"locale\")",
+    "tbl_name": "ToolLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "ToolLocalizations_on_localizationUsage",
+    "sql": "CREATE INDEX \"ToolLocalizations_on_localizationUsage\" ON \"ToolLocalizations\"(\"localizationUsage\")",
+    "tbl_name": "ToolLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "ToolLocalizations_on_toolId",
+    "sql": "CREATE INDEX \"ToolLocalizations_on_toolId\" ON \"ToolLocalizations\"(\"toolId\")",
+    "tbl_name": "ToolLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "ToolOutputTypes_on_toolId",
+    "sql": "CREATE INDEX \"ToolOutputTypes_on_toolId\" ON \"ToolOutputTypes\"(\"toolId\")",
+    "tbl_name": "ToolOutputTypes",
+    "type": "index"
+  },
+  {
+    "name": "ToolOutputTypes_on_typeIdentifier",
+    "sql": "CREATE INDEX \"ToolOutputTypes_on_typeIdentifier\" ON \"ToolOutputTypes\"(\"typeIdentifier\")",
+    "tbl_name": "ToolOutputTypes",
+    "type": "index"
+  },
+  {
+    "name": "ToolParameterTypes_on_key",
+    "sql": "CREATE INDEX \"ToolParameterTypes_on_key\" ON \"ToolParameterTypes\"(\"key\")",
+    "tbl_name": "ToolParameterTypes",
+    "type": "index"
+  },
+  {
+    "name": "ToolParameterTypes_on_toolId",
+    "sql": "CREATE INDEX \"ToolParameterTypes_on_toolId\" ON \"ToolParameterTypes\"(\"toolId\")",
+    "tbl_name": "ToolParameterTypes",
+    "type": "index"
+  },
+  {
+    "name": "ToolParameterTypes_on_typeId",
+    "sql": "CREATE INDEX \"ToolParameterTypes_on_typeId\" ON \"ToolParameterTypes\"(\"typeId\")",
+    "tbl_name": "ToolParameterTypes",
+    "type": "index"
+  },
+  {
+    "name": "Tools_on_attributionContainerId",
+    "sql": "CREATE INDEX \"Tools_on_attributionContainerId\" ON \"Tools\"(\"attributionContainerId\")",
+    "tbl_name": "Tools",
+    "type": "index"
+  },
+  {
+    "name": "Tools_on_pythonName",
+    "sql": "CREATE INDEX \"Tools_on_pythonName\" ON \"Tools\"(\"pythonName\")",
+    "tbl_name": "Tools",
+    "type": "index"
+  },
+  {
+    "name": "Tools_on_sourceActionProvider",
+    "sql": "CREATE INDEX \"Tools_on_sourceActionProvider\" ON \"Tools\"(\"sourceActionProvider\")",
+    "tbl_name": "Tools",
+    "type": "index"
+  },
+  {
+    "name": "Tools_on_sourceContainerId",
+    "sql": "CREATE INDEX \"Tools_on_sourceContainerId\" ON \"Tools\"(\"sourceContainerId\")",
+    "tbl_name": "Tools",
+    "type": "index"
+  },
+  {
+    "name": "TriggerLocalizations_on_locale",
+    "sql": "CREATE INDEX \"TriggerLocalizations_on_locale\" ON \"TriggerLocalizations\"(\"locale\")",
+    "tbl_name": "TriggerLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "TriggerLocalizations_on_triggerId",
+    "sql": "CREATE INDEX \"TriggerLocalizations_on_triggerId\" ON \"TriggerLocalizations\"(\"triggerId\")",
+    "tbl_name": "TriggerLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "TriggerOutputTypes_on_triggerId",
+    "sql": "CREATE INDEX \"TriggerOutputTypes_on_triggerId\" ON \"TriggerOutputTypes\"(\"triggerId\")",
+    "tbl_name": "TriggerOutputTypes",
+    "type": "index"
+  },
+  {
+    "name": "TriggerOutputTypes_on_typeIdentifier",
+    "sql": "CREATE INDEX \"TriggerOutputTypes_on_typeIdentifier\" ON \"TriggerOutputTypes\"(\"typeIdentifier\")",
+    "tbl_name": "TriggerOutputTypes",
+    "type": "index"
+  },
+  {
+    "name": "TriggerParameterLocalizations_on_key",
+    "sql": "CREATE INDEX \"TriggerParameterLocalizations_on_key\" ON \"TriggerParameterLocalizations\"(\"key\")",
+    "tbl_name": "TriggerParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "TriggerParameterLocalizations_on_locale",
+    "sql": "CREATE INDEX \"TriggerParameterLocalizations_on_locale\" ON \"TriggerParameterLocalizations\"(\"locale\")",
+    "tbl_name": "TriggerParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "TriggerParameterLocalizations_on_triggerId",
+    "sql": "CREATE INDEX \"TriggerParameterLocalizations_on_triggerId\" ON \"TriggerParameterLocalizations\"(\"triggerId\")",
+    "tbl_name": "TriggerParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "TriggerParameters_on_typeId",
+    "sql": "CREATE INDEX \"TriggerParameters_on_typeId\" ON \"TriggerParameters\"(\"typeId\")",
+    "tbl_name": "TriggerParameters",
+    "type": "index"
+  },
+  {
+    "name": "Triggers_on_pythonName",
+    "sql": "CREATE INDEX \"Triggers_on_pythonName\" ON \"Triggers\"(\"pythonName\")",
+    "tbl_name": "Triggers",
+    "type": "index"
+  },
+  {
+    "name": "TypeCoercions_on_typeId",
+    "sql": "CREATE INDEX \"TypeCoercions_on_typeId\" ON \"TypeCoercions\"(\"typeId\")",
+    "tbl_name": "TypeCoercions",
+    "type": "index"
+  },
+  {
+    "name": "Types_on_id",
+    "sql": "CREATE INDEX \"Types_on_id\" ON \"Types\"(\"id\")",
+    "tbl_name": "Types",
+    "type": "index"
+  },
+  {
+    "name": "Types_on_kind",
+    "sql": "CREATE INDEX \"Types_on_kind\" ON \"Types\"(\"kind\")",
+    "tbl_name": "Types",
+    "type": "index"
+  },
+  {
+    "name": "Types_on_pythonName",
+    "sql": "CREATE INDEX \"Types_on_pythonName\" ON \"Types\"(\"pythonName\")",
+    "tbl_name": "Types",
+    "type": "index"
+  },
+  {
+    "name": "Types_on_sourceContainerId",
+    "sql": "CREATE INDEX \"Types_on_sourceContainerId\" ON \"Types\"(\"sourceContainerId\")",
+    "tbl_name": "Types",
+    "type": "index"
+  },
+  {
+    "name": "UTTypeCoercions_on_coercionIdentifier",
+    "sql": "CREATE INDEX \"UTTypeCoercions_on_coercionIdentifier\" ON \"UTTypeCoercions\"(\"coercionIdentifier\")",
+    "tbl_name": "UTTypeCoercions",
+    "type": "index"
+  },
+  {
+    "name": "UTTypeCoercions_on_typeId",
+    "sql": "CREATE INDEX \"UTTypeCoercions_on_typeId\" ON \"UTTypeCoercions\"(\"typeId\")",
+    "tbl_name": "UTTypeCoercions",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_AdditionalToolAttributionContainers_1",
+    "sql": null,
+    "tbl_name": "AdditionalToolAttributionContainers",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_Categories_1",
+    "sql": null,
+    "tbl_name": "Categories",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ContainerMetadataLocalizations_1",
+    "sql": null,
+    "tbl_name": "ContainerMetadataLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ContainerMetadataSynonyms_1",
+    "sql": null,
+    "tbl_name": "ContainerMetadataSynonyms",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ContainerMetadata_1",
+    "sql": null,
+    "tbl_name": "ContainerMetadata",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_EntityProperties_1",
+    "sql": null,
+    "tbl_name": "EntityProperties",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_EntityPropertyLocalizations_1",
+    "sql": null,
+    "tbl_name": "EntityPropertyLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_EnumerationCases_1",
+    "sql": null,
+    "tbl_name": "EnumerationCases",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_LaunchServicesState_1",
+    "sql": null,
+    "tbl_name": "LaunchServicesState",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_LinkActionIdentifiers_1",
+    "sql": null,
+    "tbl_name": "LinkActionIdentifiers",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_LinkState_1",
+    "sql": null,
+    "tbl_name": "LinkState",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_Metadata_1",
+    "sql": null,
+    "tbl_name": "Metadata",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ParameterLocalizations_1",
+    "sql": null,
+    "tbl_name": "ParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_Parameters_1",
+    "sql": null,
+    "tbl_name": "Parameters",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_PredicateTemplates_1",
+    "sql": null,
+    "tbl_name": "PredicateTemplates",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_SearchKeywords_1",
+    "sql": null,
+    "tbl_name": "SearchKeywords",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_SystemTypeProtocols_1",
+    "sql": null,
+    "tbl_name": "SystemTypeProtocols",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ToolCascadeSharedIdentifiers_1",
+    "sql": null,
+    "tbl_name": "ToolCascadeSharedIdentifiers",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ToolLocalizations_1",
+    "sql": null,
+    "tbl_name": "ToolLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ToolOutputTypes_1",
+    "sql": null,
+    "tbl_name": "ToolOutputTypes",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_ToolParameterTypes_1",
+    "sql": null,
+    "tbl_name": "ToolParameterTypes",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_Tools_1",
+    "sql": null,
+    "tbl_name": "Tools",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_TriggerLocalizations_1",
+    "sql": null,
+    "tbl_name": "TriggerLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_TriggerOutputTypes_1",
+    "sql": null,
+    "tbl_name": "TriggerOutputTypes",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_TriggerParameterLocalizations_1",
+    "sql": null,
+    "tbl_name": "TriggerParameterLocalizations",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_TriggerParameters_1",
+    "sql": null,
+    "tbl_name": "TriggerParameters",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_TypeDisplayRepresentations_1",
+    "sql": null,
+    "tbl_name": "TypeDisplayRepresentations",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_Types_1",
+    "sql": null,
+    "tbl_name": "Types",
+    "type": "index"
+  },
+  {
+    "name": "sqlite_autoindex_UTTypeCoercions_1",
+    "sql": null,
+    "tbl_name": "UTTypeCoercions",
+    "type": "index"
+  }
+]

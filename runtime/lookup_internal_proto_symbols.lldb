@@ -1,0 +1,7 @@
+target create runtime/toolkit_native_decoder
+process launch --stop-at-entry -o /dev/null -- defaults-all
+image lookup -rn 'serializedBytes' InternalSwiftProtobuf
+image lookup -rn 'BinaryDecoder' InternalSwiftProtobuf
+image lookup -rn 'jsonString' InternalSwiftProtobuf
+process kill
+quit

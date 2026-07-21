@@ -1,0 +1,54 @@
+(lldb) target create "runtime/toolkit_native_decoder"
+Current executable set to '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64).
+(lldb) command source -s 0 'runtime/verify_raw_identifier_types.lldb'
+Executing commands in '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_raw_identifier_types.lldb'.
+(lldb) settings set target.inline-breakpoint-strategy always
+(lldb) settings set target.skip-prologue false
+(lldb) process launch --stop-at-entry -- decode ToolKitProtoLaunchServicesSnapshot.State 0a1c636f6d2e6170706c652e717569636b6c6f6f6b2e716c6d616e61676512240000000028220000080000005c45a393ee52482a8de7308e794705112822000000000000
+Process 14675 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64)
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLaunchServicesSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name launch_services_state_decode
+Breakpoint 1: no locations (pending).
+WARNING:  Unable to resolve breakpoint to any actual locations.
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLinkSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name link_state_decode
+Breakpoint 2: no locations (pending).
+WARNING:  Unable to resolve breakpoint to any actual locations.
+(lldb) continue
+1 location added to breakpoint 1
+1 location added to breakpoint 2
+{"canonicalBinaryHex":"0a1c636f6d2e6170706c652e717569636b6c6f6f6b2e716c6d616e61676512240000000028220000080000005c45a393ee52482a8de7308e794705112822000000000000","json":"{\"bundleId\":\"com.apple.quicklook.qlmanage\",\"persistentIdentifier\":\"AAAAACgiAAAIAAAAXEWjk+5SSCqN5zCOeUcFESgiAAAAAAAA\"}","protoMessageName":"ToolKit.LaunchServicesSnapshot.State","swiftType":"ToolKitProtoLaunchServicesSnapshot.State","unknownFieldsHex":""}
+Process 14675 resuming
+Process 14675 exited with status = 0 (0x00000000)
+(lldb) breakpoint list launch_services_state_decode
+1: regex = 'ToolKitProtoLaunchServicesSnapshot.State.decodeMessage', module = ToolKit, locations = 1, resolved = 1, hit count = 0 Options: enabled auto-continue 
+  Names:
+    launch_services_state_decode
+
+  1.1: where = ToolKit`ToolKitProtoLaunchServicesSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a79a6a54, resolved, hit count = 0 
+
+(lldb) breakpoint list link_state_decode
+2: regex = 'ToolKitProtoLinkSnapshot.State.decodeMessage', module = ToolKit, locations = 1, resolved = 1, hit count = 1 Options: enabled auto-continue 
+  Names:
+    link_state_decode
+
+  2.1: where = ToolKit`ToolKitProtoLinkSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a7991dc4, resolved, hit count = 1 
+
+(lldb) process launch --stop-at-entry -- decode ToolKitProtoLinkSnapshot.State 0a2d636f6d2e6170706c652e646f6e6f74646973747572622e446f4e6f7444697374757262417070496e74656e74731220514528621d7d383bd30ab90abdd94101363c435b8dde20ed9938ec1510b57b41
+Process 14681 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64)
+(lldb) continue
+{"canonicalBinaryHex":"0a2d636f6d2e6170706c652e646f6e6f74646973747572622e446f4e6f7444697374757262417070496e74656e74731220514528621d7d383bd30ab90abdd94101363c435b8dde20ed9938ec1510b57b41","json":"{\"containerId\":\"com.apple.donotdisturb.DoNotDisturbAppIntents\",\"installIdentifier\":\"UUUoYh19ODvTCrkKvdlBATY8Q1uN3iDtmTjsFRC1e0E=\"}","protoMessageName":"ToolKit.LinkSnapshot.State","swiftType":"ToolKitProtoLinkSnapshot.State","unknownFieldsHex":""}
+Process 14681 resuming
+Process 14681 exited with status = 0 (0x00000000)
+(lldb) breakpoint list launch_services_state_decode
+1: regex = 'ToolKitProtoLaunchServicesSnapshot.State.decodeMessage', module = ToolKit, locations = 1, resolved = 1, hit count = 0 Options: enabled auto-continue 
+  Names:
+    launch_services_state_decode
+
+  1.1: where = ToolKit`ToolKitProtoLaunchServicesSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a79a6a54, resolved, hit count = 0 
+
+(lldb) breakpoint list link_state_decode
+2: regex = 'ToolKitProtoLinkSnapshot.State.decodeMessage', module = ToolKit, locations = 1, resolved = 1, hit count = 1 Options: enabled auto-continue 
+  Names:
+    link_state_decode
+
+  2.1: where = ToolKit`ToolKitProtoLinkSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a7991dc4, resolved, hit count = 1 
+

@@ -1,0 +1,3007 @@
+[
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 13,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 14,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 14
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 7,
+        "hidden": 0,
+        "name": "containerId",
+        "nonnull_count": 14,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 14
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "toolId",
+      "containerId"
+    ],
+    "row_count": 14,
+    "table": "AdditionalToolAttributionContainers"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 414,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 1656,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 1656
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 1656,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 1656
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 116,
+        "hidden": 0,
+        "name": "category",
+        "nonnull_count": 1656,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 1656
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "toolId",
+      "category",
+      "locale"
+    ],
+    "row_count": 1656,
+    "table": "Categories"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 170,
+        "hidden": 0,
+        "name": "rowId",
+        "nonnull_count": 170,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 170
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 170,
+        "hidden": 0,
+        "name": "id",
+        "nonnull_count": 170,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 170
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 50,
+        "hidden": 0,
+        "name": "bundleVersion",
+        "nonnull_count": 170,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 170
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 17,
+        "hidden": 0,
+        "name": "teamId",
+        "nonnull_count": 170,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 170
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 1,
+        "hidden": 0,
+        "name": "deviceId",
+        "nonnull_count": 170,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 170
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 2,
+        "hidden": 0,
+        "name": "origin",
+        "nonnull_count": 170,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 170
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "containerType",
+        "nonnull_count": 170,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 170
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "rowId"
+    ],
+    "row_count": 170,
+    "table": "ContainerMetadata"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 170,
+        "hidden": 0,
+        "name": "containerId",
+        "nonnull_count": 680,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 680
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 680,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 680
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 226,
+        "hidden": 0,
+        "name": "name",
+        "nonnull_count": 680,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 680
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "containerId",
+      "locale"
+    ],
+    "row_count": 680,
+    "table": "ContainerMetadataLocalizations"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 1,
+        "hidden": 0,
+        "name": "containerId",
+        "nonnull_count": 12,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 12
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 12,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 12
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 8,
+        "hidden": 0,
+        "name": "synonym",
+        "nonnull_count": 12,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 12
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "order",
+        "nonnull_count": 12,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 12
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "containerId",
+      "locale",
+      "synonym"
+    ],
+    "row_count": 12,
+    "table": "ContainerMetadataSynonyms"
+  },
+  {
+    "blob_columns": [
+      "typeInstance"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 1382,
+        "hidden": 0,
+        "name": "id",
+        "nonnull_count": 2794,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 2794
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 786,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 2794,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 2794
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 513,
+        "hidden": 0,
+        "name": "typeInstance",
+        "nonnull_count": 2794,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 2794
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 62,
+        "hidden": 0,
+        "name": "spotlightAttributeKey",
+        "nonnull_count": 303,
+        "notnull": 0,
+        "null_count": 2491,
+        "pk": 0,
+        "storage_types": {
+          "null": 2491,
+          "text": 303
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "spotlightCustomAttributeKey",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 2794,
+        "pk": 0,
+        "storage_types": {
+          "null": 2794
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "authenticationPolicy",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 2794,
+        "pk": 0,
+        "storage_types": {
+          "null": 2794
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "id",
+      "typeId"
+    ],
+    "row_count": 2794,
+    "table": "EntityProperties"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 786,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 11176,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 11176
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 1382,
+        "hidden": 0,
+        "name": "propertyId",
+        "nonnull_count": 11176,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 11176
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 11176,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 11176
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 3252,
+        "hidden": 0,
+        "name": "displayName",
+        "nonnull_count": 11176,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 11176
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "propertyId",
+      "locale",
+      "typeId"
+    ],
+    "row_count": 11176,
+    "table": "EntityPropertyLocalizations"
+  },
+  {
+    "blob_columns": [
+      "subtitle",
+      "altText",
+      "image",
+      "snippetPluginModel",
+      "synonyms"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 2030,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 38540,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 38540
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 38540,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 38540
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 4872,
+        "hidden": 0,
+        "name": "id",
+        "nonnull_count": 38540,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 38540
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 11118,
+        "hidden": 0,
+        "name": "title",
+        "nonnull_count": 38536,
+        "notnull": 0,
+        "null_count": 4,
+        "pk": 0,
+        "storage_types": {
+          "null": 4,
+          "text": 38536
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "subtitle",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 38540,
+        "pk": 0,
+        "storage_types": {
+          "null": 38540
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "altText",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 38540,
+        "pk": 0,
+        "storage_types": {
+          "null": 38540
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "image",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 38540,
+        "pk": 0,
+        "storage_types": {
+          "null": 38540
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 7,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "snippetPluginModel",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 38540,
+        "pk": 0,
+        "storage_types": {
+          "null": 38540
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 8,
+        "dflt_value": null,
+        "distinct_count": 1113,
+        "hidden": 0,
+        "name": "synonyms",
+        "nonnull_count": 38540,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 38540
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "typeId",
+      "id",
+      "locale"
+    ],
+    "row_count": 38540,
+    "table": "EnumerationCases"
+  },
+  {
+    "blob_columns": [
+      "persistentIdentifier"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 451,
+        "hidden": 0,
+        "name": "bundleId",
+        "nonnull_count": 451,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 451
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 451,
+        "hidden": 0,
+        "name": "persistentIdentifier",
+        "nonnull_count": 451,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 451
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "bundleId"
+    ],
+    "row_count": 451,
+    "table": "LaunchServicesState"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 1186,
+        "hidden": 0,
+        "name": "identifier",
+        "nonnull_count": 1214,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 1214
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 1214,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 1214,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 1214
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 1214,
+    "table": "LinkActionIdentifiers"
+  },
+  {
+    "blob_columns": [
+      "installIdentifier"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 89,
+        "hidden": 0,
+        "name": "containerId",
+        "nonnull_count": 89,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 89
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 89,
+        "hidden": 0,
+        "name": "installIdentifier",
+        "nonnull_count": 89,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 89
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "containerId"
+    ],
+    "row_count": 89,
+    "table": "LinkState"
+  },
+  {
+    "blob_columns": [
+      "value"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 5,
+        "hidden": 0,
+        "name": "key",
+        "nonnull_count": 5,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 5
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "value",
+        "nonnull_count": 5,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 5
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "key"
+    ],
+    "row_count": 5,
+    "table": "Metadata"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 2203,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 30140,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 30140
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 1921,
+        "hidden": 0,
+        "name": "key",
+        "nonnull_count": 30140,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 30140
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 30140,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 30140
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 5431,
+        "hidden": 0,
+        "name": "name",
+        "nonnull_count": 30140,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 30140
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 4835,
+        "hidden": 0,
+        "name": "description",
+        "nonnull_count": 8900,
+        "notnull": 0,
+        "null_count": 21240,
+        "pk": 0,
+        "storage_types": {
+          "null": 21240,
+          "text": 8900
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 52,
+        "hidden": 0,
+        "name": "trueString",
+        "nonnull_count": 4432,
+        "notnull": 0,
+        "null_count": 25708,
+        "pk": 0,
+        "storage_types": {
+          "null": 25708,
+          "text": 4432
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 52,
+        "hidden": 0,
+        "name": "falseString",
+        "nonnull_count": 4432,
+        "notnull": 0,
+        "null_count": 25708,
+        "pk": 0,
+        "storage_types": {
+          "null": 25708,
+          "text": 4432
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "toolId",
+      "key",
+      "locale"
+    ],
+    "row_count": 30140,
+    "table": "ParameterLocalizations"
+  },
+  {
+    "blob_columns": [
+      "typeInstance",
+      "relationships"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 4076,
+        "hidden": 0,
+        "name": "typeInstance",
+        "nonnull_count": 7535,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 7535
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 1921,
+        "hidden": 0,
+        "name": "key",
+        "nonnull_count": 7535,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 7535
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 198,
+        "hidden": 0,
+        "name": "sortOrder",
+        "nonnull_count": 7535,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 7535
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 221,
+        "hidden": 0,
+        "name": "relationships",
+        "nonnull_count": 7535,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 7535
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "flags",
+        "nonnull_count": 7535,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 7535
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 2203,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 7535,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 7535
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "toolId",
+      "key"
+    ],
+    "row_count": 7535,
+    "table": "Parameters"
+  },
+  {
+    "blob_columns": [
+      "comparison",
+      "stringSearch",
+      "valueSearch",
+      "idSearch",
+      "searchableItem",
+      "all",
+      "unique",
+      "valid",
+      "suggested",
+      "metadata"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 411,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 411,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 411
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 157,
+        "hidden": 0,
+        "name": "comparison",
+        "nonnull_count": 411,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "stringSearch",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "valueSearch",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "idSearch",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "searchableItem",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "all",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 7,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "unique",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 8,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "valid",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 9,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "suggested",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 10,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "metadata",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 411,
+        "pk": 0,
+        "storage_types": {
+          "null": 411
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "typeId"
+    ],
+    "row_count": 411,
+    "table": "PredicateTemplates"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "rowId",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {},
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 0,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "INTEGER"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "parameterKey",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "expectedResult",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "rowId"
+    ],
+    "row_count": 0,
+    "table": "SampleInvocation"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "rowId",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {},
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "invocationId",
+        "nonnull_count": 0,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "INTEGER"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "annotation",
+        "nonnull_count": 0,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "INTEGER"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "phrase",
+        "nonnull_count": 0,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "rowId"
+    ],
+    "row_count": 0,
+    "table": "SampleInvocationPhrase"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 843,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 16734,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 16734
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 16734,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 16734
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 3899,
+        "hidden": 0,
+        "name": "keyword",
+        "nonnull_count": 16734,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 16734
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 206,
+        "hidden": 0,
+        "name": "order",
+        "nonnull_count": 16734,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 16734
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "toolId",
+      "locale",
+      "keyword"
+    ],
+    "row_count": 16734,
+    "table": "SearchKeywords"
+  },
+  {
+    "blob_columns": [
+      "protocol"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 1850,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 4793,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 4793
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 226,
+        "hidden": 0,
+        "name": "identifier",
+        "nonnull_count": 4793,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 4793
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 2009,
+        "hidden": 0,
+        "name": "protocol",
+        "nonnull_count": 4793,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 4793
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 4793,
+    "table": "SystemToolProtocols"
+  },
+  {
+    "blob_columns": [
+      "protocol"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 833,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 1351,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 1351
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 170,
+        "hidden": 0,
+        "name": "identifier",
+        "nonnull_count": 1351,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 1351
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 183,
+        "hidden": 0,
+        "name": "protocol",
+        "nonnull_count": 1351,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "blob": 1351
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "typeId",
+      "protocol"
+    ],
+    "row_count": 1351,
+    "table": "SystemTypeProtocols"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 0,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "cascadeSharedIdentifier",
+        "nonnull_count": 0,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "deviceId",
+        "nonnull_count": 0,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {},
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 0,
+    "table": "ToolCascadeSharedIdentifiers"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 2400,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 9600,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 9600
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 9600,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 9600
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 5477,
+        "hidden": 0,
+        "name": "name",
+        "nonnull_count": 9600,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 9600
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 1968,
+        "hidden": 0,
+        "name": "outputResultName",
+        "nonnull_count": 4620,
+        "notnull": 0,
+        "null_count": 4980,
+        "pk": 0,
+        "storage_types": {
+          "null": 4980,
+          "text": 4620
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 4263,
+        "hidden": 0,
+        "name": "descriptionSummary",
+        "nonnull_count": 6928,
+        "notnull": 0,
+        "null_count": 2672,
+        "pk": 0,
+        "storage_types": {
+          "null": 2672,
+          "text": 6928
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 6,
+        "hidden": 0,
+        "name": "descriptionAttribution",
+        "nonnull_count": 16,
+        "notnull": 0,
+        "null_count": 9584,
+        "pk": 0,
+        "storage_types": {
+          "null": 9584,
+          "text": 16
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 643,
+        "hidden": 0,
+        "name": "descriptionResult",
+        "nonnull_count": 1040,
+        "notnull": 0,
+        "null_count": 8560,
+        "pk": 0,
+        "storage_types": {
+          "null": 8560,
+          "text": 1040
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 7,
+        "dflt_value": null,
+        "distinct_count": 91,
+        "hidden": 0,
+        "name": "descriptionNote",
+        "nonnull_count": 140,
+        "notnull": 0,
+        "null_count": 9460,
+        "pk": 0,
+        "storage_types": {
+          "null": 9460,
+          "text": 140
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 8,
+        "dflt_value": null,
+        "distinct_count": 42,
+        "hidden": 0,
+        "name": "descriptionRequires",
+        "nonnull_count": 152,
+        "notnull": 0,
+        "null_count": 9448,
+        "pk": 0,
+        "storage_types": {
+          "null": 9448,
+          "text": 152
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 9,
+        "dflt_value": null,
+        "distinct_count": 60,
+        "hidden": 0,
+        "name": "deprecationMessage",
+        "nonnull_count": 172,
+        "notnull": 0,
+        "null_count": 9428,
+        "pk": 0,
+        "storage_types": {
+          "null": 9428,
+          "text": 172
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 10,
+        "dflt_value": null,
+        "distinct_count": 1,
+        "hidden": 0,
+        "name": "localizationUsage",
+        "nonnull_count": 9600,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 9600
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "toolId",
+      "locale",
+      "localizationUsage"
+    ],
+    "row_count": 9600,
+    "table": "ToolLocalizations"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 2400,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 2509,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 2509
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 536,
+        "hidden": 0,
+        "name": "typeIdentifier",
+        "nonnull_count": 2509,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 2509
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 2509,
+    "table": "ToolOutputTypes"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 2203,
+        "hidden": 0,
+        "name": "toolId",
+        "nonnull_count": 7926,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 7926
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 1920,
+        "hidden": 0,
+        "name": "key",
+        "nonnull_count": 7926,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 7926
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 2903,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 7926,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 7926
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "toolId",
+      "key",
+      "typeId"
+    ],
+    "row_count": 7926,
+    "table": "ToolParameterTypes"
+  },
+  {
+    "blob_columns": [
+      "requirements",
+      "customIcon",
+      "outputTypeInstance"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 2400,
+        "hidden": 0,
+        "name": "rowId",
+        "nonnull_count": 2400,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 2400
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 2400,
+        "hidden": 0,
+        "name": "id",
+        "nonnull_count": 2400,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 2400
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "toolType",
+        "nonnull_count": 2400,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 2400
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 14,
+        "hidden": 0,
+        "name": "flags",
+        "nonnull_count": 2400,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 2400
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 8,
+        "hidden": 0,
+        "name": "visibilityFlags",
+        "nonnull_count": 2400,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 2400
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 82,
+        "hidden": 0,
+        "name": "requirements",
+        "nonnull_count": 2400,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 2400
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "authenticationPolicy",
+        "nonnull_count": 2400,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 2400
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 7,
+        "dflt_value": null,
+        "distinct_count": 179,
+        "hidden": 0,
+        "name": "customIcon",
+        "nonnull_count": 264,
+        "notnull": 0,
+        "null_count": 2136,
+        "pk": 0,
+        "storage_types": {
+          "blob": 264,
+          "null": 2136
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 8,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "deprecationReplacementId",
+        "nonnull_count": 7,
+        "notnull": 0,
+        "null_count": 2393,
+        "pk": 0,
+        "storage_types": {
+          "null": 2393,
+          "text": 7
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 9,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "sourceActionProvider",
+        "nonnull_count": 2400,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 2400
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 10,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "resourceURL",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 2400,
+        "pk": 0,
+        "storage_types": {
+          "null": 2400
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 11,
+        "dflt_value": null,
+        "distinct_count": 2266,
+        "hidden": 0,
+        "name": "pythonName",
+        "nonnull_count": 2400,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 2400
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 12,
+        "dflt_value": null,
+        "distinct_count": 591,
+        "hidden": 0,
+        "name": "outputTypeInstance",
+        "nonnull_count": 2400,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 2400
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 13,
+        "dflt_value": null,
+        "distinct_count": 97,
+        "hidden": 0,
+        "name": "sourceContainerId",
+        "nonnull_count": 2400,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 2400
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 14,
+        "dflt_value": null,
+        "distinct_count": 148,
+        "hidden": 0,
+        "name": "attributionContainerId",
+        "nonnull_count": 2175,
+        "notnull": 0,
+        "null_count": 225,
+        "pk": 0,
+        "storage_types": {
+          "integer": 2175,
+          "null": 225
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "rowId"
+    ],
+    "row_count": 2400,
+    "table": "Tools"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 42,
+        "hidden": 0,
+        "name": "triggerId",
+        "nonnull_count": 168,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 168
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 168,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 168
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 72,
+        "hidden": 0,
+        "name": "name",
+        "nonnull_count": 168,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 168
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "outputResultName",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 168,
+        "pk": 0,
+        "storage_types": {
+          "null": 168
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 42,
+        "hidden": 0,
+        "name": "descriptionSummary",
+        "nonnull_count": 168,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 168
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "triggerId",
+      "locale"
+    ],
+    "row_count": 168,
+    "table": "TriggerLocalizations"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 42,
+        "hidden": 0,
+        "name": "triggerId",
+        "nonnull_count": 42,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 42
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 7,
+        "hidden": 0,
+        "name": "typeIdentifier",
+        "nonnull_count": 42,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 42
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 42,
+    "table": "TriggerOutputTypes"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 38,
+        "hidden": 0,
+        "name": "triggerId",
+        "nonnull_count": 260,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 260
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 45,
+        "hidden": 0,
+        "name": "key",
+        "nonnull_count": 260,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 260
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 260,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 3,
+        "storage_types": {
+          "text": 260
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 96,
+        "hidden": 0,
+        "name": "name",
+        "nonnull_count": 260,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 260
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "description",
+        "nonnull_count": 8,
+        "notnull": 0,
+        "null_count": 252,
+        "pk": 0,
+        "storage_types": {
+          "null": 252,
+          "text": 8
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "triggerId",
+      "key",
+      "locale"
+    ],
+    "row_count": 260,
+    "table": "TriggerParameterLocalizations"
+  },
+  {
+    "blob_columns": [
+      "typeInstance",
+      "relationships"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 39,
+        "hidden": 0,
+        "name": "typeInstance",
+        "nonnull_count": 65,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 65
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 45,
+        "hidden": 0,
+        "name": "key",
+        "nonnull_count": 65,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 65
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "sortOrder",
+        "nonnull_count": 65,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 65
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 1,
+        "hidden": 0,
+        "name": "relationships",
+        "nonnull_count": 65,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 65
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 1,
+        "hidden": 0,
+        "name": "flags",
+        "nonnull_count": 65,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 65
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 32,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 65,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 65
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 38,
+        "hidden": 0,
+        "name": "triggerId",
+        "nonnull_count": 65,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 65
+        },
+        "type": "INTEGER"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "triggerId",
+      "key"
+    ],
+    "row_count": 65,
+    "table": "TriggerParameters"
+  },
+  {
+    "blob_columns": [
+      "requirements",
+      "outputTypeInstance"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 42,
+        "hidden": 0,
+        "name": "rowId",
+        "nonnull_count": 42,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "integer": 42
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 42,
+        "hidden": 0,
+        "name": "id",
+        "nonnull_count": 42,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 42
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 42,
+        "hidden": 0,
+        "name": "pythonName",
+        "nonnull_count": 42,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 42
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "flags",
+        "nonnull_count": 42,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 42
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 1,
+        "hidden": 0,
+        "name": "requirements",
+        "nonnull_count": 42,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 42
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 7,
+        "hidden": 0,
+        "name": "outputTypeInstance",
+        "nonnull_count": 42,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 42
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "rowId"
+    ],
+    "row_count": 42,
+    "table": "Triggers"
+  },
+  {
+    "blob_columns": [
+      "coercionDefinition"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 385,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 746,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 746
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 38,
+        "hidden": 0,
+        "name": "coercionDefinition",
+        "nonnull_count": 746,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 746
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 746,
+    "table": "TypeCoercions"
+  },
+  {
+    "blob_columns": [
+      "synonyms"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 2969,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 11876,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 11876
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 4,
+        "hidden": 0,
+        "name": "locale",
+        "nonnull_count": 11876,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 11876
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 3957,
+        "hidden": 0,
+        "name": "name",
+        "nonnull_count": 11876,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 11876
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 394,
+        "hidden": 0,
+        "name": "numericFormat",
+        "nonnull_count": 1252,
+        "notnull": 0,
+        "null_count": 10624,
+        "pk": 0,
+        "storage_types": {
+          "null": 10624,
+          "text": 1252
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 19,
+        "hidden": 0,
+        "name": "synonyms",
+        "nonnull_count": 11876,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 11876
+        },
+        "type": "BLOB"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "typeId",
+      "locale"
+    ],
+    "row_count": 11876,
+    "table": "TypeDisplayRepresentations"
+  },
+  {
+    "blob_columns": [
+      "id",
+      "runtimeRequirements"
+    ],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 3428,
+        "hidden": 0,
+        "name": "rowId",
+        "nonnull_count": 3428,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 3428
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 3427,
+        "hidden": 0,
+        "name": "id",
+        "nonnull_count": 3428,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "blob": 3428
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 86,
+        "hidden": 0,
+        "name": "sourceContainerId",
+        "nonnull_count": 3428,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 3428
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 3,
+        "dflt_value": null,
+        "distinct_count": 5,
+        "hidden": 0,
+        "name": "kind",
+        "nonnull_count": 3428,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 3428
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 4,
+        "dflt_value": null,
+        "distinct_count": 2,
+        "hidden": 0,
+        "name": "runtimeFlags",
+        "nonnull_count": 936,
+        "notnull": 0,
+        "null_count": 2492,
+        "pk": 0,
+        "storage_types": {
+          "integer": 936,
+          "null": 2492
+        },
+        "type": "INTEGER"
+      },
+      {
+        "cid": 5,
+        "dflt_value": null,
+        "distinct_count": 21,
+        "hidden": 0,
+        "name": "runtimeRequirements",
+        "nonnull_count": 2968,
+        "notnull": 0,
+        "null_count": 460,
+        "pk": 0,
+        "storage_types": {
+          "blob": 2968,
+          "null": 460
+        },
+        "type": "BLOB"
+      },
+      {
+        "cid": 6,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "authenticationPolicy",
+        "nonnull_count": 936,
+        "notnull": 0,
+        "null_count": 2492,
+        "pk": 0,
+        "storage_types": {
+          "null": 2492,
+          "text": 936
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 7,
+        "dflt_value": null,
+        "distinct_count": 0,
+        "hidden": 0,
+        "name": "resourceURL",
+        "nonnull_count": 0,
+        "notnull": 0,
+        "null_count": 3428,
+        "pk": 0,
+        "storage_types": {
+          "null": 3428
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 8,
+        "dflt_value": null,
+        "distinct_count": 3195,
+        "hidden": 0,
+        "name": "pythonName",
+        "nonnull_count": 3220,
+        "notnull": 0,
+        "null_count": 208,
+        "pk": 0,
+        "storage_types": {
+          "null": 208,
+          "text": 3220
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "rowId"
+    ],
+    "row_count": 3428,
+    "table": "Types"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 43,
+        "hidden": 0,
+        "name": "typeId",
+        "nonnull_count": 78,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 1,
+        "storage_types": {
+          "text": 78
+        },
+        "type": "TEXT"
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 32,
+        "hidden": 0,
+        "name": "coercionIdentifier",
+        "nonnull_count": 78,
+        "notnull": 1,
+        "null_count": 0,
+        "pk": 2,
+        "storage_types": {
+          "text": 78
+        },
+        "type": "TEXT"
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [
+      "typeId",
+      "coercionIdentifier"
+    ],
+    "row_count": 78,
+    "table": "UTTypeCoercions"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "name",
+        "nonnull_count": 3,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 3
+        },
+        "type": ""
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 3,
+        "hidden": 0,
+        "name": "seq",
+        "nonnull_count": 3,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "integer": 3
+        },
+        "type": ""
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 3,
+    "table": "sqlite_sequence"
+  },
+  {
+    "blob_columns": [],
+    "columns": [
+      {
+        "cid": 0,
+        "dflt_value": null,
+        "distinct_count": 31,
+        "hidden": 0,
+        "name": "tbl",
+        "nonnull_count": 76,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 76
+        },
+        "type": ""
+      },
+      {
+        "cid": 1,
+        "dflt_value": null,
+        "distinct_count": 76,
+        "hidden": 0,
+        "name": "idx",
+        "nonnull_count": 76,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 76
+        },
+        "type": ""
+      },
+      {
+        "cid": 2,
+        "dflt_value": null,
+        "distinct_count": 72,
+        "hidden": 0,
+        "name": "stat",
+        "nonnull_count": 76,
+        "notnull": 0,
+        "null_count": 0,
+        "pk": 0,
+        "storage_types": {
+          "text": 76
+        },
+        "type": ""
+      }
+    ],
+    "has_rowid": true,
+    "primary_key_columns": [],
+    "row_count": 76,
+    "table": "sqlite_stat1"
+  }
+]

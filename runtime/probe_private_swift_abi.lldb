@@ -1,0 +1,12 @@
+settings set auto-confirm true
+target create runtime/toolkit_loader
+breakpoint set --name toolkit_probe_ready
+run
+image list -b -f ToolKit
+image list -b -f InternalSwiftProtobuf
+expression -l swift -- import ToolKit
+expression -l swift -- import InternalSwiftProtobuf
+expression -l swift -O -- Swift._typeByName("ToolKit.ToolKitProtoTypeInstance") as Any
+expression -l swift -O -- Swift._typeByName("InternalSwiftProtobuf._NameMap") as Any
+expression -l swift -O -- @_silgen_name("$s7ToolKit0aB17ProtoTypeInstanceV16protoMessageNameSSvgZ") func toolkitProtoTypeInstanceName() -> Swift.String; toolkitProtoTypeInstanceName()
+quit

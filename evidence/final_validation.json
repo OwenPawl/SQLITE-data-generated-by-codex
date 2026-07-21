@@ -1,0 +1,479 @@
+{
+  "check_count": 90,
+  "checks": [
+    {
+      "expected": "6d81e93772304ff00df64a975546c56795d53ce980c0b95f977eac091350fb5a",
+      "name": "database hash",
+      "observed": "6d81e93772304ff00df64a975546c56795d53ce980c0b95f977eac091350fb5a",
+      "passed": true
+    },
+    {
+      "expected": "0o444",
+      "name": "database snapshot mode",
+      "observed": "0o444",
+      "passed": true
+    },
+    {
+      "name": "snapshot manifest content matches",
+      "passed": true
+    },
+    {
+      "name": "snapshot manifest read only",
+      "passed": true
+    },
+    {
+      "name": "snapshot exists: database",
+      "passed": true
+    },
+    {
+      "name": "snapshot hash: database",
+      "passed": true
+    },
+    {
+      "name": "snapshot mode: database",
+      "passed": true
+    },
+    {
+      "name": "snapshot exists: database_lock",
+      "passed": true
+    },
+    {
+      "name": "snapshot hash: database_lock",
+      "passed": true
+    },
+    {
+      "name": "snapshot mode: database_lock",
+      "passed": true
+    },
+    {
+      "name": "snapshot exists: database_shm",
+      "passed": true
+    },
+    {
+      "name": "snapshot hash: database_shm",
+      "passed": true
+    },
+    {
+      "name": "snapshot mode: database_shm",
+      "passed": true
+    },
+    {
+      "name": "snapshot exists: database_wal",
+      "passed": true
+    },
+    {
+      "name": "snapshot hash: database_wal",
+      "passed": true
+    },
+    {
+      "name": "snapshot mode: database_wal",
+      "passed": true
+    },
+    {
+      "name": "snapshot exists: starting_document",
+      "passed": true
+    },
+    {
+      "name": "snapshot hash: starting_document",
+      "passed": true
+    },
+    {
+      "name": "snapshot mode: starting_document",
+      "passed": true
+    },
+    {
+      "expected": "ok",
+      "name": "SQLite integrity",
+      "observed": "ok",
+      "passed": true
+    },
+    {
+      "expected": 78,
+      "name": "SQLite user version",
+      "observed": 78,
+      "passed": true
+    },
+    {
+      "expected": "817be7a669f5189e57f31fa83157d4adb640b127460c690792b5225288708c6b",
+      "name": "refresh snapshot hash",
+      "observed": "817be7a669f5189e57f31fa83157d4adb640b127460c690792b5225288708c6b",
+      "passed": true
+    },
+    {
+      "expected": "0o444",
+      "name": "refresh snapshot mode",
+      "observed": "0o444",
+      "passed": true
+    },
+    {
+      "expected": "817be7a669f5189e57f31fa83157d4adb640b127460c690792b5225288708c6b",
+      "name": "current active source hash",
+      "observed": "817be7a669f5189e57f31fa83157d4adb640b127460c690792b5225288708c6b",
+      "passed": true
+    },
+    {
+      "expected": 36,
+      "name": "source drift table coverage",
+      "observed": 36,
+      "passed": true
+    },
+    {
+      "name": "source drift logical equivalence",
+      "passed": true
+    },
+    {
+      "expected": 2,
+      "name": "source physical drift byte count",
+      "observed": 2,
+      "passed": true
+    },
+    {
+      "expected": [
+        27,
+        95
+      ],
+      "name": "source physical drift offsets",
+      "observed": [
+        27,
+        95
+      ],
+      "passed": true
+    },
+    {
+      "name": "source SQLite counters",
+      "passed": true
+    },
+    {
+      "expected": 12986,
+      "name": "unique native messages",
+      "observed": 12986,
+      "passed": true
+    },
+    {
+      "expected": 12986,
+      "name": "unique decode IDs",
+      "observed": 12986,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native decode errors",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native unknown fields",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native round trips",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native canonical bytes",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 87795,
+      "name": "blob instance ledger",
+      "observed": 87795,
+      "passed": true
+    },
+    {
+      "expected": 87255,
+      "name": "decoded blob instances",
+      "observed": 87255,
+      "passed": true
+    },
+    {
+      "expected": 540,
+      "name": "raw bytes blob instances",
+      "observed": 540,
+      "passed": true
+    },
+    {
+      "expected": [
+        "accounted_raw_bytes_field",
+        "decoded"
+      ],
+      "name": "only final blob statuses",
+      "observed": [
+        "accounted_raw_bytes_field",
+        "decoded"
+      ],
+      "passed": true
+    },
+    {
+      "expected": 33730,
+      "name": "native decode references",
+      "observed": 33730,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "all decode references resolve",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "instance native errors",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "instance unknown fields",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 540,
+      "name": "flattened bytes wrapper rows",
+      "observed": 540,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "flattened bytes native wrapper verification",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "name": "flattened bytes summary",
+      "passed": true
+    },
+    {
+      "expected": 216,
+      "name": "schema coverage: defined_message_count",
+      "observed": 216,
+      "passed": true
+    },
+    {
+      "expected": 868,
+      "name": "schema coverage: defined_field_count",
+      "observed": 868,
+      "passed": true
+    },
+    {
+      "expected": 43,
+      "name": "schema coverage: defined_oneof_group_count",
+      "observed": 43,
+      "passed": true
+    },
+    {
+      "expected": 48,
+      "name": "schema coverage: defined_enum_count",
+      "observed": 48,
+      "passed": true
+    },
+    {
+      "expected": 291,
+      "name": "schema coverage: observed_defined_field_count",
+      "observed": 291,
+      "passed": true
+    },
+    {
+      "expected": 93,
+      "name": "schema coverage: observed_enum_field_count",
+      "observed": 93,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "schema coverage: unresolved_path_count",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "name": "message presence ledger",
+      "passed": true
+    },
+    {
+      "name": "field ledger",
+      "passed": true
+    },
+    {
+      "name": "oneof ledger",
+      "passed": true
+    },
+    {
+      "name": "report field semantics",
+      "passed": true
+    },
+    {
+      "name": "report enums",
+      "passed": true
+    },
+    {
+      "name": "report enum semantics",
+      "passed": true
+    },
+    {
+      "expected": 216,
+      "name": "default message rows",
+      "observed": 216,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "default encodings",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "name": "default summary",
+      "passed": true
+    },
+    {
+      "expected": 290,
+      "name": "runtime flag combination matrix",
+      "observed": 290,
+      "passed": true
+    },
+    {
+      "expected": 6,
+      "name": "observed flag domains",
+      "observed": 6,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "observed flag values resolved",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native model flags: toolFlagMismatches",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native model flags: parameterFlagMismatches",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native model flags: hiddenPartitionMismatches",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native model flags: missingNativeTools",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native model flags: nativeOnlyTools",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native model flags: missingNativeParameters",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "expected": 0,
+      "name": "native model flags: nativeOnlyParameters",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "name": "native model tool count",
+      "passed": true
+    },
+    {
+      "name": "native model parameter count",
+      "passed": true
+    },
+    {
+      "name": "native model type count",
+      "passed": true
+    },
+    {
+      "name": "native entity runtime flags",
+      "passed": true
+    },
+    {
+      "name": "LaunchServices identifier rows",
+      "passed": true
+    },
+    {
+      "name": "LaunchServices native reconstruction",
+      "passed": true
+    },
+    {
+      "name": "LaunchServices bundle identity",
+      "passed": true
+    },
+    {
+      "name": "LaunchServices byte mismatches",
+      "passed": true
+    },
+    {
+      "name": "Link identifier exact matches",
+      "passed": true
+    },
+    {
+      "name": "decode summary count",
+      "passed": true
+    },
+    {
+      "name": "metadata blob count",
+      "passed": true
+    },
+    {
+      "name": "report completion",
+      "passed": true
+    },
+    {
+      "name": "runtime log evidence: logs/lldb-verify-native-schema.log",
+      "passed": true
+    },
+    {
+      "name": "runtime log evidence: logs/lldb-verify-native-defaults.log",
+      "passed": true
+    },
+    {
+      "name": "runtime log evidence: logs/lldb-verify-flags.log",
+      "passed": true
+    },
+    {
+      "name": "runtime log evidence: logs/lldb-verify-native-model-flags.log",
+      "passed": true
+    },
+    {
+      "name": "runtime log evidence: logs/lldb-verify-launchservices-identifiers.log",
+      "passed": true
+    },
+    {
+      "name": "runtime log evidence: logs/lldb-capture-link-registrations-shortcuts.log",
+      "passed": true
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "schema_version": "toolkit_final_validation.v1",
+  "status": "passed",
+  "totals": {
+    "blob_instances": 87795,
+    "decoded_blob_instances": 87255,
+    "native_decode_references": 33730,
+    "observed_flag_values": 32,
+    "raw_bytes_field_instances": 540,
+    "unique_native_messages": 12986
+  }
+}

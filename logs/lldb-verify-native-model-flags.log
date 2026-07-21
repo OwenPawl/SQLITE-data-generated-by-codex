@@ -1,0 +1,78 @@
+(lldb) command source -s 0 'runtime/verify_native_model_flags.lldb'
+Executing commands in '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_native_model_flags.lldb'.
+(lldb) settings set auto-confirm true
+(lldb) target create runtime/native_model_flag_probe
+Current executable set to '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/native_model_flag_probe' (arm64).
+(lldb) breakpoint set --shlib ToolKit --func-regex 'DirectToolMetadataProvider.*tools' --auto-continue true --breakpoint-name flag_tools_query
+Breakpoint 1: 2 locations.
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolVisibilityFilter.*is\(' --auto-continue true --breakpoint-name flag_visibility_filter
+Breakpoint 2: where = ToolKit`static ToolVisibilityFilter.is(_:), address = 0x00000002a2013b70
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolDefinition.*flags.getter' --auto-continue true --breakpoint-name flag_tool_flags
+Breakpoint 3: 3 locations.
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolDefinition.*visibilityFlags.getter' --auto-continue true --breakpoint-name flag_tool_visibility
+Breakpoint 4: 2 locations.
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ParameterDefinition.*flags.getter' --auto-continue true --breakpoint-name flag_parameter_flags
+Breakpoint 5: where = ToolKit`ParameterDefinition.flags.getter, address = 0x00000002a1f43964
+(lldb) breakpoint set --shlib ToolKit --func-regex 'DirectToolMetadataProvider.*types' --auto-continue true --breakpoint-name flag_types_query
+Breakpoint 6: where = ToolKit`DirectToolMetadataProvider.types(matching:locale:scope:), address = 0x00000002a218fba0
+(lldb) breakpoint set --shlib ToolKit --func-regex 'EntityDefinition.*runtimeFlags.getter' --auto-continue true --breakpoint-name flag_entity_runtime
+Breakpoint 7: where = ToolKit`EntityDefinition.runtimeFlags.getter, address = 0x00000002a1fb774c
+(lldb) process launch -o /dev/null
+Process 29629 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/native_model_flag_probe' (arm64)
+Process 29629 exited with status = 0 (0x00000000)
+(lldb) image list -b -f ToolKit
+[  0] ToolKit /System/Library/PrivateFrameworks/ToolKit.framework/Versions/A/ToolKit
+(lldb) breakpoint list flag_tools_query
+1: regex = 'DirectToolMetadataProvider.*tools', module = ToolKit, locations = 2, resolved = 2, hit count = 10 Options: enabled auto-continue 
+  Names:
+    flag_tools_query
+
+  1.1: where = ToolKit`DirectToolMetadataProvider.tools(matching:localeOptions:scope:), address = 0x00000002a7ba7a90, resolved, hit count = 5 
+  1.2: where = ToolKit`DirectToolMetadataProvider.tools(matching:locale:scope:), address = 0x00000002a7ba7988, resolved, hit count = 5 
+
+(lldb) breakpoint list flag_visibility_filter
+2: regex = 'ToolVisibilityFilter.*is\(', module = ToolKit, locations = 1, resolved = 1, hit count = 4 Options: enabled auto-continue 
+  Names:
+    flag_visibility_filter
+
+  2.1: where = ToolKit`static ToolVisibilityFilter.is(_:), address = 0x00000002a7a2bb70, resolved, hit count = 4 
+
+(lldb) breakpoint list flag_tool_flags
+3: regex = 'ToolDefinition.*flags.getter', module = ToolKit, locations = 3, resolved = 3, hit count = 2400 Options: enabled auto-continue 
+  Names:
+    flag_tool_flags
+
+  3.1: where = ToolKit`ToolDefinition.flags.getter, address = 0x00000002a7952bec, resolved, hit count = 2400 
+  3.2: where = ToolKit`ToolKitProtoToolDefinition.Version1.flags.getter, address = 0x00000002a7828fdc, resolved, hit count = 0 
+  3.3: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.flags.getter, address = 0x00000002a7828fec, resolved, hit count = 0 
+
+(lldb) breakpoint list flag_tool_visibility
+4: regex = 'ToolDefinition.*visibilityFlags.getter', module = ToolKit, locations = 2, resolved = 2, hit count = 2400 Options: enabled auto-continue 
+  Names:
+    flag_tool_visibility
+
+  4.1: where = ToolKit`ToolDefinition.visibilityFlags.getter, address = 0x00000002a795310c, resolved, hit count = 2400 
+  4.2: where = ToolKit`ToolKitProtoToolDefinition.Version1.visibilityFlags.getter, address = 0x00000002a78123b0, resolved, hit count = 0 
+
+(lldb) breakpoint list flag_parameter_flags
+5: regex = 'ParameterDefinition.*flags.getter', module = ToolKit, locations = 1, resolved = 1, hit count = 7535 Options: enabled auto-continue 
+  Names:
+    flag_parameter_flags
+
+  5.1: where = ToolKit`ParameterDefinition.flags.getter, address = 0x00000002a795b964, resolved, hit count = 7535 
+
+(lldb) breakpoint list flag_types_query
+6: regex = 'DirectToolMetadataProvider.*types', module = ToolKit, locations = 1, resolved = 1, hit count = 1 Options: enabled auto-continue 
+  Names:
+    flag_types_query
+
+  6.1: where = ToolKit`DirectToolMetadataProvider.types(matching:locale:scope:), address = 0x00000002a7ba7ba0, resolved, hit count = 1 
+
+(lldb) breakpoint list flag_entity_runtime
+7: regex = 'EntityDefinition.*runtimeFlags.getter', module = ToolKit, locations = 1, resolved = 1, hit count = 936 Options: enabled auto-continue 
+  Names:
+    flag_entity_runtime
+
+  7.1: where = ToolKit`EntityDefinition.runtimeFlags.getter, address = 0x00000002a79cf74c, resolved, hit count = 936 
+
+(lldb) quit

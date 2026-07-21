@@ -1,0 +1,18 @@
+{
+  "blob_column_count": 34,
+  "blob_instance_count": 87795,
+  "column_count": 170,
+  "coverage_status": "inventory_complete_decode_not_started",
+  "created_at": "2026-07-21T09:04:45.842053+00:00",
+  "database_path": "inputs/raw/Tools-active.sqlite",
+  "database_sha256": "6d81e93772304ff00df64a975546c56795d53ce980c0b95f977eac091350fb5a",
+  "flag_domain_count": 6,
+  "integrity_check": "ok",
+  "protobuf_wire_candidate_count": 27090,
+  "row_count_total": 156984,
+  "schema_version": "toolkit_coverage_ledger.v1",
+  "sqlite_user_version": 78,
+  "table_count": 36,
+  "unique_blob_hash_count": 13099,
+  "wire_shape_count": 930
+}

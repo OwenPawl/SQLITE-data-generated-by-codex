@@ -1,0 +1,13 @@
+settings set auto-confirm true
+target create runtime/verify_identifier_semantics
+breakpoint set --name '-[LSRecord initWithPersistentIdentifier:]' --auto-continue true --breakpoint-name ls_init_persistent
+breakpoint set --name '-[LSRecord persistentIdentifier]' --auto-continue true --breakpoint-name ls_get_persistent
+breakpoint set --name '-[LSBundleRecord bundleIdentifier]' --auto-continue true --breakpoint-name ls_get_bundle
+breakpoint set --name '-[LSApplicationRecord initWithBundleIdentifier:allowPlaceholder:error:]' --auto-continue true --breakpoint-name ls_init_bundle
+process launch -o /dev/null -- inputs/raw/Tools-active.sqlite
+image list -b -f LaunchServices
+breakpoint list ls_init_persistent
+breakpoint list ls_get_persistent
+breakpoint list ls_get_bundle
+breakpoint list ls_init_bundle
+quit

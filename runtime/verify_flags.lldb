@@ -1,0 +1,10 @@
+settings set auto-confirm true
+target create runtime/flag_probe
+breakpoint set --func-regex 'static ToolKit\.(ToolFlag|ToolVisibilityFlag|TriggerFlag|ParameterDefinition\.ParameterFlags|EntityDefinition\.RuntimeFlags)\..*\.getter'
+breakpoint command add 1
+  script print("RUNTIME_HIT " + lldb.frame.GetFunctionName())
+  continue
+DONE
+run
+image list -t -o -f ToolKit
+quit

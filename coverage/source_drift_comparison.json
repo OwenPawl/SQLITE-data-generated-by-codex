@@ -1,0 +1,578 @@
+{
+  "all_tables": [
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 14,
+      "old_row_count": 14,
+      "primary_key": [
+        "toolId",
+        "containerId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "AdditionalToolAttributionContainers",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 1656,
+      "old_row_count": 1656,
+      "primary_key": [
+        "toolId",
+        "category",
+        "locale"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "Categories",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 170,
+      "old_row_count": 170,
+      "primary_key": [
+        "rowId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ContainerMetadata",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 680,
+      "old_row_count": 680,
+      "primary_key": [
+        "containerId",
+        "locale"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ContainerMetadataLocalizations",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 12,
+      "old_row_count": 12,
+      "primary_key": [
+        "containerId",
+        "locale",
+        "synonym"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ContainerMetadataSynonyms",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 2794,
+      "old_row_count": 2794,
+      "primary_key": [
+        "id",
+        "typeId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "EntityProperties",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 11176,
+      "old_row_count": 11176,
+      "primary_key": [
+        "propertyId",
+        "locale",
+        "typeId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "EntityPropertyLocalizations",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 38540,
+      "old_row_count": 38540,
+      "primary_key": [
+        "typeId",
+        "id",
+        "locale"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "EnumerationCases",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 451,
+      "old_row_count": 451,
+      "primary_key": [
+        "bundleId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "LaunchServicesState",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 1214,
+      "old_row_count": 1214,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "LinkActionIdentifiers",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 89,
+      "old_row_count": 89,
+      "primary_key": [
+        "containerId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "LinkState",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 5,
+      "old_row_count": 5,
+      "primary_key": [
+        "key"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "Metadata",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 30140,
+      "old_row_count": 30140,
+      "primary_key": [
+        "toolId",
+        "key",
+        "locale"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ParameterLocalizations",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 7535,
+      "old_row_count": 7535,
+      "primary_key": [
+        "toolId",
+        "key"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "Parameters",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 411,
+      "old_row_count": 411,
+      "primary_key": [
+        "typeId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "PredicateTemplates",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 0,
+      "old_row_count": 0,
+      "primary_key": [
+        "rowId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "SampleInvocation",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 0,
+      "old_row_count": 0,
+      "primary_key": [
+        "rowId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "SampleInvocationPhrase",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 16734,
+      "old_row_count": 16734,
+      "primary_key": [
+        "toolId",
+        "locale",
+        "keyword"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "SearchKeywords",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 4793,
+      "old_row_count": 4793,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "SystemToolProtocols",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 1351,
+      "old_row_count": 1351,
+      "primary_key": [
+        "typeId",
+        "protocol"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "SystemTypeProtocols",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 0,
+      "old_row_count": 0,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ToolCascadeSharedIdentifiers",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 9600,
+      "old_row_count": 9600,
+      "primary_key": [
+        "toolId",
+        "locale",
+        "localizationUsage"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ToolLocalizations",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 2509,
+      "old_row_count": 2509,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ToolOutputTypes",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 7926,
+      "old_row_count": 7926,
+      "primary_key": [
+        "toolId",
+        "key",
+        "typeId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "ToolParameterTypes",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 2400,
+      "old_row_count": 2400,
+      "primary_key": [
+        "rowId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "Tools",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 168,
+      "old_row_count": 168,
+      "primary_key": [
+        "triggerId",
+        "locale"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "TriggerLocalizations",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 42,
+      "old_row_count": 42,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "TriggerOutputTypes",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 260,
+      "old_row_count": 260,
+      "primary_key": [
+        "triggerId",
+        "key",
+        "locale"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "TriggerParameterLocalizations",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 65,
+      "old_row_count": 65,
+      "primary_key": [
+        "triggerId",
+        "key"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "TriggerParameters",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 42,
+      "old_row_count": 42,
+      "primary_key": [
+        "rowId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "Triggers",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 746,
+      "old_row_count": 746,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "TypeCoercions",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 11876,
+      "old_row_count": 11876,
+      "primary_key": [
+        "typeId",
+        "locale"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "TypeDisplayRepresentations",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 3428,
+      "old_row_count": 3428,
+      "primary_key": [
+        "rowId"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "Types",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 78,
+      "old_row_count": 78,
+      "primary_key": [
+        "typeId",
+        "coercionIdentifier"
+      ],
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "UTTypeCoercions",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 3,
+      "old_row_count": 3,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "sqlite_sequence",
+      "unchanged": true
+    },
+    {
+      "added_row_count": 0,
+      "changed_column_counts": {},
+      "changed_row_count": 0,
+      "changes": [],
+      "new_row_count": 76,
+      "old_row_count": 76,
+      "removed_row_count": 0,
+      "schema_equal": true,
+      "table": "sqlite_stat1",
+      "unchanged": true
+    }
+  ],
+  "changed_table_count": 0,
+  "changed_tables": [],
+  "new_only_tables": [],
+  "new_path": "inputs/refresh_20260721T102100Z/Tools-active.sqlite",
+  "new_sha256": "817be7a669f5189e57f31fa83157d4adb640b127460c690792b5225288708c6b",
+  "new_size": 31576064,
+  "old_only_tables": [],
+  "old_path": "inputs/raw/Tools-active.sqlite",
+  "old_sha256": "6d81e93772304ff00df64a975546c56795d53ce980c0b95f977eac091350fb5a",
+  "old_size": 31576064,
+  "physical_difference_count": 2,
+  "physical_differences": [
+    {
+      "new": 200,
+      "offset": 27,
+      "old": 199
+    },
+    {
+      "new": 200,
+      "offset": 95,
+      "old": 199
+    }
+  ],
+  "schema_version": "sqlite_snapshot_comparison.v1",
+  "sqlite_header": {
+    "new_change_counter": 968,
+    "new_version_valid_for": 968,
+    "old_change_counter": 967,
+    "old_version_valid_for": 967
+  },
+  "table_count": 36
+}

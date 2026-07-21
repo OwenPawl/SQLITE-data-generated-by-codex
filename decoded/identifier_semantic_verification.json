@@ -1,0 +1,329 @@
+{
+  "databasePath" : "inputs\/raw\/Tools-active.sqlite",
+  "launchServicesPersistentIdentifier" : {
+    "exactMatches" : 373,
+    "failures" : [
+      {
+        "bundleIdentifier" : "com.apple.AccessibilitySettingsSearchExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.AccessibilitySettingsWidgetExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.AccountsUISettings.AppIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.AppleAccountIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.BiometricsAndPasswordSettingsAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.BluetoothSettingsApp.BluetoothSettingsAppIntentsWidget",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.ClassKit.ClassKitAppIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.ClassroomDeviceExpert",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Desktop-Settings.extension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.GameCenter.Settings.DeviceExpertExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Home.HomeWidgetIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.HomeAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.HydraUSDAppIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Maps.MapsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.MediaRemoteAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.NewDeviceOutreach.NewDeviceOutreachIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Passwords.PasswordSettingsAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.PlaceholderSettingsSearchTermsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.PrefPaneSearchIntent",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Profiles-Settings.intents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.SoftwareUpdateSettingsExtensionIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Sound-Settings.SoundIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Spotlight-Settings.extension.SpotlightSettingsIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.StartupDisk.StartupDiskWidgetExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.Time-Machine-Settings-Intents.extension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.TransparencySettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.VPNAppIntentWidget",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.VisionAppIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.WritingTools.WritingToolsAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.batteryui.BatterySettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.calls.PhoneAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.contacts.ContactsAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.controlcenter.ControlCenterSettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.desktopsettings.DesktopSettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.donotdisturb.DoNotDisturbAppIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.family.FamilyIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.findmy.FindMyIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.generativeassistanttools.GenerativeAssistantExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.generativepartnerservice.GenerativePartnerSettingsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.gms.GenerativePartnerPrototypeExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.intelligenceflow.IntelligenceFlowAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.intelligenceplatform.IntelligencePlatform.IntelligencePlatformDataActionsAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.mobiletimer.AlarmIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.mobiletimer.StopwatchIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.mobiletimer.TimerIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.mobiletimer.WorldClockIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.notifications.NotificationsSettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.omniSearch.SearchToolExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.AirDropHandoffIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.AppearanceIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.DateTimeIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.LockScreenIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.LoginItemsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.NetworkSettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.PrinterScannerIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.TransferResetIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.UsersGroupsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.WallpaperIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.mouse",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings-intents.trackpad",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings.SecurityPrefQADirector.SecurityPrivacyIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.settings.Storage.StorageSettingsIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.AssistantSettingsControls",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.AudioAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.SiriCrisisAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.SiriGeo.SiriGeoAppIntentExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.SiriNotebookAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.SiriNotificationsAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.SiriPhoneAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.SiriPhotosAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.SiriVideoAppIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.siri.messages.SiriMessagesAppIntentsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.systempreferences.AboutSettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.systempreferences.DisplaysSettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.systempreferences.InternationalSettingsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.systempreferences.KeyboardSettingsExtension",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.systempreferences.SharingSettingsIntents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      },
+      {
+        "bundleIdentifier" : "com.apple.wifi-settings-extension.intents",
+        "error" : "Error Domain=NSOSStatusErrorDomain Code=-10814 \"kLSApplicationNotFoundErr: E.g. no application claims the file\" UserInfo={_LSLine=1975, _LSFunction=runEvaluator, _LSFile=LSBindingEvaluator.mm, _LSErrorMessage=kLSApplicationNotFoundErr}"
+      }
+    ],
+    "mismatches" : 0,
+    "missingRuntimeRecords" : 78,
+    "reconstructedBundleIdentifierMatches" : 451,
+    "reconstructedFromStoredIdentifier" : 451,
+    "rows" : 451
+  },
+  "linkInstallIdentifier" : {
+    "error" : "Error Domain=NSCocoaErrorDomain Code=4097 \"connection to service named com.apple.linkd.registry\" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.registry}",
+    "rows" : 89
+  }
+}

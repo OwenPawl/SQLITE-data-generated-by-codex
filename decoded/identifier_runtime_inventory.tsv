@@ -1,0 +1,864 @@
+IMAGE	/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/LaunchServices	loaded
+IMAGE	/System/Library/PrivateFrameworks/LinkServices.framework/LinkServices	loaded
+IMAGE	/System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient	loaded
+CLASS	LSPersistentIdentifier	missing
+CLASS	LSRecord	present
+PROPERTY	LSRecord	visualizerURL	T@"NSURL",R,N
+PROPERTY	LSRecord	databaseUUID	T@"NSUUID",R
+PROPERTY	LSRecord	_shared	TB,N,G_isShared,S_setShared:
+PROPERTY	LSRecord	compatibilityObject	T@,R,N
+PROPERTY	LSRecord	persistentIdentifier	T@"NSData",R
+IVAR	LSRecord	_resolvedProperties	^v
+IVAR	LSRecord	_context	{LSContext="db"@"_LSDatabase"}
+IVAR	LSRecord	_unitID	I
+IVAR	LSRecord	_tableID	b16
+IVAR	LSRecord	_discardableContentCounter	b14
+IVAR	LSRecord	_intentionallyInvalid	b1
+IVAR	LSRecord	_shared	b1
+METHOD	LSRecord	-	_is_canProvideIconResources	B16@0:8
+METHOD	LSRecord	-	_is_providesPrecomposedIconResources	B16@0:8
+METHOD	LSRecord	-	persistentIdentifier	@16@0:8
+METHOD	LSRecord	-	unitID	I16@0:8
+METHOD	LSRecord	-	init	@16@0:8
+METHOD	LSRecord	-	.cxx_construct	@16@0:8
+METHOD	LSRecord	-	detach	v16@0:8
+METHOD	LSRecord	-	endContentAccess	v16@0:8
+METHOD	LSRecord	-	isContentDiscarded	B16@0:8
+METHOD	LSRecord	-	beginContentAccess	B16@0:8
+METHOD	LSRecord	-	discardContentIfPossible	v16@0:8
+METHOD	LSRecord	-	debugDescription	@16@0:8
+METHOD	LSRecord	-	dealloc	v16@0:8
+METHOD	LSRecord	-	_persistentIdentifierWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^v32
+METHOD	LSRecord	-	_detachFromContext:tableID:unitID:unitBytes:	v40@0:8^{LSContext=@}16I24I28r^v32
+METHOD	LSRecord	-	description	@16@0:8
+METHOD	LSRecord	-	encodeWithCoder:	v24@0:8@16
+METHOD	LSRecord	-	tableID	I16@0:8
+METHOD	LSRecord	-	copyWithZone:	@24@0:8^{_NSZone=}16
+METHOD	LSRecord	-	initWithCoder:	@24@0:8@16
+METHOD	LSRecord	-	.cxx_destruct	v16@0:8
+METHOD	LSRecord	-	_attributedDescription	@16@0:8
+METHOD	LSRecord	-	_compatibilityObjectWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^v32
+METHOD	LSRecord	-	_ifAttached:else:	v32@0:8@?16@?24
+METHOD	LSRecord	-	_initInvalid	@16@0:8
+METHOD	LSRecord	-	_initWithContext:persistentIdentifier:	@32@0:8^{LSContext=@}16@24
+METHOD	LSRecord	-	_initWithContext:persistentIdentifierData:length:	@40@0:8^{LSContext=@}16r^{LSPersistentIdentifierData=C[3C]II[16C][0c]}24Q32
+METHOD	LSRecord	-	_initWithContext:tableID:unitID:	@32@0:8^{LSContext=@}16I24I28
+METHOD	LSRecord	-	_isShared	B16@0:8
+METHOD	LSRecord	-	_performBlockWithContext:	v24@0:8@?16
+METHOD	LSRecord	-	_propertyClassesForCoding	@16@0:8
+METHOD	LSRecord	-	_removeResolvedPropertyValueForGetter:	v24@0:8:16
+METHOD	LSRecord	-	_replacementObjectForResolvedPropertyValue:forGetter:encoder:	@40@0:8@16:24@32
+METHOD	LSRecord	-	_resolveAllProperties	v16@0:8
+METHOD	LSRecord	-	_resolvedPropertyValueForGetter:	@24@0:8:16
+METHOD	LSRecord	-	_resolvedPropertyValueForGetter:nullPlaceholder:	@32@0:8:16@24
+METHOD	LSRecord	-	_resolvingMethods	r^v16@0:8
+METHOD	LSRecord	-	_setResolvedPropertyValue:forGetter:	v32@0:8@16:24
+METHOD	LSRecord	-	_setShared:	v20@0:8B16
+METHOD	LSRecord	-	compatibilityObject	@16@0:8
+METHOD	LSRecord	-	databaseUUID	@16@0:8
+METHOD	LSRecord	-	initWithPersistentIdentifier:	@24@0:8@16
+METHOD	LSRecord	-	resolveAllPropertiesAndDetachOnQueue:	v24@0:8@16
+METHOD	LSRecord	-	visualizerURL	@16@0:8
+METHOD	LSRecord	+	_is_getSequenceNumber:andUUID:	v32@0:8^Q16^@24
+METHOD	LSRecord	+	_is_remapLSDatabase	v16@0:8
+METHOD	LSRecord	+	_is_resourceTokenForRecords:	@24@0:8@16
+METHOD	LSRecord	+	new	@16@0:8
+METHOD	LSRecord	+	initialize	v16@0:8
+METHOD	LSRecord	+	supportsSecureCoding	B16@0:8
+METHOD	LSRecord	+	_propertyClasses	@16@0:8
+METHOD	LSRecord	+	hasDatabaseAccess	B16@0:8
+METHOD	LSRecord	+	resolveAllPropertiesOfRecords:andDetachOnQueue:	v32@0:8@16@24
+METHOD	LSRecord	+	resolveAllPropertiesOfRecords:count:andDetachOnQueue:	v40@0:8r^@16Q24@32
+CLASS	LSApplicationRecord	present
+PROPERTY	LSApplicationRecord	if_userActivityTypes	T@"NSArray",R
+PROPERTY	LSApplicationRecord	bundleContainerURL	T@"NSURL",R
+PROPERTY	LSApplicationRecord	additionalEnvironmentVariables	T@"NSDictionary",R
+PROPERTY	LSApplicationRecord	iTunesMetadata	T@"LSiTunesMetadata",R
+PROPERTY	LSApplicationRecord	deviceIdentifierForVendor	T@"NSUUID",R,N
+PROPERTY	LSApplicationRecord	deviceIdentifierForAdvertising	T@"NSUUID",R,N
+PROPERTY	LSApplicationRecord	directionsModes	T@"NSArray",R
+PROPERTY	LSApplicationRecord	audioComponents	T@"NSArray",R
+PROPERTY	LSApplicationRecord	externalAccessoryProtocols	T@"NSArray",R
+PROPERTY	LSApplicationRecord	staticShortcutItems	T@"NSArray",R
+PROPERTY	LSApplicationRecord	VPNPlugins	T@"NSArray",R
+PROPERTY	LSApplicationRecord	appTags	T@"NSArray",R
+PROPERTY	LSApplicationRecord	requiredDeviceCapabilities	T@"NSDictionary",R
+PROPERTY	LSApplicationRecord	deviceFamilies	T@"NSArray",R
+PROPERTY	LSApplicationRecord	supportsExternallyPlayableContent	TB,R
+PROPERTY	LSApplicationRecord	supportsOpenInPlace	TB,R
+PROPERTY	LSApplicationRecord	fileSharingEnabled	TB,R,GisFileSharingEnabled
+PROPERTY	LSApplicationRecord	supportsPurgeableLocalStorage	TB,R
+PROPERTY	LSApplicationRecord	supportsLiveActivitiesFrequentUpdates	TB,R
+PROPERTY	LSApplicationRecord	supportsLiveActivities	TB,R
+PROPERTY	LSApplicationRecord	supportedLiveActivityLaunchAttributeTypes	T@"NSArray",R
+PROPERTY	LSApplicationRecord	supportsSessions	TB,R
+PROPERTY	LSApplicationRecord	regulatoryPrivacyDisclosureVersion	T@"NSString",R
+PROPERTY	LSApplicationRecord	isTemplateApplication	TB,R
+PROPERTY	LSApplicationRecord	isTemplateProxyApplication	TB,R
+PROPERTY	LSApplicationRecord	isManagedAppDistributor	TB,R
+PROPERTY	LSApplicationRecord	isInstalledFromDistributorOrWeb	TB,R
+PROPERTY	LSApplicationRecord	renamed	TB,R,GwasRenamed
+PROPERTY	LSApplicationRecord	_rawIconDictionary	T@"_LSLazyPropertyList",R
+PROPERTY	LSApplicationRecord	supportsAlternateIconNames	TB,R
+PROPERTY	LSApplicationRecord	alternateIconName	T@"NSString",R
+PROPERTY	LSApplicationRecord	iconDictionary	T@"NSDictionary",R
+PROPERTY	LSApplicationRecord	supportsControllerUserInteraction	TB,R
+PROPERTY	LSApplicationRecord	supportedGameControllers	T@"NSArray",R
+PROPERTY	LSApplicationRecord	gameCenterEnabled	TB,R,GisGameCenterEnabled
+PROPERTY	LSApplicationRecord	supportsGameMode	T@"NSNumber",R
+PROPERTY	LSApplicationRecord	wrapper	TB,R,GisWrapper
+PROPERTY	LSApplicationRecord	wrapped	TB,R,GisWrapped
+PROPERTY	LSApplicationRecord	applicationDSID	TQ,R
+PROPERTY	LSApplicationRecord	applicationDownloaderDSID	TQ,R
+PROPERTY	LSApplicationRecord	applicationFamilyID	TQ,R
+PROPERTY	LSApplicationRecord	installType	TQ,R
+PROPERTY	LSApplicationRecord	adHocCodeSigned	TB,R,GisAdHocCodeSigned
+PROPERTY	LSApplicationRecord	hasSettingsBundle	TB,R
+PROPERTY	LSApplicationRecord	applicationHasMIDBasedSINF	TB,R
+PROPERTY	LSApplicationRecord	applicationMissingRequiredSINF	TB,R
+PROPERTY	LSApplicationRecord	hasCustomNotification	TB,R
+PROPERTY	LSApplicationRecord	placeholderFailureReason	TQ,R
+PROPERTY	LSApplicationRecord	removableByInstallMachinery	TB,R,GisRemovableByInstallMachinery
+PROPERTY	LSApplicationRecord	uniqueInstallIdentifier	T@"NSData",R
+PROPERTY	LSApplicationRecord	installSessionIdentifier	T@"NSData",R
+PROPERTY	LSApplicationRecord	codeSignatureVersion	TI,R
+PROPERTY	LSApplicationRecord	stashedAppMetadata	T@"LSStashedAppMetadata",R
+PROPERTY	LSApplicationRecord	serializedPlaceholderURL	T@"NSURL",R
+PROPERTY	LSApplicationRecord	serializedPlaceholderPath	T@"NSURL",R
+PROPERTY	LSApplicationRecord	companionBundleIdentifier	T@"NSString",R
+PROPERTY	LSApplicationRecord	watchKitApplicationType	TC,R
+PROPERTY	LSApplicationRecord	watchKitVersion	T@"NSString",R
+PROPERTY	LSApplicationRecord	complicationPrincipalClassName	T@"NSString",R
+PROPERTY	LSApplicationRecord	supportedComplicationFamilies	T@"NSArray",R
+PROPERTY	LSApplicationRecord	hasComplication	TB,R
+PROPERTY	LSApplicationRecord	hasGlance	TB,R
+PROPERTY	LSApplicationRecord	shouldSkipWatchAppInstall	TB,R
+PROPERTY	LSApplicationRecord	watchOnly	TB,R,GisWatchOnly
+PROPERTY	LSApplicationRecord	runsIndependentlyOfCompanionApp	TB,R
+PROPERTY	LSApplicationRecord	watchKitApplicationTintColorName	T@"NSString",R
+PROPERTY	LSApplicationRecord	typeForInstallMachinery	T@"NSString",R
+PROPERTY	LSApplicationRecord	eligibilityDeletionDomain	T@"NSNumber",R
+PROPERTY	LSApplicationRecord	deletable	TB,R,GisDeletable
+PROPERTY	LSApplicationRecord	deletableSystemApplication	TB,R,GisDeletableSystemApplication
+PROPERTY	LSApplicationRecord	sequenceNumber	TQ,R
+PROPERTY	LSApplicationRecord	identities	T@"NSArray",R
+PROPERTY	LSApplicationRecord	supportedDefaultAppCategories	TQ,R
+PROPERTY	LSApplicationRecord	mayBeBUIVisible	TB,R
+PROPERTY	LSApplicationRecord	bundleInode	TQ,R
+PROPERTY	LSApplicationRecord	executableInode	TQ,R
+PROPERTY	LSApplicationRecord	journalNotificationURLFormatString	T@"NSString",R
+PROPERTY	LSApplicationRecord	_localizedNamesWithContext	T@"NSDictionary",R
+PROPERTY	LSApplicationRecord	_rawBundleFlags	TQ,R
+PROPERTY	LSApplicationRecord	_rawPlistFlags	TI,R
+PROPERTY	LSApplicationRecord	_rawIconFlags	TC,R
+PROPERTY	LSApplicationRecord	_rawMoreFlags	T{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1},R
+PROPERTY	LSApplicationRecord	_bundleModTime	Ti,R
+PROPERTY	LSApplicationRecord	_iconFileNames	T@"NSArray",R
+PROPERTY	LSApplicationRecord	requiresPostProcessing	TB,R
+PROPERTY	LSApplicationRecord	localizedNameIsActive	TB,R
+PROPERTY	LSApplicationRecord	_preferredLaunchArchitecture	T@"NSString",R
+PROPERTY	LSApplicationRecord	_defaultCategoryTypeIdentifiers	T@"NSArray",R
+PROPERTY	LSApplicationRecord	sensitiveDataProxy	T@"_LSApplicationSensitiveDataProxy",R,V_sensitiveDataProxy
+PROPERTY	LSApplicationRecord	compatibilityObject	T@"LSApplicationProxy",R,D,N
+PROPERTY	LSApplicationRecord	teamIdentifier	T@"NSString",R,D
+PROPERTY	LSApplicationRecord	counterpartIdentifiers	T@"NSArray",R
+PROPERTY	LSApplicationRecord	equivalentBundleIdentifiers	T@"NSArray",R
+PROPERTY	LSApplicationRecord	driverExtensionPaths	T@"NSArray",R
+PROPERTY	LSApplicationRecord	minimumSystemVersion	T@"NSString",R
+PROPERTY	LSApplicationRecord	maximumSystemVersion	T@"NSString",R
+PROPERTY	LSApplicationRecord	exactBundleVersion	T@"NSString",R
+PROPERTY	LSApplicationRecord	shortVersionString	T@"NSString",R
+PROPERTY	LSApplicationRecord	beta	TB,R,GisBeta
+PROPERTY	LSApplicationRecord	jobLabel	T@"NSString",R
+PROPERTY	LSApplicationRecord	containerized	TB,R,GisContainerized
+PROPERTY	LSApplicationRecord	update	TB,R,GisUpdate
+PROPERTY	LSApplicationRecord	updateAvailability	TQ,R
+PROPERTY	LSApplicationRecord	placeholder	TB,R,GisPlaceholder
+PROPERTY	LSApplicationRecord	webAppPlaceholder	TB,R,GisWebAppPlaceholder
+PROPERTY	LSApplicationRecord	webApp	TB,R,GisWebApp
+PROPERTY	LSApplicationRecord	systemPlaceholder	TB,R,GisSystemPlaceholder
+PROPERTY	LSApplicationRecord	hasParallelPlaceholder	TB,R
+PROPERTY	LSApplicationRecord	applicationState	T@"_LSApplicationState",R
+PROPERTY	LSApplicationRecord	appStoreVendable	TB,R,N,GisAppStoreVendable
+PROPERTY	LSApplicationRecord	launchDisabled	TB,R,GisLaunchDisabled
+PROPERTY	LSApplicationRecord	launchProhibited	TB,R,GisLaunchProhibited
+PROPERTY	LSApplicationRecord	appStoreToolsBuildVersion	T@"NSString",R
+PROPERTY	LSApplicationRecord	userActivityTypes	T@"NSSet",R
+PROPERTY	LSApplicationRecord	canHandleWebAuthentication	TB,R
+PROPERTY	LSApplicationRecord	applicationExtensionRecords	T@"NSSet",R
+PROPERTY	LSApplicationRecord	extensionPointRecords	T@"NSSet",R
+PROPERTY	LSApplicationRecord	supportsMultiwindow	TB,R
+PROPERTY	LSApplicationRecord	arcadeApp	TB,R,GisArcadeApp
+PROPERTY	LSApplicationRecord	diskUsage	T@"_LSDiskUsage",R
+PROPERTY	LSApplicationRecord	supportsOnDemandResources	TB,R
+PROPERTY	LSApplicationRecord	supportsAudiobooks	TB,R
+PROPERTY	LSApplicationRecord	backgroundTaskSchedulerPermittedIdentifiers	T@"NSArray",R
+PROPERTY	LSApplicationRecord	carPlayInstrumentClusterURLSchemes	T@"NSArray",R
+PROPERTY	LSApplicationRecord	supportsCarPlayDashboardScene	TB,R
+PROPERTY	LSApplicationRecord	supportsCarPlayInstrumentClusterScene	TB,R
+PROPERTY	LSApplicationRecord	appClipMetadata	T@"LSAppClipMetadata",R
+PROPERTY	LSApplicationRecord	shouldShowSecurityPromptsOnSignIn	TB,R
+PROPERTY	LSApplicationRecord	webBrowser	TB,R,GisWebBrowser
+PROPERTY	LSApplicationRecord	eligibleWebBrowser	TB,R,GisEligibleWebBrowser
+PROPERTY	LSApplicationRecord	mailClient	TB,R,GisMailClient
+PROPERTY	LSApplicationRecord	eligibleMailClient	TB,R,GisEligibleMailClient
+PROPERTY	LSApplicationRecord	supportsSpotlightQueryContinuation	TB,R
+PROPERTY	LSApplicationRecord	spotlightActions	T@"NSArray",R
+PROPERTY	LSApplicationRecord	requiresNativeExecution	TB,R
+PROPERTY	LSApplicationRecord	swiftPlaygroundsApp	TB,R,GisSwiftPlaygroundsApp
+PROPERTY	LSApplicationRecord	managementDomain	T@"NSString",R
+PROPERTY	LSApplicationRecord	linkedParentApplication	T@"LSApplicationRecord",R
+PROPERTY	LSApplicationRecord	representedBundleIdentifier	T@"NSString",R
+PROPERTY	LSApplicationRecord	trustedForBinding	TB,R,GisTrustedForBinding
+PROPERTY	LSApplicationRecord	supportsDataExport	TB,R
+PROPERTY	LSApplicationRecord	hasCriticalAlertsEntitlement	TB,R
+IVAR	LSApplicationRecord	_sensitiveDataProxy	@"_LSApplicationSensitiveDataProxy"
+METHOD	LSApplicationRecord	-	fbs_correspondingApplicationProxy	@16@0:8
+METHOD	LSApplicationRecord	-	fbs_isLaunchProhibited	B16@0:8
+METHOD	LSApplicationRecord	-	fbs_processIdentityForApplicationIdentity:	@24@0:8@16
+METHOD	LSApplicationRecord	-	in_counterpartIdentifiers	@16@0:8
+METHOD	LSApplicationRecord	-	in_documentTypes	@16@0:8
+METHOD	LSApplicationRecord	-	in_supportedIntents	@16@0:8
+METHOD	LSApplicationRecord	-	if_userActivityTypes	@16@0:8
+METHOD	LSApplicationRecord	-	ln_isAppIntentsEnabled	B16@0:8
+METHOD	LSApplicationRecord	-	isPlaceholder	B16@0:8
+METHOD	LSApplicationRecord	-	deviceFamilies	@16@0:8
+METHOD	LSApplicationRecord	-	updateAvailability	Q16@0:8
+METHOD	LSApplicationRecord	-	supportedIntents	@16@0:8
+METHOD	LSApplicationRecord	-	identities	@16@0:8
+METHOD	LSApplicationRecord	-	installType	Q16@0:8
+METHOD	LSApplicationRecord	-	sequenceNumber	Q16@0:8
+METHOD	LSApplicationRecord	-	supportedComplicationFamilies	@16@0:8
+METHOD	LSApplicationRecord	-	intentsRestrictedWhileProtectedDataUnavailable	@16@0:8
+METHOD	LSApplicationRecord	-	bundleContainerURL	@16@0:8
+METHOD	LSApplicationRecord	-	isLaunchProhibited	B16@0:8
+METHOD	LSApplicationRecord	-	isWebApp	B16@0:8
+METHOD	LSApplicationRecord	-	supportsMultiwindow	B16@0:8
+METHOD	LSApplicationRecord	-	iTunesMetadata	@16@0:8
+METHOD	LSApplicationRecord	-	applicationState	@16@0:8
+METHOD	LSApplicationRecord	-	_persistentIdentifierWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^v32
+METHOD	LSApplicationRecord	-	_personasWithAttributes	@16@0:8
+METHOD	LSApplicationRecord	-	iconDictionary	@16@0:8
+METHOD	LSApplicationRecord	-	exactBundleVersion	@16@0:8
+METHOD	LSApplicationRecord	-	applicationDSID	Q16@0:8
+METHOD	LSApplicationRecord	-	intentsRestrictedWhileLocked	@16@0:8
+METHOD	LSApplicationRecord	-	_detachFromContext:tableID:unitID:unitBytes:	v40@0:8^{LSContext=@}16I24I28r^v32
+METHOD	LSApplicationRecord	-	jobLabel	@16@0:8
+METHOD	LSApplicationRecord	-	requiredDeviceCapabilities	@16@0:8
+METHOD	LSApplicationRecord	-	isContainerized	B16@0:8
+METHOD	LSApplicationRecord	-	alternateIconName	@16@0:8
+METHOD	LSApplicationRecord	-	managedPersonas	@16@0:8
+METHOD	LSApplicationRecord	-	runsIndependentlyOfCompanionApp	B16@0:8
+METHOD	LSApplicationRecord	-	shortVersionString	@16@0:8
+METHOD	LSApplicationRecord	-	driverExtensionPaths	@16@0:8
+METHOD	LSApplicationRecord	-	isSystemPlaceholder	B16@0:8
+METHOD	LSApplicationRecord	-	counterpartIdentifiers	@16@0:8
+METHOD	LSApplicationRecord	-	isEligibleForWatchAppInstall	B16@0:8
+METHOD	LSApplicationRecord	-	isWrapped	B16@0:8
+METHOD	LSApplicationRecord	-	initWithCoder:	@24@0:8@16
+METHOD	LSApplicationRecord	-	watchKitVersion	@16@0:8
+METHOD	LSApplicationRecord	-	extensionPointRecords	@16@0:8
+METHOD	LSApplicationRecord	-	isGameCenterEnabled	B16@0:8
+METHOD	LSApplicationRecord	-	.cxx_destruct	v16@0:8
+METHOD	LSApplicationRecord	-	associatedPersonas	@16@0:8
+METHOD	LSApplicationRecord	-	supportedIntentMediaCategories	@16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__rawIconFlags	v16@0:8
+METHOD	LSApplicationRecord	-	_containerClass	Q16@0:8
+METHOD	LSApplicationRecord	-	appClipMetadata	@16@0:8
+METHOD	LSApplicationRecord	-	appTags	@16@0:8
+METHOD	LSApplicationRecord	-	audioComponents	@16@0:8
+METHOD	LSApplicationRecord	-	executableInode	Q16@0:8
+METHOD	LSApplicationRecord	-	trustedCDHashes	@16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__rawMoreFlags	v16@0:8
+METHOD	LSApplicationRecord	-	_defaultCategoryTypeIdentifiers	@16@0:8
+METHOD	LSApplicationRecord	-	_localizedNamesWithContextWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_rawBundleFlags	Q16@0:8
+METHOD	LSApplicationRecord	-	directionsModes	@16@0:8
+METHOD	LSApplicationRecord	-	externalAccessoryProtocolsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	hasComplication	B16@0:8
+METHOD	LSApplicationRecord	-	isInstalledFromDistributorOrWeb	B16@0:8
+METHOD	LSApplicationRecord	-	mayBeBUIVisible	B16@0:8
+METHOD	LSApplicationRecord	-	VPNPlugins	@16@0:8
+METHOD	LSApplicationRecord	-	VPNPluginsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_VPNPlugins	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__bundleModTime	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__defaultCategoryTypeIdentifiers	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__iconFileNames	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__localizedNamesWithContext	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__personasWithAttributes	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__preferredLaunchArchitecture	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__rawBundleFlags	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__rawIconDictionary	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve__rawPlistFlags	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_appTags	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_applicationExtensionRecords	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_applicationState	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_audioComponents	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_backgroundTaskSchedulerPermittedIdentifiers	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_bundleContainerURL	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_bundleInode	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_companionBundleIdentifier	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_counterpartIdentifiers	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_deviceFamilies	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_directionsModes	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_diskUsage	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_driverExtensionPaths	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_equivalentBundleIdentifiers	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_exactBundleVersion	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_executableInode	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_extensionPointRecords	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_externalAccessoryProtocols	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_iTunesMetadata	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_iconDictionary	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_installSessionIdentifier	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_installType	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_isRemovableByInstallMachinery	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_isSystemPlaceholder	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_localizedNameIsActive	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_managementDomain	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_maximumSystemVersion	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_minimumSystemVersion	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_placeholderFailureReason	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_regulatoryPrivacyDisclosureVersion	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_sensitiveDataProxy	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_shortVersionString	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_staticShortcutItems	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_supportedGameControllers	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_trustedCDHashes	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_uniqueInstallIdentifier	v16@0:8
+METHOD	LSApplicationRecord	-	_LSRecord_resolve_userActivityTypes	v16@0:8
+METHOD	LSApplicationRecord	-	_bundleModTime	i16@0:8
+METHOD	LSApplicationRecord	-	_bundleModTimeWithContext:tableID:unitID:unitBytes:	i40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_compatibilityObjectWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^v32
+METHOD	LSApplicationRecord	-	_containerized	B16@0:8
+METHOD	LSApplicationRecord	-	_defaultCategoryTypeIdentifiersWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_iconFileNames	@16@0:8
+METHOD	LSApplicationRecord	-	_iconFileNamesWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_initWithBundleIdentifier:placeholder:error:	@36@0:8@16B24^@28
+METHOD	LSApplicationRecord	-	_initWithContext:bundleID:bundleData:error:	@44@0:8^{LSContext=@}16I24r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}28^@36
+METHOD	LSApplicationRecord	-	_initWithContext:persistentIdentifierData:length:	@40@0:8^{LSContext=@}16r^{LSPersistentIdentifierData=C[3C]II[16C][0c]}24Q32
+METHOD	LSApplicationRecord	-	_initWithNode:bundleIdentifier:context:tableID:unitID:bundleBaseData:error:	@64@0:8@16@24^{LSContext=@}32I40I44r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}48^@56
+METHOD	LSApplicationRecord	-	_initWithNode:bundleIdentifier:placeholderBehavior:systemPlaceholder:itemID:forceInBundleContainer:context:error:	@72@0:8@16@24q32B40Q44B52^{LSContext=@}56^@64
+METHOD	LSApplicationRecord	-	_localizedNamesWithContext	@16@0:8
+METHOD	LSApplicationRecord	-	_personasWithAttributesWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_preferredLaunchArchitecture	@16@0:8
+METHOD	LSApplicationRecord	-	_preferredLaunchArchitectureWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_rawBundleFlagsWithContext:tableID:unitID:unitBytes:	Q40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_rawIconDictionary	@16@0:8
+METHOD	LSApplicationRecord	-	_rawIconDictionaryWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_rawIconFlags	C16@0:8
+METHOD	LSApplicationRecord	-	_rawIconFlagsWithContext:tableID:unitID:unitBytes:	C40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_rawMoreFlags	{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}16@0:8
+METHOD	LSApplicationRecord	-	_rawMoreFlagsWithContext:tableID:unitID:unitBytes:	{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_rawPlistFlags	I16@0:8
+METHOD	LSApplicationRecord	-	_rawPlistFlagsWithContext:tableID:unitID:unitBytes:	I40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	_usesSystemPersona	B16@0:8
+METHOD	LSApplicationRecord	-	additionalEnvironmentVariables	@16@0:8
+METHOD	LSApplicationRecord	-	appStoreToolsBuildVersion	@16@0:8
+METHOD	LSApplicationRecord	-	appTagsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	applicationDownloaderDSID	Q16@0:8
+METHOD	LSApplicationRecord	-	applicationExtensionRecords	@16@0:8
+METHOD	LSApplicationRecord	-	applicationExtensionRecordsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	applicationFamilyID	Q16@0:8
+METHOD	LSApplicationRecord	-	applicationHasMIDBasedSINF	B16@0:8
+METHOD	LSApplicationRecord	-	applicationMissingRequiredSINF	B16@0:8
+METHOD	LSApplicationRecord	-	applicationStateWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	audioComponentsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	backgroundTaskSchedulerPermittedIdentifiers	@16@0:8
+METHOD	LSApplicationRecord	-	backgroundTaskSchedulerPermittedIdentifiersWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	bundleContainerURLWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	bundleInode	Q16@0:8
+METHOD	LSApplicationRecord	-	bundleInodeWithContext:tableID:unitID:unitBytes:	Q40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	bundleMetadataReturningError:	@24@0:8^@16
+METHOD	LSApplicationRecord	-	bundleVersionWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	canHandleWebAuthentication	B16@0:8
+METHOD	LSApplicationRecord	-	carPlayInstrumentClusterURLSchemes	@16@0:8
+METHOD	LSApplicationRecord	-	categoryTypesWithError:	@24@0:8^@16
+METHOD	LSApplicationRecord	-	clearAdvertisingIdentifier	v16@0:8
+METHOD	LSApplicationRecord	-	companionBundleIdentifier	@16@0:8
+METHOD	LSApplicationRecord	-	companionBundleIdentifierWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	complicationPrincipalClassName	@16@0:8
+METHOD	LSApplicationRecord	-	counterpartIdentifiersWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	deviceFamiliesWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	deviceIdentifierForAdvertising	@16@0:8
+METHOD	LSApplicationRecord	-	deviceIdentifierForVendor	@16@0:8
+METHOD	LSApplicationRecord	-	directionsModesWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	diskUsage	@16@0:8
+METHOD	LSApplicationRecord	-	diskUsageWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	driverExtensionPathsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	eligibilityDeletionDomain	@16@0:8
+METHOD	LSApplicationRecord	-	equivalentBundleIdentifiers	@16@0:8
+METHOD	LSApplicationRecord	-	equivalentBundleIdentifiersWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	exactBundleVersionWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	executableInodeWithContext:tableID:unitID:unitBytes:	Q40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	extensionPointRecordForIdentifier:platform:error:	@36@0:8@16I24^@28
+METHOD	LSApplicationRecord	-	extensionPointRecordsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	externalAccessoryProtocols	@16@0:8
+METHOD	LSApplicationRecord	-	getApplicationExtensionDiagnosticDescriptionWithError:	@24@0:8^@16
+METHOD	LSApplicationRecord	-	getDeviceManagementPolicyWithCompletionHandler:	v24@0:8@?16
+METHOD	LSApplicationRecord	-	getGenericTranslocationTargetURL:error:	B32@0:8^@16^@24
+METHOD	LSApplicationRecord	-	hasCriticalAlertsEntitlement	B16@0:8
+METHOD	LSApplicationRecord	-	hasCustomNotification	B16@0:8
+METHOD	LSApplicationRecord	-	hasGlance	B16@0:8
+METHOD	LSApplicationRecord	-	hasParallelPlaceholder	B16@0:8
+METHOD	LSApplicationRecord	-	hasSettingsBundle	B16@0:8
+METHOD	LSApplicationRecord	-	iTunesMetadataWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	iconDictionaryWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	initForInstallMachineryWithBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LSApplicationRecord	-	initForInstallMachineryWithBundleIdentifier:placeholder:error:	@36@0:8@16B24^@28
+METHOD	LSApplicationRecord	-	initWithBundleIdentifier:allowPlaceholder:error:	@36@0:8@16B24^@28
+METHOD	LSApplicationRecord	-	initWithBundleIdentifier:fetchingPlaceholder:error:	@40@0:8@16q24^@32
+METHOD	LSApplicationRecord	-	initWithBundleIdentifierOfCompanionApplication:error:	@32@0:8@16^@24
+METHOD	LSApplicationRecord	-	initWithBundleIdentifierOfSystemPlaceholder:error:	@32@0:8@16^@24
+METHOD	LSApplicationRecord	-	initWithRemotePlaceholderBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LSApplicationRecord	-	initWithStoreItemIdentifier:error:	@32@0:8Q16^@24
+METHOD	LSApplicationRecord	-	initWithURL:allowPlaceholder:error:	@36@0:8@16B24^@28
+METHOD	LSApplicationRecord	-	initWithURL:fetchingPlaceholder:error:	@40@0:8@16q24^@32
+METHOD	LSApplicationRecord	-	installSessionIdentifier	@16@0:8
+METHOD	LSApplicationRecord	-	installSessionIdentifierWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	installTypeWithContext:tableID:unitID:unitBytes:	Q40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	isAdHocCodeSigned	B16@0:8
+METHOD	LSApplicationRecord	-	isAppStoreVendable	B16@0:8
+METHOD	LSApplicationRecord	-	isArcadeApp	B16@0:8
+METHOD	LSApplicationRecord	-	isBeta	B16@0:8
+METHOD	LSApplicationRecord	-	isDeletable	B16@0:8
+METHOD	LSApplicationRecord	-	isDeletableSystemApplication	B16@0:8
+METHOD	LSApplicationRecord	-	isEligibleMailClient	B16@0:8
+METHOD	LSApplicationRecord	-	isEligibleWebBrowser	B16@0:8
+METHOD	LSApplicationRecord	-	isFileSharingEnabled	B16@0:8
+METHOD	LSApplicationRecord	-	isLaunchDisabled	B16@0:8
+METHOD	LSApplicationRecord	-	isMailClient	B16@0:8
+METHOD	LSApplicationRecord	-	isManagedAppDistributor	B16@0:8
+METHOD	LSApplicationRecord	-	isRemovableByInstallMachinery	B16@0:8
+METHOD	LSApplicationRecord	-	isRemovableByInstallMachineryWithContext:tableID:unitID:unitBytes:	B40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	isSwiftPlaygroundsApp	B16@0:8
+METHOD	LSApplicationRecord	-	isSystemPlaceholderWithContext:tableID:unitID:unitBytes:	B40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	isTemplateApplication	B16@0:8
+METHOD	LSApplicationRecord	-	isTemplateProxyApplication	B16@0:8
+METHOD	LSApplicationRecord	-	isTrustedForBinding	B16@0:8
+METHOD	LSApplicationRecord	-	isUpdate	B16@0:8
+METHOD	LSApplicationRecord	-	isWatchOnly	B16@0:8
+METHOD	LSApplicationRecord	-	isWebAppPlaceholder	B16@0:8
+METHOD	LSApplicationRecord	-	isWebBrowser	B16@0:8
+METHOD	LSApplicationRecord	-	isWrapper	B16@0:8
+METHOD	LSApplicationRecord	-	journalNotificationURLFormatString	@16@0:8
+METHOD	LSApplicationRecord	-	linkedChildApplicationRecordEnumeratorWithOptions:	@24@0:8Q16
+METHOD	LSApplicationRecord	-	linkedParentApplication	@16@0:8
+METHOD	LSApplicationRecord	-	localizedNameIsActive	B16@0:8
+METHOD	LSApplicationRecord	-	localizedNameIsActiveWithContext:tableID:unitID:unitBytes:	B40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	localizedNameWithContext:	@24@0:8@16
+METHOD	LSApplicationRecord	-	localizedNameWithContext:preferredLocalizations:	@32@0:8@16@24
+METHOD	LSApplicationRecord	-	managementDomain	@16@0:8
+METHOD	LSApplicationRecord	-	managementDomainWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	maximumSystemVersion	@16@0:8
+METHOD	LSApplicationRecord	-	maximumSystemVersionWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	minimumSystemVersion	@16@0:8
+METHOD	LSApplicationRecord	-	minimumSystemVersionWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	placeholderFailureReason	Q16@0:8
+METHOD	LSApplicationRecord	-	placeholderFailureReasonWithContext:tableID:unitID:unitBytes:	Q40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	recordForUnredactingWithContext:error:	@32@0:8^{LSContext=@}16^@24
+METHOD	LSApplicationRecord	-	regulatoryPrivacyDisclosureVersion	@16@0:8
+METHOD	LSApplicationRecord	-	regulatoryPrivacyDisclosureVersionWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	representedBundleIdentifier	@16@0:8
+METHOD	LSApplicationRecord	-	requiresNativeExecution	B16@0:8
+METHOD	LSApplicationRecord	-	requiresPostProcessing	B16@0:8
+METHOD	LSApplicationRecord	-	sensitiveDataProxy	@16@0:8
+METHOD	LSApplicationRecord	-	sensitiveDataProxy	@16@0:8
+METHOD	LSApplicationRecord	-	sensitiveDataProxyWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	setAlternateIconName:completionHandler:	v32@0:8@16@?24
+METHOD	LSApplicationRecord	-	setAlternateIconNameSilently:completionHandler:	v32@0:8@16@?24
+METHOD	LSApplicationRecord	-	setUpdateAvailability:completionHandler:	v32@0:8Q16@?24
+METHOD	LSApplicationRecord	-	shortVersionStringWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	shouldShowSecurityPromptsOnSignIn	B16@0:8
+METHOD	LSApplicationRecord	-	shouldSkipWatchAppInstall	B16@0:8
+METHOD	LSApplicationRecord	-	spotlightActions	@16@0:8
+METHOD	LSApplicationRecord	-	stashedAppMetadata	@16@0:8
+METHOD	LSApplicationRecord	-	staticShortcutItems	@16@0:8
+METHOD	LSApplicationRecord	-	staticShortcutItemsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	supportedDefaultAppCategories	Q16@0:8
+METHOD	LSApplicationRecord	-	supportedGameControllers	@16@0:8
+METHOD	LSApplicationRecord	-	supportedGameControllersWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	supportedLiveActivityLaunchAttributeTypes	@16@0:8
+METHOD	LSApplicationRecord	-	supportsAlternateIconNames	B16@0:8
+METHOD	LSApplicationRecord	-	supportsAudiobooks	B16@0:8
+METHOD	LSApplicationRecord	-	supportsCarPlayDashboardScene	B16@0:8
+METHOD	LSApplicationRecord	-	supportsCarPlayInstrumentClusterScene	B16@0:8
+METHOD	LSApplicationRecord	-	supportsControllerUserInteraction	B16@0:8
+METHOD	LSApplicationRecord	-	supportsDataExport	B16@0:8
+METHOD	LSApplicationRecord	-	supportsExternallyPlayableContent	B16@0:8
+METHOD	LSApplicationRecord	-	supportsGameMode	@16@0:8
+METHOD	LSApplicationRecord	-	supportsLiveActivities	B16@0:8
+METHOD	LSApplicationRecord	-	supportsLiveActivitiesFrequentUpdates	B16@0:8
+METHOD	LSApplicationRecord	-	supportsOnDemandResources	B16@0:8
+METHOD	LSApplicationRecord	-	supportsOpenInPlace	B16@0:8
+METHOD	LSApplicationRecord	-	supportsPurgeableLocalStorage	B16@0:8
+METHOD	LSApplicationRecord	-	supportsSessions	B16@0:8
+METHOD	LSApplicationRecord	-	supportsSpotlightQueryContinuation	B16@0:8
+METHOD	LSApplicationRecord	-	trustedCDHashesWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	typeForInstallMachinery	@16@0:8
+METHOD	LSApplicationRecord	-	uniqueInstallIdentifier	@16@0:8
+METHOD	LSApplicationRecord	-	uniqueInstallIdentifierWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	userActivityTypes	@16@0:8
+METHOD	LSApplicationRecord	-	userActivityTypesWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSApplicationRecord	-	wasRenamed	B16@0:8
+METHOD	LSApplicationRecord	-	watchKitApplicationTintColorName	@16@0:8
+METHOD	LSApplicationRecord	-	watchKitApplicationType	C16@0:8
+METHOD	LSApplicationRecord	+	ln_dynamicOptionsWithAppsImplementingFrameworkAtURL:matchingSearchTerm:options:error:	@48@0:8@16@24Q32^@40
+METHOD	LSApplicationRecord	+	supportsSecureCoding	B16@0:8
+METHOD	LSApplicationRecord	+	_propertyClasses	@16@0:8
+METHOD	LSApplicationRecord	+	_alternateIconQueue	@16@0:8
+METHOD	LSApplicationRecord	+	applicationRecordsForUserActivityDomainName:limit:error:	@40@0:8@16Q24^@32
+METHOD	LSApplicationRecord	+	applicationRecordsForUserActivityType:limit:error:	@40@0:8@16Q24^@32
+METHOD	LSApplicationRecord	+	displayOrderEnumeratorForViableDefaultAppsForCategory:options:	@32@0:8Q16Q24
+METHOD	LSApplicationRecord	+	enumeratorForApplicationsOnSameVolumeWithinDirectoryAtURL:enumerationOptions:filteringOptions:	@40@0:8@16Q24Q32
+METHOD	LSApplicationRecord	+	enumeratorForCandidateAppsIgnoringEligibilityForCategory:options:	@32@0:8Q16Q24
+METHOD	LSApplicationRecord	+	enumeratorForViableDefaultAppsForCategory:options:	@32@0:8Q16Q24
+METHOD	LSApplicationRecord	+	enumeratorOnVolumeAtURL:options:	@32@0:8@16Q24
+METHOD	LSApplicationRecord	+	enumeratorWithOptions:	@24@0:8Q16
+METHOD	LSApplicationRecord	+	isAnyRegisteredApplicationInstalledFromDistributorOrWeb	B16@0:8
+METHOD	LSApplicationRecord	+	remotePlaceholderEnumerator	@16@0:8
+METHOD	LSApplicationRecord	+	setUpdateAvailabilityForApplicationsWithBundleIdentifiers:completionHandler:	v32@0:8@16@?24
+METHOD	LSApplicationRecord	+	systemPlaceholderEnumerator	@16@0:8
+CLASS	LSBundleRecord	present
+PROPERTY	LSBundleRecord	if_containingAppRecord	T@"LSApplicationRecord",R
+PROPERTY	LSBundleRecord	swift_isAppIntentsEnabled	TB,N,R
+PROPERTY	LSBundleRecord	ln_isAppIntentsEnabled	TB,R,N
+PROPERTY	LSBundleRecord	infoDictionary	T@"LSPropertyList",R
+PROPERTY	LSBundleRecord	entitlements	T@"LSPropertyList",R
+PROPERTY	LSBundleRecord	dataContainerURL	T@"NSURL",R
+PROPERTY	LSBundleRecord	groupContainerURLs	T@"NSDictionary",R
+PROPERTY	LSBundleRecord	localizedName	T@"NSString",R
+PROPERTY	LSBundleRecord	localizedShortName	T@"NSString",R
+PROPERTY	LSBundleRecord	signerOrganization	T@"NSString",R
+PROPERTY	LSBundleRecord	signerIdentity	T@"NSString",R
+PROPERTY	LSBundleRecord	profileValidated	TB,R,GisProfileValidated
+PROPERTY	LSBundleRecord	UPPValidated	TB,R,GisUPPValidated
+PROPERTY	LSBundleRecord	freeProfileValidated	TB,R,GisFreeProfileValidated
+PROPERTY	LSBundleRecord	codeSignatureVersion	TI,R
+PROPERTY	LSBundleRecord	compatibilityState	TQ,R
+PROPERTY	LSBundleRecord	managedPersonas	T@"NSArray",R
+PROPERTY	LSBundleRecord	associatedPersonas	T@"NSArray",R
+PROPERTY	LSBundleRecord	UIBackgroundModes	T@"NSArray",R
+PROPERTY	LSBundleRecord	accentColorName	T@"NSString",R
+PROPERTY	LSBundleRecord	privacyTrackingDomains	T@"NSArray",R
+PROPERTY	LSBundleRecord	WKBackgroundModes	T@"NSArray",R
+PROPERTY	LSBundleRecord	supportsNowPlaying	TB,R
+PROPERTY	LSBundleRecord	intentDefinitionURLs	T@"NSDictionary",R
+PROPERTY	LSBundleRecord	supportedIntents	T@"NSArray",R
+PROPERTY	LSBundleRecord	intentsRestrictedWhileLocked	T@"NSArray",R
+PROPERTY	LSBundleRecord	intentsRestrictedWhileProtectedDataUnavailable	T@"NSArray",R
+PROPERTY	LSBundleRecord	supportedIntentMediaCategories	T@"NSArray",R
+PROPERTY	LSBundleRecord	_localizedName	T@"_LSLocalizedStringRecord",R
+PROPERTY	LSBundleRecord	_localizedShortName	T@"_LSLocalizedStringRecord",R
+PROPERTY	LSBundleRecord	_baseFlags	T{LSBundleBaseFlags=b1b1b1b1b1b1b1},R
+PROPERTY	LSBundleRecord	_node	T@"FSNode",R,N,V_node
+PROPERTY	LSBundleRecord	_auditToken	Tr^{?=[8I]},R,N
+PROPERTY	LSBundleRecord	_bundleVersion	T{LSVersionNumber=[32C]},R,N
+PROPERTY	LSBundleRecord	_realRecord	T@"LSBundleRecord",R,N
+PROPERTY	LSBundleRecord	_usesSystemPersona	TB,R
+PROPERTY	LSBundleRecord	_personasWithAttributes	T@"NSArray",R,V__personasWithAttributes
+PROPERTY	LSBundleRecord	_containerized	TB,R
+PROPERTY	LSBundleRecord	_containerClass	TQ,R
+PROPERTY	LSBundleRecord	_rawGroupContainerURLs	T@"_LSLazyPropertyList",R,V__rawGroupContainerURLs
+PROPERTY	LSBundleRecord	_personaUniqueStringsWithDataContainersInDatabaseOrNilIfNonPersonified	T@"NSSet",R
+PROPERTY	LSBundleRecord	_profileValidationState	TC,R
+PROPERTY	LSBundleRecord	_fallbackLocalizedName	T@"NSString",R
+PROPERTY	LSBundleRecord	isAppleInternal	TB,R
+PROPERTY	LSBundleRecord	execSDKVersion	T{LSVersionNumber=[32C]},R
+PROPERTY	LSBundleRecord	_contextualFeatureUsageDescriptions	T@"NSDictionary",R
+PROPERTY	LSBundleRecord	isLinkEnabled	TB,R
+PROPERTY	LSBundleRecord	compatibilityObject	T@"LSBundleProxy",R,D,N
+PROPERTY	LSBundleRecord	bundleIdentifier	T@"NSString",R,V_bundleIdentifier
+PROPERTY	LSBundleRecord	applicationIdentifier	T@"NSString",R
+PROPERTY	LSBundleRecord	teamIdentifier	T@"NSString",R
+PROPERTY	LSBundleRecord	codeSigningIdentifier	T@"NSString",R
+PROPERTY	LSBundleRecord	URL	T@"NSURL",R
+PROPERTY	LSBundleRecord	executableURL	T@"NSURL",R
+PROPERTY	LSBundleRecord	bundleVersion	T@"NSString",R
+PROPERTY	LSBundleRecord	developerType	Tc,R
+PROPERTY	LSBundleRecord	registrationDate	T@"NSDate",R
+PROPERTY	LSBundleRecord	machOUUIDs	T@"NSArray",R
+PROPERTY	LSBundleRecord	SDKVersion	T@"NSString",R
+PROPERTY	LSBundleRecord	platform	TI,R
+PROPERTY	LSBundleRecord	builtWithThreadSanitizer	TB,R,GwasBuiltWithThreadSanitizer
+PROPERTY	LSBundleRecord	claimRecords	T@"NSSet",R
+PROPERTY	LSBundleRecord	exportedTypeRecords	T@"NSSet",R
+PROPERTY	LSBundleRecord	importedTypeRecords	T@"NSSet",R
+PROPERTY	LSBundleRecord	serviceRecords	T@"NSSet",R
+PROPERTY	LSBundleRecord	appProtectionHidden	TB,R
+PROPERTY	LSBundleRecord	appProtectionLocked	TB,R
+IVAR	LSBundleRecord	_auditToken	^{?=[8I]}
+IVAR	LSBundleRecord	_cachedDataContainerURLMap	@
+IVAR	LSBundleRecord	_flags	{?="redacted"b1}
+IVAR	LSBundleRecord	_node	@"FSNode"
+IVAR	LSBundleRecord	_bundleIdentifier	@"NSString"
+IVAR	LSBundleRecord	__personasWithAttributes	@"NSArray"
+IVAR	LSBundleRecord	__rawGroupContainerURLs	@"_LSLazyPropertyList"
+METHOD	LSBundleRecord	-	_IS_iconDictionaryForTag:tagClass:	@32@0:8@16@24
+METHOD	LSBundleRecord	-	_IS_iconDictionaryForType:	@24@0:8@16
+METHOD	LSBundleRecord	-	_IS_iconProvidingLineageForRecord:	@24@0:8@16
+METHOD	LSBundleRecord	-	_IS_platformToIFPlatform	Q16@0:8
+METHOD	LSBundleRecord	-	if_allIntentDefinitionURLs	@16@0:8
+METHOD	LSBundleRecord	-	if_containingAppRecord	@16@0:8
+METHOD	LSBundleRecord	-	linkedOnOrAfter2024	B16@0:8
+METHOD	LSBundleRecord	-	linkedOnOrAfter2025	B16@0:8
+METHOD	LSBundleRecord	-	linkedOnOrAfter:	B24@0:8@16
+METHOD	LSBundleRecord	-	ln_isAppIntentsEnabled	B16@0:8
+METHOD	LSBundleRecord	-	ln_linkedFrameworksWithError:	@24@0:8^@16
+METHOD	LSBundleRecord	-	swift_isAppIntentsEnabled	B16@0:8
+METHOD	LSBundleRecord	-	redact	v16@0:8
+METHOD	LSBundleRecord	-	executableURL	@16@0:8
+METHOD	LSBundleRecord	-	isUPPValidated	B16@0:8
+METHOD	LSBundleRecord	-	infoDictionary	@16@0:8
+METHOD	LSBundleRecord	-	supportedIntents	@16@0:8
+METHOD	LSBundleRecord	-	intentDefinitionURLs	@16@0:8
+METHOD	LSBundleRecord	-	accentColorName	@16@0:8
+METHOD	LSBundleRecord	-	platform	I16@0:8
+METHOD	LSBundleRecord	-	teamIdentifier	@16@0:8
+METHOD	LSBundleRecord	-	WKBackgroundModes	@16@0:8
+METHOD	LSBundleRecord	-	applicationIdentifier	@16@0:8
+METHOD	LSBundleRecord	-	localizedShortNameWithPreferredLocalizations:	@24@0:8@16
+METHOD	LSBundleRecord	-	localizedName	@16@0:8
+METHOD	LSBundleRecord	-	isEqual:	B24@0:8@16
+METHOD	LSBundleRecord	-	_localizedName	@16@0:8
+METHOD	LSBundleRecord	-	supportsNowPlaying	B16@0:8
+METHOD	LSBundleRecord	-	UIBackgroundModes	@16@0:8
+METHOD	LSBundleRecord	-	intentsRestrictedWhileProtectedDataUnavailable	@16@0:8
+METHOD	LSBundleRecord	-	bundleIdentifier	@16@0:8
+METHOD	LSBundleRecord	-	isAppleInternal	B16@0:8
+METHOD	LSBundleRecord	-	registrationDate	@16@0:8
+METHOD	LSBundleRecord	-	machOUUIDs	@16@0:8
+METHOD	LSBundleRecord	-	hash	Q16@0:8
+METHOD	LSBundleRecord	-	developerType	c16@0:8
+METHOD	LSBundleRecord	-	debugDescription	@16@0:8
+METHOD	LSBundleRecord	-	dealloc	v16@0:8
+METHOD	LSBundleRecord	-	_personasWithAttributes	@16@0:8
+METHOD	LSBundleRecord	-	_personasWithAttributes	@16@0:8
+METHOD	LSBundleRecord	-	entitlements	@16@0:8
+METHOD	LSBundleRecord	-	isFreeProfileValidated	B16@0:8
+METHOD	LSBundleRecord	-	serviceRecords	@16@0:8
+METHOD	LSBundleRecord	-	isProfileValidated	B16@0:8
+METHOD	LSBundleRecord	-	localizedUsageDescriptionForFeature:preferredLocalizations:	@32@0:8Q16@24
+METHOD	LSBundleRecord	-	intentsRestrictedWhileLocked	@16@0:8
+METHOD	LSBundleRecord	-	_detachFromContext:tableID:unitID:unitBytes:	v40@0:8^{LSContext=@}16I24I28r^v32
+METHOD	LSBundleRecord	-	description	@16@0:8
+METHOD	LSBundleRecord	-	signerIdentity	@16@0:8
+METHOD	LSBundleRecord	-	managedPersonas	@16@0:8
+METHOD	LSBundleRecord	-	groupContainerIdentifiers	@16@0:8
+METHOD	LSBundleRecord	-	_localizedShortName	@16@0:8
+METHOD	LSBundleRecord	-	bundleVersion	@16@0:8
+METHOD	LSBundleRecord	-	encodeWithCoder:	v24@0:8@16
+METHOD	LSBundleRecord	-	localizedUsageDescriptionForFeature:	@24@0:8Q16
+METHOD	LSBundleRecord	-	SDKVersion	@16@0:8
+METHOD	LSBundleRecord	-	localizedNameWithPreferredLocalizations:	@24@0:8@16
+METHOD	LSBundleRecord	-	copyWithZone:	@24@0:8^{_NSZone=}16
+METHOD	LSBundleRecord	-	dataContainerURL	@16@0:8
+METHOD	LSBundleRecord	-	URL	@16@0:8
+METHOD	LSBundleRecord	-	codeSigningIdentifier	@16@0:8
+METHOD	LSBundleRecord	-	wasBuiltWithThreadSanitizer	B16@0:8
+METHOD	LSBundleRecord	-	signerOrganization	@16@0:8
+METHOD	LSBundleRecord	-	localizedShortName	@16@0:8
+METHOD	LSBundleRecord	-	initWithCoder:	@24@0:8@16
+METHOD	LSBundleRecord	-	_realRecord	@16@0:8
+METHOD	LSBundleRecord	-	.cxx_destruct	v16@0:8
+METHOD	LSBundleRecord	-	associatedPersonas	@16@0:8
+METHOD	LSBundleRecord	-	supportedIntentMediaCategories	@16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_developerType	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_isLinkEnabled	v16@0:8
+METHOD	LSBundleRecord	-	_containerClass	Q16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_executableURL	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__baseFlags	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__bundleDataContainerMapFromDatabase	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__bundleVersion	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__contextualFeatureUsageDescriptions	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__localizedName	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__localizedShortName	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__profileValidationState	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve__rawGroupContainerURLMap	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_claimRecords	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_codeSigningIdentifier	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_entitlements	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_execSDKVersion	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_exportedTypeRecords	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_importedTypeRecords	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_infoDictionary	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_intentDefinitionURLs	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_isAppleInternal	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_machOUUIDs	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_platform	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_registrationDate	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_serviceRecords	v16@0:8
+METHOD	LSBundleRecord	-	_LSRecord_resolve_teamIdentifier	v16@0:8
+METHOD	LSBundleRecord	-	_auditToken	r^{?=[8I]}16@0:8
+METHOD	LSBundleRecord	-	_baseFlags	{LSBundleBaseFlags=b1b1b1b1b1b1b1}16@0:8
+METHOD	LSBundleRecord	-	_baseFlagsWithContext:tableID:unitID:unitBytes:	{LSBundleBaseFlags=b1b1b1b1b1b1b1}40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_bundleDataContainerMapFromDatabase	@16@0:8
+METHOD	LSBundleRecord	-	_bundleDataContainerMapFromDatabaseWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_bundleVersion	{LSVersionNumber=[32C]}16@0:8
+METHOD	LSBundleRecord	-	_bundleVersionWithContext:tableID:unitID:unitBytes:	{LSVersionNumber=[32C]}40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_cachedDataContainerURLMap	@16@0:8
+METHOD	LSBundleRecord	-	_containerized	B16@0:8
+METHOD	LSBundleRecord	-	_contextualFeatureUsageDescriptions	@16@0:8
+METHOD	LSBundleRecord	-	_contextualFeatureUsageDescriptionsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_fallbackLocalizedName	@16@0:8
+METHOD	LSBundleRecord	-	_getGroupContainersCreatingIfNecessary:checkNonContainerizedBundles:	@24@0:8B16B20
+METHOD	LSBundleRecord	-	_groupContainerURLDictFromDatabase	@16@0:8
+METHOD	LSBundleRecord	-	_initWithContext:persistentIdentifierData:length:	@40@0:8^{LSContext=@}16r^{LSPersistentIdentifierData=C[3C]II[16C][0c]}24Q32
+METHOD	LSBundleRecord	-	_initWithNode:bundleIdentifier:context:tableID:unitID:bundleBaseData:error:	@64@0:8@16@24^{LSContext=@}32I40I44r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}48^@56
+METHOD	LSBundleRecord	-	_localizedNameWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_localizedShort:nameWithContext:tableID:unitID:bundleData:	@44@0:8B16^{LSContext=@}20I28I32r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}36
+METHOD	LSBundleRecord	-	_localizedShortNameWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_node	@16@0:8
+METHOD	LSBundleRecord	-	_personaUniqueStringsWithDataContainersInDatabaseOrNilIfNonPersonified	@16@0:8
+METHOD	LSBundleRecord	-	_profileValidationState	C16@0:8
+METHOD	LSBundleRecord	-	_profileValidationStateWithContext:tableID:unitID:unitBytes:	C40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_rawGroupContainerURLMap	@16@0:8
+METHOD	LSBundleRecord	-	_rawGroupContainerURLMapCheckingRedaction	@16@0:8
+METHOD	LSBundleRecord	-	_rawGroupContainerURLMapWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	_rawGroupContainerURLs	@16@0:8
+METHOD	LSBundleRecord	-	_setCachedDataContainerURLMap:	v24@0:8@16
+METHOD	LSBundleRecord	-	_usesSystemPersona	B16@0:8
+METHOD	LSBundleRecord	-	appProtectionHidden	B16@0:8
+METHOD	LSBundleRecord	-	appProtectionLocked	B16@0:8
+METHOD	LSBundleRecord	-	claimRecords	@16@0:8
+METHOD	LSBundleRecord	-	claimRecordsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSBundleRecord	-	codeSignatureVersion	I16@0:8
+METHOD	LSBundleRecord	-	codeSigningIdentifierWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	compatibilityState	Q16@0:8
+METHOD	LSBundleRecord	-	dataContainerURLForPersonaWithUniqueString:error:	@32@0:8@16^@24
+METHOD	LSBundleRecord	-	developerTypeWithContext:tableID:unitID:unitBytes:	c40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSBundleRecord	-	eligibleForRedaction	B16@0:8
+METHOD	LSBundleRecord	-	entitlementsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	execSDKVersion	{LSVersionNumber=[32C]}16@0:8
+METHOD	LSBundleRecord	-	execSDKVersionWithContext:tableID:unitID:unitBytes:	{LSVersionNumber=[32C]}40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	executableURLWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	exported:typesWithContext:tableID:unitID:unitBytes:	@44@0:8B16^{LSContext=@}20I28I32r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}36
+METHOD	LSBundleRecord	-	exportedTypeRecords	@16@0:8
+METHOD	LSBundleRecord	-	exportedTypeRecordsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSBundleRecord	-	getDataContainerURL:error:	B32@0:8^@16^@24
+METHOD	LSBundleRecord	-	getGroupContainersCreatingIfNecessary:	@20@0:8B16
+METHOD	LSBundleRecord	-	getGroupContainersForPersonaWithUniqueString:createIfNecessary:error:	@36@0:8@16B24^@28
+METHOD	LSBundleRecord	-	groupContainerURLs	@16@0:8
+METHOD	LSBundleRecord	-	hasBooleanEntitlement:	B24@0:8@16
+METHOD	LSBundleRecord	-	hasLocalizedUsageDescriptionForFeature:contextKey:	B32@0:8Q16@24
+METHOD	LSBundleRecord	-	importedTypeRecords	@16@0:8
+METHOD	LSBundleRecord	-	importedTypeRecordsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSBundleRecord	-	infoDictionaryWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	intentDefinitionURLsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	isAppleInternalWithContext:tableID:unitID:unitBytes:	B40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSBundleRecord	-	isLinkEnabled	B16@0:8
+METHOD	LSBundleRecord	-	isLinkEnabledWithContext:tableID:unitID:unitBytes:	B40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSBundleRecord	-	isRedacted	B16@0:8
+METHOD	LSBundleRecord	-	localizedUsageDescriptionForFeature:contextKey:	@32@0:8Q16@24
+METHOD	LSBundleRecord	-	localizedUsageDescriptionForFeature:contextKey:preferredLocalizations:	@40@0:8Q16@24@32
+METHOD	LSBundleRecord	-	machOUUIDsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	personaIsApplicable:	B24@0:8@16
+METHOD	LSBundleRecord	-	personaOrPrimaryPersonaPlaceholderIsApplicable:	B24@0:8@16
+METHOD	LSBundleRecord	-	platformWithContext:tableID:unitID:unitBytes:	I40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	privacyTrackingDomains	@16@0:8
+METHOD	LSBundleRecord	-	recordForUnredactingWithContext:error:	@32@0:8^{LSContext=@}16^@24
+METHOD	LSBundleRecord	-	registrationDateWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	serviceRecordsWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleData={LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}IQIICCCCCCCCCC{LSBundleMoreFlags=b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1}IIQQI{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}Ii{LSVersionNumber=[32C]}QQIIIIIIIIIIQIQQQIQQIIIQIQQIIIQIIIIIIIIIIIIIIIICCC[0I]IIiIIIIII}32
+METHOD	LSBundleRecord	-	teamIdentifierWithContext:tableID:unitID:unitBytes:	@40@0:8^{LSContext=@}16I24I28r^{LSBundleBaseData=IIIIIIIii{LSVersionNumber=[32C]}{LSVersionNumber=[32C]}IIIIIIIIIICCII{LSBundleBaseFlags=b1b1b1b1b1b1b1}}32
+METHOD	LSBundleRecord	-	unredactWithError:	B24@0:8^@16
+METHOD	LSBundleRecord	+	cls_appExtensionContainerBundleRecordForConnection:	@24@0:8@16
+METHOD	LSBundleRecord	+	cls_appExtensionContainerBundleRecordForCurrentTask	@16@0:8
+METHOD	LSBundleRecord	+	cls_appExtensionContainerBundleRecordWithProperties:	@24@0:8@16
+METHOD	LSBundleRecord	+	bundle:linkedOnOrAfter:	B32@0:8@16@24
+METHOD	LSBundleRecord	+	bundleLinkedOnOrAfter2024:	B24@0:8@16
+METHOD	LSBundleRecord	+	bundleLinkedOnOrAfter2025:	B24@0:8@16
+METHOD	LSBundleRecord	+	platformToSDKMapping2024	@16@0:8
+METHOD	LSBundleRecord	+	platformToSDKMapping2025	@16@0:8
+METHOD	LSBundleRecord	+	supportsSecureCoding	B16@0:8
+METHOD	LSBundleRecord	+	_propertyClasses	@16@0:8
+METHOD	LSBundleRecord	+	_bundleRecordForAuditToken:checkNSBundleMainBundle:error:	@60@0:8{?=[8I]}16C48^@52
+METHOD	LSBundleRecord	+	bundleRecordForApplicationSerialNumber:error:	@32@0:8^{__LSASN=}16^@24
+METHOD	LSBundleRecord	+	bundleRecordForAuditToken:error:	@56@0:8{?=[8I]}16^@48
+METHOD	LSBundleRecord	+	bundleRecordForCurrentProcess	@16@0:8
+METHOD	LSBundleRecord	+	bundleRecordWithApplicationIdentifier:error:	@32@0:8@16^@24
+METHOD	LSBundleRecord	+	bundleRecordWithBundleIdentifier:allowPlaceholder:error:	@36@0:8@16B24^@28
+METHOD	LSBundleRecord	+	coreTypesBundleRecord	@16@0:8
+METHOD	LSBundleRecord	+	redactedProperties	@16@0:8
+CLASS	LNRegisteredBundleMetadata	present
+PROPERTY	LNRegisteredBundleMetadata	bundleIdentifier	T@"NSString",R,C,N,V_bundleIdentifier
+PROPERTY	LNRegisteredBundleMetadata	installIdentifier	T@"NSData",R,C,N,V_installIdentifier
+IVAR	LNRegisteredBundleMetadata	_bundleIdentifier	@"NSString"
+IVAR	LNRegisteredBundleMetadata	_installIdentifier	@"NSData"
+METHOD	LNRegisteredBundleMetadata	-	isEqual:	B24@0:8@16
+METHOD	LNRegisteredBundleMetadata	-	bundleIdentifier	@16@0:8
+METHOD	LNRegisteredBundleMetadata	-	hash	Q16@0:8
+METHOD	LNRegisteredBundleMetadata	-	description	@16@0:8
+METHOD	LNRegisteredBundleMetadata	-	encodeWithCoder:	v24@0:8@16
+METHOD	LNRegisteredBundleMetadata	-	copyWithZone:	@24@0:8^{_NSZone=}16
+METHOD	LNRegisteredBundleMetadata	-	initWithCoder:	@24@0:8@16
+METHOD	LNRegisteredBundleMetadata	-	.cxx_destruct	v16@0:8
+METHOD	LNRegisteredBundleMetadata	-	installIdentifier	@16@0:8
+METHOD	LNRegisteredBundleMetadata	-	initWithBundleIdentifier:installIdentifier:	@32@0:8@16@24
+METHOD	LNRegisteredBundleMetadata	+	supportsSecureCoding	B16@0:8
+CLASS	LNMetadataProvider	present
+PROPERTY	LNMetadataProvider	connection	T@"NSXPCConnection",R,N,V_connection
+PROPERTY	LNMetadataProvider	hash	TQ,R
+PROPERTY	LNMetadataProvider	superclass	T#,R
+PROPERTY	LNMetadataProvider	description	T@"NSString",R,C
+PROPERTY	LNMetadataProvider	debugDescription	T@"NSString",?,R,C
+IVAR	LNMetadataProvider	_lock	{os_unfair_lock_s="_os_unfair_lock_opaque"I}
+IVAR	LNMetadataProvider	_options	q
+IVAR	LNMetadataProvider	_xpcProvider	@"<LNMetadataProviderInterface>"
+IVAR	LNMetadataProvider	_directProvider	@"<LNMetadataProviderInterface>"
+IVAR	LNMetadataProvider	_connection	@"NSXPCConnection"
+METHOD	LNMetadataProvider	-	initWithOptions:	@24@0:8q16
+METHOD	LNMetadataProvider	-	enumerateQueriesForBundleIdentifier:usingBlock:error:	B40@0:8@16@?24^@32
+METHOD	LNMetadataProvider	-	enumerateActionsForBundleIdentifier:usingBlock:error:	B40@0:8@16@?24^@32
+METHOD	LNMetadataProvider	-	init	@16@0:8
+METHOD	LNMetadataProvider	-	examplePhrasesForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	actionsConformingToSystemProtocols:logicalType:bundleIdentifier:error:	@48@0:8@16Q24@32^@40
+METHOD	LNMetadataProvider	-	resetWithReply:	v24@0:8@?16
+METHOD	LNMetadataProvider	-	actionsWithFullyQualifiedIdentifiers:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	queriesForBundleIdentifier:withCapabilities:inputValueType:resultValueType:error:	@56@0:8@16Q24@32@40^@48
+METHOD	LNMetadataProvider	-	actionsWithError:	@24@0:8^@16
+METHOD	LNMetadataProvider	-	actionForBundleIdentifier:andActionIdentifier:error:	@40@0:8@16@24^@32
+METHOD	LNMetadataProvider	-	initiateAuditAndWait:	B24@0:8^@16
+METHOD	LNMetadataProvider	-	bundlesWithError:	@24@0:8^@16
+METHOD	LNMetadataProvider	-	entityForBundleIdentifier:withEntityIdentifier:error:	@40@0:8@16@24^@32
+METHOD	LNMetadataProvider	-	queryForBundleIdentifier:ofType:error:	@40@0:8@16@24^@32
+METHOD	LNMetadataProvider	-	enumerateEntitiesForBundleIdentifier:usingBlock:error:	B40@0:8@16@?24^@32
+METHOD	LNMetadataProvider	-	registerBundleWithIdentifier:error:	B32@0:8@16^@24
+METHOD	LNMetadataProvider	-	dealloc	v16@0:8
+METHOD	LNMetadataProvider	-	entitiesForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	actionForBundleIdentifier:andActionIdentifier:waitForIndexing:error:	@44@0:8@16@24B32^@36
+METHOD	LNMetadataProvider	-	enumerateEnumsForBundleIdentifier:usingBlock:error:	B40@0:8@16@?24^@32
+METHOD	LNMetadataProvider	-	queriesWithCapabilities:inputValueType:resultValueType:error:	@48@0:8Q16@24@32^@40
+METHOD	LNMetadataProvider	-	openCollectionActionsForEntityTypeIdentifier:capabilities:bundleIdentifier:error:	@48@0:8@16q24@32^@40
+METHOD	LNMetadataProvider	-	queryForBundleIdentifier:withFullyQualifiedIdentifier:error:	@40@0:8@16@24^@32
+METHOD	LNMetadataProvider	-	bundleRegistrationsWithError:	@24@0:8^@16
+METHOD	LNMetadataProvider	-	queriesForSchemaIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	enumsForSchemaIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	entitiesForSchemaIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	openActionsForTypeIdentifier:bundleIdentifier:error:	@40@0:8@16@24^@32
+METHOD	LNMetadataProvider	-	actionsForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	queriesWithError:	@24@0:8^@16
+METHOD	LNMetadataProvider	-	deprioritizedQueriesWithCapabilities:inputValueType:resultValueType:bundleIdentifier:completionHandler:	v56@0:8Q16@24@32@40@?48
+METHOD	LNMetadataProvider	-	actionsForSchemaIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	waitForInitialIndexing:	B24@0:8^@16
+METHOD	LNMetadataProvider	-	registerBundleWithIdentifier:force:reply:	v36@0:8@16B24@?28
+METHOD	LNMetadataProvider	-	entitiesWithError:	@24@0:8^@16
+METHOD	LNMetadataProvider	-	actionsConformingToSystemProtocol:withParametersOfTypes:bundleIdentifier:error:	@48@0:8@16@24@32^@40
+METHOD	LNMetadataProvider	-	entityIdentifiersForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	actionsAndSystemProtocolDefaultsForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	connection	@16@0:8
+METHOD	LNMetadataProvider	-	actionsForBundleIdentifier:andActionIdentifier:error:	@40@0:8@16@24^@32
+METHOD	LNMetadataProvider	-	enumsWithError:	@24@0:8^@16
+METHOD	LNMetadataProvider	-	queriesForBundleIdentifier:ofType:error:	@40@0:8@16@24^@32
+METHOD	LNMetadataProvider	-	enumsForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	appShortcutsProviderMangledTypeNameForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	suggestionPhrasesForQueries:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	actionIdentifiersForBundleIdentifier:error:	@32@0:8@16^@24
+METHOD	LNMetadataProvider	-	.cxx_destruct	v16@0:8
+METHOD	LNMetadataProvider	-	unregisterBundleWithIdentifier:reply:	v32@0:8@16@?24
+METHOD	LNMetadataProvider	-	metadataVersionForBundleIdentifier:error:	q32@0:8@16^@24
+METHOD	LNMetadataProvider	-	diagnoseBundleIdentifier:completionHandler:	v32@0:8@16@?24
+METHOD	LNMetadataProvider	-	scanBundlesWithReply:	v24@0:8@?16
+METHOD	LNMetadataProvider	+	enumerateActionsWithConnection:bundleIdentifier:batchSize:block:outError:	B56@0:8@16@24q32@?40^@48
+METHOD	LNMetadataProvider	+	enumerateEntitiesWithConnection:bundleIdentifier:batchSize:block:outError:	B56@0:8@16@24q32@?40^@48
+METHOD	LNMetadataProvider	+	enumerateEnumsWithConnection:bundleIdentifier:batchSize:block:outError:	B56@0:8@16@24q32@?40^@48
+METHOD	LNMetadataProvider	+	enumerateQueriesWithConnection:bundleIdentifier:batchSize:block:outError:	B56@0:8@16@24q32@?40^@48

@@ -1,0 +1,14 @@
+settings set auto-confirm true
+settings set target.process.thread.step-avoid-regexp ^std::|^Swift|^swift
+settings set target.inline-breakpoint-strategy always
+settings set target.skip-prologue false
+
+target create runtime/toolkit_native_decoder
+breakpoint set --shlib InternalSwiftProtobuf --func-regex 'InternalSwiftProtobuf.Message.init.*serializedBytes' --auto-continue true --breakpoint-name defaults_serialized_init
+breakpoint set --shlib ToolKit --func-regex 'ToolKitProto.*decodeMessage' --auto-continue true --breakpoint-name defaults_decode_message
+process launch -o /dev/null -- defaults-all
+image list -b -f ToolKit
+image list -b -f InternalSwiftProtobuf
+breakpoint list defaults_serialized_init
+breakpoint list defaults_decode_message
+quit

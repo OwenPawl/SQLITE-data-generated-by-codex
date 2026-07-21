@@ -1,0 +1,91 @@
+
+public protocol ToolDatabaseProvider {
+  func database() throws -> ToolKit.ToolDatabase
+}
+
+public class SharedToolDatabaseProvider : ToolKit.ToolDatabaseProvider {
+  public static var shared: ToolKit.SharedToolDatabaseProvider { get }
+  public func database() throws -> ToolKit.ToolDatabase
+}
+
+public final class ToolDatabase {
+  public func count(over query: ToolKit.ToolDefinitionQuery) throws -> Swift.Int
+  public func count(over query: ToolKit.TriggerDefinitionQuery) throws -> Swift.Int
+  public func iterate(over query: ToolKit.ToolDefinitionQuery, scope: ToolKit.ToolKitDatabaseRequestScope, locale: Foundation.Locale, block: (ToolKit.ToolDefinition) throws -> ()) throws
+  public func iterate(over query: ToolKit.TriggerDefinitionQuery, scope: ToolKit.ToolKitDatabaseRequestScope, locale: Foundation.Locale, block: (ToolKit.TriggerDefinition) throws -> ()) throws
+}
+
+public final class DirectToolMetadataProvider {
+  public init() throws
+  public func tools(matching query: ToolKit.ToolDefinitionQuery, locale: Foundation.Locale, scope: ToolKit.ToolKitDatabaseRequestScope) throws -> [ToolKit.ToolDefinition]
+  public func types(matching query: ToolKit.TypeDefinitionQuery, locale: Foundation.Locale, scope: ToolKit.ToolKitDatabaseRequestScope) throws -> [ToolKit.TypeDefinition]
+}
+
+public enum ToolKitDatabaseRequestScope {
+  case all
+  case max(Swift.Int)
+}
+
+public struct ToolDefinitionQuery {
+  public static func all() -> ToolKit.ToolDefinitionQuery
+  public var visibility: ToolKit.ToolVisibilityFilter { get set }
+  public var debugDescription: Swift.String { get }
+}
+
+public struct TriggerDefinitionQuery {
+  public static func all() -> ToolKit.TriggerDefinitionQuery
+  public var debugDescription: Swift.String { get }
+}
+
+public struct TypeDefinitionQuery {
+  public static func all() -> ToolKit.TypeDefinitionQuery
+}
+
+public struct ToolVisibilityFilter {
+  public static var any: ToolKit.ToolVisibilityFilter { get }
+  public static func `is`(_ flag: ToolKit.ToolVisibilityFlag) -> ToolKit.ToolVisibilityFilter
+  public var debugDescription: Swift.String { get }
+}
+
+public struct ToolDefinition {
+  public var id: Swift.String { get }
+  public var name: Swift.String { get }
+  public var flags: ToolKit.ToolFlag { get }
+  public var visibilityFlags: ToolKit.ToolVisibilityFlag { get }
+  public var parameters: [ToolKit.ParameterDefinition] { get }
+  public var hiddenParameters: [ToolKit.ParameterDefinition] { get }
+}
+
+public struct TriggerDefinition {
+  public var id: Swift.String { get }
+  public var name: Swift.String { get }
+  public var flags: ToolKit.TriggerFlag { get }
+  public var parameters: [ToolKit.ParameterDefinition] { get }
+}
+
+public enum TypeDefinition {
+  case entity(ToolKit.EntityDefinition)
+  case enumeration(ToolKit.EnumerationDefinition)
+  case dynamicEnumeration(ToolKit.DynamicEnumerationDefinition)
+  case query(ToolKit.QueryDefinition)
+  case codable(ToolKit.CodableDefinition)
+  case primitive(ToolKit.TypeIdentifier.PrimitiveTypeIdentifier)
+}
+
+public struct EnumerationDefinition {}
+public struct DynamicEnumerationDefinition {}
+public struct QueryDefinition {}
+public struct CodableDefinition {}
+public enum TypeIdentifier {
+  public enum PrimitiveTypeIdentifier {}
+}
+
+extension ToolKit.ParameterDefinition {
+  public var key: Swift.String { get }
+  public var name: Swift.String { get }
+  public var flags: ToolKit.ParameterDefinition.ParameterFlags { get }
+}
+
+extension ToolKit.EntityDefinition {
+  public var runtimeFlags: ToolKit.EntityDefinition.RuntimeFlags { get }
+}

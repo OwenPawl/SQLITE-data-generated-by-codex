@@ -1,0 +1,45 @@
+2026-07-21 02:16:35 INFO  (LoggingInitialization) Using log config file: jar:file:/Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-07-21 02:16:35 INFO  (LoggingInitialization) Using log file: /Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/logs/ghidra-decompile-typeinstance-decode.log  
+2026-07-21 02:16:35 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-07-21 02:16:35 INFO  (Preferences) Loading user preferences: /private/tmp/cerberus-ghidra-clean-home/Library/ghidra/ghidra_12.1.2_PUBLIC/preferences  
+2026-07-21 02:16:35 INFO  (Preferences) Loading previous preferences: /private/tmp/cerberus-ghidra-clean-home/Library/ghidra/ghidra_11.4.3_PUBLIC/preferences  
+2026-07-21 02:16:35 INFO  (ClassSearcher) Searching for classes...  
+2026-07-21 02:16:36 INFO  (ClassSearcher) Class search complete (552 ms)  
+2026-07-21 02:16:36 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-07-21 02:16:36 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-07-21 02:16:36 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-07-21 02:16:36 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-07-21 02:16:36 INFO  (AnalyzeHeadless) Headless startup complete (1371 ms)  
+2026-07-21 02:16:36 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-07-21 02:16:36 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Extensions/CodexGhidraBridge/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /Users/owenpawling/Documents/Playground/ghidra_re/scripts/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /Volumes/reSSD/re/tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts  
+2026-07-21 02:16:36 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-07-21 02:16:36 INFO  (HeadlessAnalyzer) Opening existing project: /Volumes/reSSD/dyld_macos_27_0_26A5353q/extract/Ghidra/dyld_macos_27_0_26A5353q  
+2026-07-21 02:16:36 INFO  (HeadlessProject) Opening project: /Volumes/reSSD/dyld_macos_27_0_26A5353q/extract/Ghidra/dyld_macos_27_0_26A5353q  
+2026-07-21 02:16:37 INFO  (HeadlessAnalyzer) REPORT: Processing read-only project file: /ToolKit  
+2026-07-21 02:16:38 INFO  (HeadlessAnalyzer) REPORT: Execute script: DecompileFunction.java 'address=0x296bd5bd8' 'output=/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/static/decomp/ToolKitProtoTypeInstance_decodeMessage.c' 'timeout=120'   
+2026-07-21 02:16:38 INFO  (HeadlessAnalyzer) SCRIPT: /Users/owenpawling/Documents/Playground/ghidra_re/scripts/ghidra_scripts/DecompileFunction.java  
+2026-07-21 02:16:38 INFO  (GhidraScript) DecompileFunction.java> Wrote /Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/static/decomp/ToolKitProtoTypeInstance_decodeMessage.c  

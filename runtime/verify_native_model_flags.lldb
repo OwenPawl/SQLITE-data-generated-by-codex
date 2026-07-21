@@ -1,0 +1,19 @@
+settings set auto-confirm true
+target create runtime/native_model_flag_probe
+breakpoint set --shlib ToolKit --func-regex 'DirectToolMetadataProvider.*tools' --auto-continue true --breakpoint-name flag_tools_query
+breakpoint set --shlib ToolKit --func-regex 'ToolVisibilityFilter.*is\(' --auto-continue true --breakpoint-name flag_visibility_filter
+breakpoint set --shlib ToolKit --func-regex 'ToolDefinition.*flags.getter' --auto-continue true --breakpoint-name flag_tool_flags
+breakpoint set --shlib ToolKit --func-regex 'ToolDefinition.*visibilityFlags.getter' --auto-continue true --breakpoint-name flag_tool_visibility
+breakpoint set --shlib ToolKit --func-regex 'ParameterDefinition.*flags.getter' --auto-continue true --breakpoint-name flag_parameter_flags
+breakpoint set --shlib ToolKit --func-regex 'DirectToolMetadataProvider.*types' --auto-continue true --breakpoint-name flag_types_query
+breakpoint set --shlib ToolKit --func-regex 'EntityDefinition.*runtimeFlags.getter' --auto-continue true --breakpoint-name flag_entity_runtime
+process launch -o /dev/null
+image list -b -f ToolKit
+breakpoint list flag_tools_query
+breakpoint list flag_visibility_filter
+breakpoint list flag_tool_flags
+breakpoint list flag_tool_visibility
+breakpoint list flag_parameter_flags
+breakpoint list flag_types_query
+breakpoint list flag_entity_runtime
+quit

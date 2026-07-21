@@ -1,0 +1,5 @@
+*.sqlite filter=lfs diff=lfs merge=lfs -text
+coverage/blob_instances.jsonl filter=lfs diff=lfs merge=lfs -text
+decoded/blob_instances.jsonl filter=lfs diff=lfs merge=lfs -text
+decoded/native_unique_messages.jsonl filter=lfs diff=lfs merge=lfs -text
+static/ghidra/ToolKit/*.json filter=lfs diff=lfs merge=lfs -text

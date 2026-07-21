@@ -1,0 +1,18 @@
+settings set auto-confirm true
+target create runtime/toolkit_native_decoder
+breakpoint set --name '$s7ToolKit0aB17ProtoTypeInstanceV13decodeMessage7decoderyxz_tK21InternalSwiftProtobuf7DecoderRzlF'
+breakpoint command add 1
+  script print("RUNTIME_HIT ToolKitProtoTypeInstance.decodeMessage")
+  bt 6
+  continue
+DONE
+breakpoint set --name '$s21InternalSwiftProtobuf7MessagePAAE10jsonString7optionsSSAA19JSONEncodingOptionsV_tKF'
+breakpoint command add 2
+  script print("RUNTIME_HIT InternalSwiftProtobuf.Message.jsonString")
+  bt 6
+  continue
+DONE
+run decode ToolKitProtoTypeInstance 1A080A060A040A021000
+image list -t -o -f ToolKit
+image list -t -o -f InternalSwiftProtobuf
+quit

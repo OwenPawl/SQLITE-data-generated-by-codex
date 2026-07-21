@@ -1,0 +1,18 @@
+settings set auto-confirm true
+settings set interpreter.stop-command-source-on-error false
+process attach --pid 710
+image list -b -f LinkServices
+expression -l objc++ -- @import Foundation
+expression -l objc++ -- @import ObjectiveC
+expression -l objc++ -- id $providerClass = (id)NSClassFromString(@"LNMetadataProvider")
+expression -l objc++ -- id $provider = ((id (*)(id, SEL))objc_msgSend)(((id (*)(id, SEL))objc_msgSend)($providerClass, sel_registerName("alloc")), sel_registerName("init"))
+expression -l objc++ -- NSError *$linkError = nil
+expression -l objc++ -- id $registrations = ((id (*)(id, SEL, NSError **))objc_msgSend)($provider, sel_registerName("bundleRegistrationsWithError:"), &$linkError)
+expression -l objc++ -O -- $linkError
+expression -l objc++ -O -- [$registrations count]
+expression -l objc++ -- id $linkRows = [NSMutableArray array]; for (id $metadata in $registrations) { NSString *$bundle = (NSString *)[(NSObject *)$metadata valueForKey:@"bundleIdentifier"]; NSData *$install = (NSData *)[(NSObject *)$metadata valueForKey:@"installIdentifier"]; [(NSMutableArray *)$linkRows addObject:@{ @"bundleIdentifier": $bundle, @"installIdentifierBase64": [$install base64EncodedStringWithOptions:0] }]; }
+expression -l objc++ -- id $linkJSONData = [NSJSONSerialization dataWithJSONObject:$linkRows options:NSJSONWritingSortedKeys error:(NSError **)0]
+expression -l objc++ -- id $linkJSONString = [[NSString alloc] initWithData:$linkJSONData encoding:NSUTF8StringEncoding]
+expression -l objc++ -O -- $linkJSONString
+process detach
+quit

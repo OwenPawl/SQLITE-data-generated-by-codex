@@ -1,0 +1,37 @@
+(lldb) target create "runtime/toolkit_native_decoder"
+Current executable set to '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64).
+(lldb) command source -s 0 'runtime/verify_raw_identifier_fields.lldb'
+Executing commands in '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_raw_identifier_fields.lldb'.
+(lldb) settings set target.inline-breakpoint-strategy always
+(lldb) settings set target.skip-prologue false
+(lldb) process launch --stop-at-entry -i runtime/raw_identifier_batch.ndjson -o /dev/null -- batch
+Process 14521 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64)
+(lldb) image list -b -f ToolKit
+[  0] ToolKit /System/Library/PrivateFrameworks/ToolKit.framework/Versions/A/ToolKit
+(lldb) image list -b -f InternalSwiftProtobuf
+[  0] InternalSwiftProtobuf /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/Versions/A/InternalSwiftProtobuf
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLaunchServicesSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name launch_services_state_decode
+Breakpoint 1: no locations (pending).
+WARNING:  Unable to resolve breakpoint to any actual locations.
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLinkSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name link_state_decode
+Breakpoint 2: no locations (pending).
+WARNING:  Unable to resolve breakpoint to any actual locations.
+(lldb) continue
+1 location added to breakpoint 1
+1 location added to breakpoint 2
+Process 14521 resuming
+Process 14521 exited with status = 0 (0x00000000)
+(lldb) breakpoint list launch_services_state_decode
+1: regex = 'ToolKitProtoLaunchServicesSnapshot.State.decodeMessage', module = ToolKit, locations = 1, resolved = 1, hit count = 0 Options: enabled auto-continue 
+  Names:
+    launch_services_state_decode
+
+  1.1: where = ToolKit`ToolKitProtoLaunchServicesSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a79a6a54, resolved, hit count = 0 
+
+(lldb) breakpoint list link_state_decode
+2: regex = 'ToolKitProtoLinkSnapshot.State.decodeMessage', module = ToolKit, locations = 1, resolved = 1, hit count = 540 Options: enabled auto-continue 
+  Names:
+    link_state_decode
+
+  2.1: where = ToolKit`ToolKitProtoLinkSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a7991dc4, resolved, hit count = 540 
+

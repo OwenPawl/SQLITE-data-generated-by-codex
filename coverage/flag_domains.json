@@ -1,0 +1,217 @@
+[
+  {
+    "bit_union": 7,
+    "column": "flags",
+    "present_bit_values": [
+      1,
+      2,
+      4
+    ],
+    "runtime_verification_status": "not_started",
+    "semantic_status": "unverified",
+    "table": "Parameters",
+    "values": [
+      {
+        "count": 4778,
+        "value": 0
+      },
+      {
+        "count": 2473,
+        "value": 1
+      },
+      {
+        "count": 221,
+        "value": 2
+      },
+      {
+        "count": 63,
+        "value": 4
+      }
+    ]
+  },
+  {
+    "bit_union": 251,
+    "column": "flags",
+    "present_bit_values": [
+      1,
+      2,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "runtime_verification_status": "not_started",
+    "semantic_status": "unverified",
+    "table": "Tools",
+    "values": [
+      {
+        "count": 1507,
+        "value": 0
+      },
+      {
+        "count": 236,
+        "value": 1
+      },
+      {
+        "count": 34,
+        "value": 2
+      },
+      {
+        "count": 3,
+        "value": 3
+      },
+      {
+        "count": 24,
+        "value": 8
+      },
+      {
+        "count": 164,
+        "value": 9
+      },
+      {
+        "count": 72,
+        "value": 16
+      },
+      {
+        "count": 15,
+        "value": 17
+      },
+      {
+        "count": 6,
+        "value": 18
+      },
+      {
+        "count": 4,
+        "value": 32
+      },
+      {
+        "count": 204,
+        "value": 64
+      },
+      {
+        "count": 13,
+        "value": 65
+      },
+      {
+        "count": 1,
+        "value": 81
+      },
+      {
+        "count": 117,
+        "value": 128
+      }
+    ]
+  },
+  {
+    "bit_union": 15,
+    "column": "visibilityFlags",
+    "present_bit_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "runtime_verification_status": "not_started",
+    "semantic_status": "unverified",
+    "table": "Tools",
+    "values": [
+      {
+        "count": 211,
+        "value": 0
+      },
+      {
+        "count": 6,
+        "value": 1
+      },
+      {
+        "count": 774,
+        "value": 2
+      },
+      {
+        "count": 546,
+        "value": 3
+      },
+      {
+        "count": 32,
+        "value": 5
+      },
+      {
+        "count": 403,
+        "value": 7
+      },
+      {
+        "count": 2,
+        "value": 13
+      },
+      {
+        "count": 426,
+        "value": 15
+      }
+    ]
+  },
+  {
+    "bit_union": 0,
+    "column": "flags",
+    "present_bit_values": [],
+    "runtime_verification_status": "not_started",
+    "semantic_status": "unverified",
+    "table": "TriggerParameters",
+    "values": [
+      {
+        "count": 65,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "bit_union": 7,
+    "column": "flags",
+    "present_bit_values": [
+      1,
+      2,
+      4
+    ],
+    "runtime_verification_status": "not_started",
+    "semantic_status": "unverified",
+    "table": "Triggers",
+    "values": [
+      {
+        "count": 9,
+        "value": 1
+      },
+      {
+        "count": 16,
+        "value": 3
+      },
+      {
+        "count": 17,
+        "value": 5
+      }
+    ]
+  },
+  {
+    "bit_union": 1,
+    "column": "runtimeFlags",
+    "present_bit_values": [
+      1
+    ],
+    "runtime_verification_status": "not_started",
+    "semantic_status": "unverified",
+    "table": "Types",
+    "values": [
+      {
+        "count": 2492,
+        "value": null
+      },
+      {
+        "count": 628,
+        "value": 0
+      },
+      {
+        "count": 308,
+        "value": 1
+      }
+    ]
+  }
+]

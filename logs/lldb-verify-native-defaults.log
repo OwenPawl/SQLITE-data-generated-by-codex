@@ -1,0 +1,250 @@
+(lldb) command source -s 0 'runtime/verify_native_defaults.lldb'
+Executing commands in '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_native_defaults.lldb'.
+(lldb) settings set auto-confirm true
+(lldb) settings set target.process.thread.step-avoid-regexp ^std::|^Swift|^swift
+(lldb) settings set target.inline-breakpoint-strategy always
+(lldb) settings set target.skip-prologue false
+(lldb) target create runtime/toolkit_native_decoder
+Current executable set to '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64).
+(lldb) breakpoint set --shlib InternalSwiftProtobuf --func-regex 'InternalSwiftProtobuf.Message.init.*serializedBytes' --auto-continue true --breakpoint-name defaults_serialized_init
+Breakpoint 1: 2 locations.
+(lldb) breakpoint set --shlib ToolKit --func-regex 'ToolKitProto.*decodeMessage' --auto-continue true --breakpoint-name defaults_decode_message
+Breakpoint 2: 216 locations.
+(lldb) process launch -o /dev/null -- defaults-all
+Process 21056 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64)
+Process 21056 exited with status = 0 (0x00000000)
+(lldb) image list -b -f ToolKit
+[  0] ToolKit /System/Library/PrivateFrameworks/ToolKit.framework/Versions/A/ToolKit
+(lldb) image list -b -f InternalSwiftProtobuf
+[  0] InternalSwiftProtobuf /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/Versions/A/InternalSwiftProtobuf
+(lldb) breakpoint list defaults_serialized_init
+1: regex = 'InternalSwiftProtobuf.Message.init.*serializedBytes', module = InternalSwiftProtobuf, locations = 2, resolved = 2, hit count = 216 Options: enabled auto-continue 
+  Names:
+    defaults_serialized_init
+
+  1.1: where = InternalSwiftProtobuf`Message.init<A>(serializedBytes:extensions:partial:options:), address = 0x00000001dde44eb8, resolved, hit count = 0 
+  1.2: where = InternalSwiftProtobuf`Message.init<A>(serializedBytes:extensions:partial:options:), address = 0x00000001ddecc224, resolved, hit count = 216 
+
+(lldb) breakpoint list defaults_decode_message
+2: regex = 'ToolKitProto.*decodeMessage', module = ToolKit, locations = 216, resolved = 216, hit count = 0 Options: enabled auto-continue 
+  Names:
+    defaults_decode_message
+
+  2.1: where = ToolKit`ToolKitProtoQuery.AnyPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7ad719c, resolved, hit count = 0 
+  2.2: where = ToolKit`ToolKitProtoQuery.decodeMessage<A>(decoder:), address = 0x00000002a7ad62d4, resolved, hit count = 0 
+  2.3: where = ToolKit`ToolKitProtoChangeset.Provenance.decodeMessage<A>(decoder:), address = 0x00000002a7993888, resolved, hit count = 0 
+  2.4: where = ToolKit`ToolKitProtoChangeset.decodeMessage<A>(decoder:), address = 0x00000002a7992388, resolved, hit count = 0 
+  2.5: where = ToolKit`ToolKitProtoChangeset.Partial.decodeMessage<A>(decoder:), address = 0x00000002a7995294, resolved, hit count = 0 
+  2.6: where = ToolKit`ToolKitProtoTypedValue.CollectionValue.decodeMessage<A>(decoder:), address = 0x00000002a7aafedc, resolved, hit count = 0 
+  2.7: where = ToolKit`ToolKitProtoTypedValue.EnumerationValue.decodeMessage<A>(decoder:), address = 0x00000002a7aad4d0, resolved, hit count = 0 
+  2.8: where = ToolKit`ToolKitProtoTypedValue.EntityIdentifierValue.decodeMessage<A>(decoder:), address = 0x00000002a7ab1034, resolved, hit count = 0 
+  2.9: where = ToolKit`ToolKitProtoTypedValue.QueryValue.decodeMessage<A>(decoder:), address = 0x00000002a7ab0794, resolved, hit count = 0 
+  2.10: where = ToolKit`ToolKitProtoTypedValue.EntityValue.decodeMessage<A>(decoder:), address = 0x00000002a7aadfd4, resolved, hit count = 0 
+  2.11: where = ToolKit`ToolKitProtoTypedValue.EntityValue.ProtocolPropertyMap.decodeMessage<A>(decoder:), address = 0x00000002a7aaf10c, resolved, hit count = 0 
+  2.12: where = ToolKit`ToolKitProtoTypedValue.CodableValue.decodeMessage<A>(decoder:), address = 0x00000002a7aaf77c, resolved, hit count = 0 
+  2.13: where = ToolKit`ToolKitProtoTypedValue.DeferredValue.decodeMessage<A>(decoder:), address = 0x00000002a7ab1c34, resolved, hit count = 0 
+  2.14: where = ToolKit`ToolKitProtoTypedValue.DeferredValue.Storage.EntityPropertyStorage.decodeMessage<A>(decoder:), address = 0x00000002a7ab4570, resolved, hit count = 0 
+  2.15: where = ToolKit`ToolKitProtoTypedValue.DeferredValue.Storage.ContentItemPropertyStorage.decodeMessage<A>(decoder:), address = 0x00000002a7ab3af0, resolved, hit count = 0 
+  2.16: where = ToolKit`ToolKitProtoTypedValue.DeferredValue.Storage.ActionParameterDefaultValueStorage.decodeMessage<A>(decoder:), address = 0x00000002a7ab3ffc, resolved, hit count = 0 
+  2.17: where = ToolKit`ToolKitProtoTypedValue.DeferredValue.Storage.decodeMessage<A>(decoder:), address = 0x00000002a7ab25c8, resolved, hit count = 0 
+  2.18: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Measurement.decodeMessage<A>(decoder:), address = 0x00000002a7a9f7b8, resolved, hit count = 0 
+  2.19: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.DateInterval.decodeMessage<A>(decoder:), address = 0x00000002a7aac6b4, resolved, hit count = 0 
+  2.20: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.PaymentMethod.decodeMessage<A>(decoder:), address = 0x00000002a7aa06f8, resolved, hit count = 0 
+  2.21: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.decodeMessage<A>(decoder:), address = 0x00000002a7a96d40, resolved, hit count = 0 
+  2.22: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.CurrencyAmount.decodeMessage<A>(decoder:), address = 0x00000002a7a9fe54, resolved, hit count = 0 
+  2.23: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.DateComponents.decodeMessage<A>(decoder:), address = 0x00000002a7aa6ac4, resolved, hit count = 0 
+  2.24: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.DateComponents.Calendar.decodeMessage<A>(decoder:), address = 0x00000002a7aa86bc, resolved, hit count = 0 
+  2.25: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.RecurrenceRule.RecurrenceRuleEnd.decodeMessage<A>(decoder:), address = 0x00000002a7aaac58, resolved, hit count = 0 
+  2.26: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.RecurrenceRule.RecurrenceRuleMonth.decodeMessage<A>(decoder:), address = 0x00000002a7aac050, resolved, hit count = 0 
+  2.27: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.RecurrenceRule.RecurrenceRuleWeekday.decodeMessage<A>(decoder:), address = 0x00000002a7aab8dc, resolved, hit count = 0 
+  2.28: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.RecurrenceRule.decodeMessage<A>(decoder:), address = 0x00000002a7aa91e0, resolved, hit count = 0 
+  2.29: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.App.decodeMessage<A>(decoder:), address = 0x00000002a7aa5808, resolved, hit count = 0 
+  2.30: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.File.decodeMessage<A>(decoder:), address = 0x00000002a7aa4dec, resolved, hit count = 0 
+  2.31: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Person.decodeMessage<A>(decoder:), address = 0x00000002a7aa215c, resolved, hit count = 0 
+  2.32: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Person.NameComponents.decodeMessage<A>(decoder:), address = 0x00000002a7aa3d24, resolved, hit count = 0 
+  2.33: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Person.NameComponents.PhoneticRepresentation.decodeMessage<A>(decoder:), address = 0x00000002a7aa45e8, resolved, hit count = 0 
+  2.34: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Person.Handle.decodeMessage<A>(decoder:), address = 0x00000002a7aa32ac, resolved, hit count = 0 
+  2.35: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Decimal.decodeMessage<A>(decoder:), address = 0x00000002a7a9e408, resolved, hit count = 0 
+  2.36: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Decimal.Mantissa.decodeMessage<A>(decoder:), address = 0x00000002a7a9eff8, resolved, hit count = 0 
+  2.37: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Duration.decodeMessage<A>(decoder:), address = 0x00000002a7aacf28, resolved, hit count = 0 
+  2.38: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Shortcut.decodeMessage<A>(decoder:), address = 0x00000002a7aa60a4, resolved, hit count = 0 
+  2.39: where = ToolKit`ToolKitProtoTypedValue.PrimitiveValue.Placemark.decodeMessage<A>(decoder:), address = 0x00000002a7aa12ec, resolved, hit count = 0 
+  2.40: where = ToolKit`ToolKitProtoTypedValue.Provenance.decodeMessage<A>(decoder:), address = 0x00000002a7ab4cac, resolved, hit count = 0 
+  2.41: where = ToolKit`ToolKitProtoTypedValue.decodeMessage<A>(decoder:), address = 0x00000002a7a936e8, resolved, hit count = 0 
+  2.42: where = ToolKit`ToolKitProtoTypedValue.ID.decodeMessage<A>(decoder:), address = 0x00000002a7a960f0, resolved, hit count = 0 
+  2.43: where = ToolKit`ToolKitProtoToolboxDump.decodeMessage<A>(decoder:), address = 0x00000002a7b3a968, resolved, hit count = 0 
+  2.44: where = ToolKit`ToolKitProtoToolboxDump.Metadata.decodeMessage<A>(decoder:), address = 0x00000002a7b4a86c, resolved, hit count = 0 
+  2.45: where = ToolKit`ToolKitProtoAllPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7ad57a0, resolved, hit count = 0 
+  2.46: where = ToolKit`ToolKitProtoIndexingStep.decodeMessage<A>(decoder:), address = 0x00000002a799a230, resolved, hit count = 0 
+  2.47: where = ToolKit`ToolKitProtoLinkSnapshot.decodeMessage<A>(decoder:), address = 0x00000002a799168c, resolved, hit count = 0 
+  2.48: where = ToolKit`ToolKitProtoLinkSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a7991dc4, resolved, hit count = 0 
+  2.49: where = ToolKit`ToolKitProtoTypeInstance.Restricted.decodeMessage<A>(decoder:), address = 0x00000002a7ab8368, resolved, hit count = 0 
+  2.50: where = ToolKit`ToolKitProtoTypeInstance.Constrained.decodeMessage<A>(decoder:), address = 0x00000002a7ab8d80, resolved, hit count = 0 
+  2.51: where = ToolKit`ToolKitProtoTypeInstance.decodeMessage<A>(decoder:), address = 0x00000002a7ab5344, resolved, hit count = 0 
+  2.52: where = ToolKit`ToolKitProtoTypeInstance.Union.decodeMessage<A>(decoder:), address = 0x00000002a7ab7de8, resolved, hit count = 0 
+  2.53: where = ToolKit`ToolKitProtoTypeInstance.Deferred.decodeMessage<A>(decoder:), address = 0x00000002a7ab87f0, resolved, hit count = 0 
+  2.54: where = ToolKit`ToolKitProtoTypeInstance.Optional.decodeMessage<A>(decoder:), address = 0x00000002a7ab7888, resolved, hit count = 0 
+  2.55: where = ToolKit`ToolKitProtoAppDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7b21fc0, resolved, hit count = 0 
+  2.56: where = ToolKit`ToolKitProtoAppDefinition.Device.decodeMessage<A>(decoder:), address = 0x00000002a7b22cf4, resolved, hit count = 0 
+  2.57: where = ToolKit`ToolKitProtoIndexingEvent.decodeMessage<A>(decoder:), address = 0x00000002a7998fe4, resolved, hit count = 0 
+  2.58: where = ToolKit`ToolKitProtoIndexingReason.decodeMessage<A>(decoder:), address = 0x00000002a7995cc0, resolved, hit count = 0 
+  2.59: where = ToolKit`ToolKitProtoTypeDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7b4a910, resolved, hit count = 0 
+  2.60: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Enumeration.decodeMessage<A>(decoder:), address = 0x00000002a7a8e2e4, resolved, hit count = 0 
+  2.61: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Enumeration.Case.decodeMessage<A>(decoder:), address = 0x00000002a7a8f188, resolved, hit count = 0 
+  2.62: where = ToolKit`ToolKitProtoTypeDefinition.Version1.decodeMessage<A>(decoder:), address = 0x00000002a7a89b04, resolved, hit count = 0 
+  2.63: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Query.decodeMessage<A>(decoder:), address = 0x00000002a7a8f9a4, resolved, hit count = 0 
+  2.64: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Query.PredicateTemplates.PredicateMetadata.decodeMessage<A>(decoder:), address = 0x00000002a7b4a524, resolved, hit count = 0 
+  2.65: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Query.PredicateTemplates.decodeMessage<A>(decoder:), address = 0x00000002a7a90364, resolved, hit count = 0 
+  2.66: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Entity.decodeMessage<A>(decoder:), address = 0x00000002a7a8bb88, resolved, hit count = 0 
+  2.67: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Entity.Property.decodeMessage<A>(decoder:), address = 0x00000002a7a8ce04, resolved, hit count = 0 
+  2.68: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Entity.Property.SpotlightAttributes.decodeMessage<A>(decoder:), address = 0x00000002a7a8dbe0, resolved, hit count = 0 
+  2.69: where = ToolKit`ToolKitProtoTypeDefinition.Version1.Codable.decodeMessage<A>(decoder:), address = 0x00000002a7a92e88, resolved, hit count = 0 
+  2.70: where = ToolKit`ToolKitProtoTypeIdentifier.Attributed.decodeMessage<A>(decoder:), address = 0x00000002a7a7c1c8, resolved, hit count = 0 
+  2.71: where = ToolKit`ToolKitProtoTypeIdentifier.decodeMessage<A>(decoder:), address = 0x00000002a7a73fc0, resolved, hit count = 0 
+  2.72: where = ToolKit`ToolKitProtoTypeIdentifier.Custom.decodeMessage<A>(decoder:), address = 0x00000002a7b4a50c, resolved, hit count = 0 
+  2.73: where = ToolKit`ToolKitProtoTypeIdentifier.Builtin.decodeMessage<A>(decoder:), address = 0x00000002a7a79df0, resolved, hit count = 0 
+  2.74: where = ToolKit`ToolKitProtoTypeIdentifier.Codable.decodeMessage<A>(decoder:), address = 0x00000002a7a7c8b0, resolved, hit count = 0 
+  2.75: where = ToolKit`ToolKitProtoTypeIdentifier.Primitive.decodeMessage<A>(decoder:), address = 0x00000002a7a761bc, resolved, hit count = 0 
+  2.76: where = ToolKit`ToolKitProtoValidPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7b4a928, resolved, hit count = 0 
+  2.77: where = ToolKit`ToolKitProtoIndexingRequest.decodeMessage<A>(decoder:), address = 0x00000002a79980dc, resolved, hit count = 0 
+  2.78: where = ToolKit`ToolKitProtoPluginModelData.decodeMessage<A>(decoder:), address = 0x00000002a7b4a7ac, resolved, hit count = 0 
+  2.79: where = ToolKit`ToolKitProtoPushDonationEnd.decodeMessage<A>(decoder:), address = 0x00000002a799e71c, resolved, hit count = 0 
+  2.80: where = ToolKit`ToolKitProtoUniquePredicate.decodeMessage<A>(decoder:), address = 0x00000002a7b4a958, resolved, hit count = 0 
+  2.81: where = ToolKit`ToolKitProtoWALOperationEnd.decodeMessage<A>(decoder:), address = 0x00000002a799c40c, resolved, hit count = 0 
+  2.82: where = ToolKit`ToolKitProtoIndexingLogEntry.decodeMessage<A>(decoder:), address = 0x00000002a799ff34, resolved, hit count = 0 
+  2.83: where = ToolKit`ToolKitProtoIndexingResponse.decodeMessage<A>(decoder:), address = 0x00000002a799ac00, resolved, hit count = 0 
+  2.84: where = ToolKit`ToolKitProtoPullOperationEnd.decodeMessage<A>(decoder:), address = 0x00000002a799f5d8, resolved, hit count = 0 
+  2.85: where = ToolKit`ToolKitProtoCompoundPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7ad3790, resolved, hit count = 0 
+  2.86: where = ToolKit`ToolKitProtoIdSearchPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7ad4500, resolved, hit count = 0 
+  2.87: where = ToolKit`ToolKitProtoIdSearchPredicate.Template.decodeMessage<A>(decoder:), address = 0x00000002a7b4a8e0, resolved, hit count = 0 
+  2.88: where = ToolKit`ToolKitProtoPushDonationStart.decodeMessage<A>(decoder:), address = 0x00000002a799d6d0, resolved, hit count = 0 
+  2.89: where = ToolKit`ToolKitProtoTriggerDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7b4a988, resolved, hit count = 0 
+  2.90: where = ToolKit`ToolKitProtoTriggerDefinition.Version1.decodeMessage<A>(decoder:), address = 0x00000002a7b34d88, resolved, hit count = 0 
+  2.91: where = ToolKit`ToolKitProtoWALOperationStart.decodeMessage<A>(decoder:), address = 0x00000002a799bf0c, resolved, hit count = 0 
+  2.92: where = ToolKit`ToolKitProtoCoercionDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7b33f10, resolved, hit count = 0 
+  2.93: where = ToolKit`ToolKitProtoPullOperationStart.decodeMessage<A>(decoder:), address = 0x00000002a799ef4c, resolved, hit count = 0 
+  2.94: where = ToolKit`ToolKitProtoRestrictionContext.TextTypedWith.decodeMessage<A>(decoder:), address = 0x00000002a7ac14d8, resolved, hit count = 0 
+  2.95: where = ToolKit`ToolKitProtoRestrictionContext.decodeMessage<A>(decoder:), address = 0x00000002a7ab9668, resolved, hit count = 0 
+  2.96: where = ToolKit`ToolKitProtoRestrictionContext.RepresentableAs.decodeMessage<A>(decoder:), address = 0x00000002a7ac0954, resolved, hit count = 0 
+  2.97: where = ToolKit`ToolKitProtoRestrictionContext.InInclusiveRange.decodeMessage<A>(decoder:), address = 0x00000002a7ac04b0, resolved, hit count = 0 
+  2.98: where = ToolKit`ToolKitProtoRestrictionContext.CharacterTypedWith.decodeMessage<A>(decoder:), address = 0x00000002a7ac2434, resolved, hit count = 0 
+  2.99: where = ToolKit`ToolKitProtoRestrictionContext.MeasurementExpressibleAs.decodeMessage<A>(decoder:), address = 0x00000002a7ac0e48, resolved, hit count = 0 
+  2.100: where = ToolKit`ToolKitProtoRestrictionContext.InSet.ValueSet.decodeMessage<A>(decoder:), address = 0x00000002a7abc934, resolved, hit count = 0 
+  2.101: where = ToolKit`ToolKitProtoRestrictionContext.InSet.ValueSet.DynamicEnumeration.decodeMessage<A>(decoder:), address = 0x00000002a7b4a53c, resolved, hit count = 0 
+  2.102: where = ToolKit`ToolKitProtoRestrictionContext.InSet.ValueSet.DynamicTriggerEnumeration.decodeMessage<A>(decoder:), address = 0x00000002a7b4a554, resolved, hit count = 0 
+  2.103: where = ToolKit`ToolKitProtoRestrictionContext.InSet.ValueSet.ContentPropertyPossibleValues.decodeMessage<A>(decoder:), address = 0x00000002a7abf7bc, resolved, hit count = 0 
+  2.104: where = ToolKit`ToolKitProtoRestrictionContext.InSet.ValueSet.LinkQuery.decodeMessage<A>(decoder:), address = 0x00000002a7abff18, resolved, hit count = 0 
+  2.105: where = ToolKit`ToolKitProtoRestrictionContext.InSet.decodeMessage<A>(decoder:), address = 0x00000002a7abc070, resolved, hit count = 0 
+  2.106: where = ToolKit`ToolKitProtoRuntimeRequirement.FeatureFlag.decodeMessage<A>(decoder:), address = 0x00000002a7adef58, resolved, hit count = 0 
+  2.107: where = ToolKit`ToolKitProtoRuntimeRequirement.decodeMessage<A>(decoder:), address = 0x00000002a7adaeb4, resolved, hit count = 0 
+  2.108: where = ToolKit`ToolKitProtoRuntimeRequirement.DeviceCapability.MobileGestalt.decodeMessage<A>(decoder:), address = 0x00000002a7ade9ac, resolved, hit count = 0 
+  2.109: where = ToolKit`ToolKitProtoRuntimeRequirement.DeviceCapability.decodeMessage<A>(decoder:), address = 0x00000002a7add72c, resolved, hit count = 0 
+  2.110: where = ToolKit`ToolKitProtoRuntimeRequirement.AvailabilityAnnotation.decodeMessage<A>(decoder:), address = 0x00000002a7adcc58, resolved, hit count = 0 
+  2.111: where = ToolKit`ToolKitProtoSuggestedPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7b4a940, resolved, hit count = 0 
+  2.112: where = ToolKit`ToolKitProtoSystemTypeProtocol.decodeMessage<A>(decoder:), address = 0x00000002a7a7d1c4, resolved, hit count = 0 
+  2.113: where = ToolKit`ToolKitProtoSystemTypeProtocol.AssistantSchema.decodeMessage<A>(decoder:), address = 0x00000002a7a88814, resolved, hit count = 0 
+  2.114: where = ToolKit`ToolKitProtoSystemTypeProtocol.IntentUpdatableEntity.decodeMessage<A>(decoder:), address = 0x00000002a7b4a4f4, resolved, hit count = 0 
+  2.115: where = ToolKit`ToolKitProtoSystemTypeProtocol.PersistentFileIdentifiable.decodeMessage<A>(decoder:), address = 0x00000002a7b4a56c, resolved, hit count = 0 
+  2.116: where = ToolKit`ToolKitProtoSystemTypeProtocol.ModelRepresentationMetadata.decodeMessage<A>(decoder:), address = 0x00000002a7a89104, resolved, hit count = 0 
+  2.117: where = ToolKit`ToolKitProtoVacuumOperationEnd.decodeMessage<A>(decoder:), address = 0x00000002a799cf40, resolved, hit count = 0 
+  2.118: where = ToolKit`ToolKitProtoComparisonPredicate.Comparison.decodeMessage<A>(decoder:), address = 0x00000002a7ac5fa0, resolved, hit count = 0 
+  2.119: where = ToolKit`ToolKitProtoComparisonPredicate.Comparison.Pair.decodeMessage<A>(decoder:), address = 0x00000002a7acbfc4, resolved, hit count = 0 
+  2.120: where = ToolKit`ToolKitProtoComparisonPredicate.Comparison.Template.decodeMessage<A>(decoder:), address = 0x00000002a7accac4, resolved, hit count = 0 
+  2.121: where = ToolKit`ToolKitProtoComparisonPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7ac5278, resolved, hit count = 0 
+  2.122: where = ToolKit`ToolKitProtoComparisonPredicate.Template.decodeMessage<A>(decoder:), address = 0x00000002a7ad2880, resolved, hit count = 0 
+  2.123: where = ToolKit`ToolKitProtoContainerDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7b234ec, resolved, hit count = 0 
+  2.124: where = ToolKit`ToolKitProtoContainerDefinition.Device.decodeMessage<A>(decoder:), address = 0x00000002a7b24594, resolved, hit count = 0 
+  2.125: where = ToolKit`ToolKitProtoModelRepresentation.Representation.decodeMessage<A>(decoder:), address = 0x00000002a7b338f4, resolved, hit count = 0 
+  2.126: where = ToolKit`ToolKitProtoModelRepresentation.RepresentationComponent.VisualValue.Transferable.decodeMessage<A>(decoder:), address = 0x00000002a7b4a824, resolved, hit count = 0 
+  2.127: where = ToolKit`ToolKitProtoModelRepresentation.RepresentationComponent.VisualValue.decodeMessage<A>(decoder:), address = 0x00000002a7b31fe8, resolved, hit count = 0 
+  2.128: where = ToolKit`ToolKitProtoModelRepresentation.RepresentationComponent.decodeMessage<A>(decoder:), address = 0x00000002a7b2fb60, resolved, hit count = 0 
+  2.129: where = ToolKit`ToolKitProtoModelRepresentation.RepresentationComponent.Label.decodeMessage<A>(decoder:), address = 0x00000002a7b3103c, resolved, hit count = 0 
+  2.130: where = ToolKit`ToolKitProtoModelRepresentation.RepresentationComponent.TextValue.decodeMessage<A>(decoder:), address = 0x00000002a7b318ec, resolved, hit count = 0 
+  2.131: where = ToolKit`ToolKitProtoModelRepresentation.decodeMessage<A>(decoder:), address = 0x00000002a7b2f4d8, resolved, hit count = 0 
+  2.132: where = ToolKit`ToolKitProtoTypedValueResolvable.decodeMessage<A>(decoder:), address = 0x00000002a7b35b38, resolved, hit count = 0 
+  2.133: where = ToolKit`ToolKitProtoVacuumOperationStart.decodeMessage<A>(decoder:), address = 0x00000002a79a6a6c, resolved, hit count = 0 
+  2.134: where = ToolKit`ToolKitProtoValueSearchPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7ad4a44, resolved, hit count = 0 
+  2.135: where = ToolKit`ToolKitProtoValueSearchPredicate.Template.decodeMessage<A>(decoder:), address = 0x00000002a7b4a458, resolved, hit count = 0 
+  2.136: where = ToolKit`ToolKitProtoDisplayRepresentation.DisplayValue.decodeMessage<A>(decoder:), address = 0x00000002a7b273b4, resolved, hit count = 0 
+  2.137: where = ToolKit`ToolKitProtoDisplayRepresentation.DisplayValue.Static.decodeMessage<A>(decoder:), address = 0x00000002a7b28688, resolved, hit count = 0 
+  2.138: where = ToolKit`ToolKitProtoDisplayRepresentation.decodeMessage<A>(decoder:), address = 0x00000002a7b25cfc, resolved, hit count = 0 
+  2.139: where = ToolKit`ToolKitProtoDisplayRepresentation.Image.decodeMessage<A>(decoder:), address = 0x00000002a7b2b314, resolved, hit count = 0 
+  2.140: where = ToolKit`ToolKitProtoDisplayRepresentation.Image.Static.decodeMessage<A>(decoder:), address = 0x00000002a7b2c384, resolved, hit count = 0 
+  2.141: where = ToolKit`ToolKitProtoDisplayRepresentation.Image.Static.Symbol.decodeMessage<A>(decoder:), address = 0x00000002a7b2d71c, resolved, hit count = 0 
+  2.142: where = ToolKit`ToolKitProtoDisplayRepresentation.AltText.decodeMessage<A>(decoder:), address = 0x00000002a7b29f3c, resolved, hit count = 0 
+  2.143: where = ToolKit`ToolKitProtoDisplayRepresentation.AltText.Static.decodeMessage<A>(decoder:), address = 0x00000002a7b4a7f4, resolved, hit count = 0 
+  2.144: where = ToolKit`ToolKitProtoDisplayRepresentation.Storage.decodeMessage<A>(decoder:), address = 0x00000002a7b26e38, resolved, hit count = 0 
+  2.145: where = ToolKit`ToolKitProtoDisplayRepresentation.Subtitle.decodeMessage<A>(decoder:), address = 0x00000002a7b28be4, resolved, hit count = 0 
+  2.146: where = ToolKit`ToolKitProtoDisplayRepresentation.Subtitle.Static.decodeMessage<A>(decoder:), address = 0x00000002a7b4a7dc, resolved, hit count = 0 
+  2.147: where = ToolKit`ToolKitProtoStringSearchPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7b4a59c, resolved, hit count = 0 
+  2.148: where = ToolKit`ToolKitProtoStringSearchPredicate.Template.decodeMessage<A>(decoder:), address = 0x00000002a7b4a8c8, resolved, hit count = 0 
+  2.149: where = ToolKit`ToolKitProtoAssistantSchemaVersion.decodeMessage<A>(decoder:), address = 0x00000002a7ae12e0, resolved, hit count = 0 
+  2.150: where = ToolKit`ToolKitProtoLaunchServicesSnapshot.decodeMessage<A>(decoder:), address = 0x00000002a79902a8, resolved, hit count = 0 
+  2.151: where = ToolKit`ToolKitProtoLaunchServicesSnapshot.State.decodeMessage<A>(decoder:), address = 0x00000002a79a6a54, resolved, hit count = 0 
+  2.152: where = ToolKit`ToolKitProtoLaunchServicesSnapshot.Version.decodeMessage<A>(decoder:), address = 0x00000002a7991310, resolved, hit count = 0 
+  2.153: where = ToolKit`ToolKitProtoRuntimePlatformVersion.decodeMessage<A>(decoder:), address = 0x00000002a7ada818, resolved, hit count = 0 
+  2.154: where = ToolKit`ToolKitProtoSearchableItemPredicate.decodeMessage<A>(decoder:), address = 0x00000002a7b4a7c4, resolved, hit count = 0 
+  2.155: where = ToolKit`ToolKitProtoSearchableItemPredicate.Template.decodeMessage<A>(decoder:), address = 0x00000002a7b4a8f8, resolved, hit count = 0 
+  2.156: where = ToolKit`ToolKitProtoEntityInstanceIdentifier.SyncedIdentifier.decodeMessage<A>(decoder:), address = 0x00000002a7b4a80c, resolved, hit count = 0 
+  2.157: where = ToolKit`ToolKitProtoEntityInstanceIdentifier.decodeMessage<A>(decoder:), address = 0x00000002a7b2dd48, resolved, hit count = 0 
+  2.158: where = ToolKit`ToolKitProtoIndexingPolicyResolution.decodeMessage<A>(decoder:), address = 0x00000002a79986e4, resolved, hit count = 0 
+  2.159: where = ToolKit`ToolKitProtoAssistantSchemaIdentifier.decodeMessage<A>(decoder:), address = 0x00000002a7ae18e0, resolved, hit count = 0 
+  2.160: where = ToolKit`ToolKitProtoTypeDisplayRepresentation.decodeMessage<A>(decoder:), address = 0x00000002a7b250b0, resolved, hit count = 0 
+  2.161: where = ToolKit`ToolKitProtoContentItemClassDescriptor.LinkEntityContentItemClass.decodeMessage<A>(decoder:), address = 0x00000002a7ac45a8, resolved, hit count = 0 
+  2.162: where = ToolKit`ToolKitProtoContentItemClassDescriptor.LinkCodableContentItemClass.decodeMessage<A>(decoder:), address = 0x00000002a7ac4dc4, resolved, hit count = 0 
+  2.163: where = ToolKit`ToolKitProtoContentItemClassDescriptor.LinkEnumContentItemClass.decodeMessage<A>(decoder:), address = 0x00000002a7b4a584, resolved, hit count = 0 
+  2.164: where = ToolKit`ToolKitProtoContentItemClassDescriptor.decodeMessage<A>(decoder:), address = 0x00000002a7ac2c0c, resolved, hit count = 0 
+  2.165: where = ToolKit`ToolKitProtoSampleInvocationDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7ae0cc8, resolved, hit count = 0 
+  2.166: where = ToolKit`ToolKitProtoAssistantTypeSchemaDefinition.Enumeration.decodeMessage<A>(decoder:), address = 0x00000002a7ae4d74, resolved, hit count = 0 
+  2.167: where = ToolKit`ToolKitProtoAssistantTypeSchemaDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7ae3210, resolved, hit count = 0 
+  2.168: where = ToolKit`ToolKitProtoAssistantTypeSchemaDefinition.Entity.decodeMessage<A>(decoder:), address = 0x00000002a7ae42fc, resolved, hit count = 0 
+  2.169: where = ToolKit`ToolKitProtoSystemToolProtocol.SynthesizedToolProtocol.decodeMessage<A>(decoder:), address = 0x00000002a7b4a704, resolved, hit count = 0 
+  2.170: where = ToolKit`ToolKitProtoSystemToolProtocol.FlowToolSchema.decodeMessage<A>(decoder:), address = 0x00000002a7b1292c, resolved, hit count = 0 
+  2.171: where = ToolKit`ToolKitProtoSystemToolProtocol.SiriKitIntent.decodeMessage<A>(decoder:), address = 0x00000002a7b4a6d4, resolved, hit count = 0 
+  2.172: where = ToolKit`ToolKitProtoSystemToolProtocol.AgentIntent.decodeMessage<A>(decoder:), address = 0x00000002a7b13020, resolved, hit count = 0 
+  2.173: where = ToolKit`ToolKitProtoSystemToolProtocol.decodeMessage<A>(decoder:), address = 0x00000002a7ae6af0, resolved, hit count = 0 
+  2.174: where = ToolKit`ToolKitProtoSystemToolProtocol.EntityUpdating.decodeMessage<A>(decoder:), address = 0x00000002a7b4a6a4, resolved, hit count = 0 
+  2.175: where = ToolKit`ToolKitProtoSystemToolProtocol.AssistantSchema.decodeMessage<A>(decoder:), address = 0x00000002a7b4a470, resolved, hit count = 0 
+  2.176: where = ToolKit`ToolKitProtoSystemToolProtocol.PropertyUpdater.decodeMessage<A>(decoder:), address = 0x00000002a7b4a6bc, resolved, hit count = 0 
+  2.177: where = ToolKit`ToolKitProtoSystemToolProtocol.IntentSideEffect.decodeMessage<A>(decoder:), address = 0x00000002a7b0f314, resolved, hit count = 0 
+  2.178: where = ToolKit`ToolKitProtoSystemToolProtocol.IntentSideEffect.StateChangeWithBehavior.decodeMessage<A>(decoder:), address = 0x00000002a7b11e2c, resolved, hit count = 0 
+  2.179: where = ToolKit`ToolKitProtoSystemToolProtocol.IntentSideEffect.Behavior.decodeMessage<A>(decoder:), address = 0x00000002a7b11518, resolved, hit count = 0 
+  2.180: where = ToolKit`ToolKitProtoSystemToolProtocol.IntentStateChange.decodeMessage<A>(decoder:), address = 0x00000002a7b0d6e8, resolved, hit count = 0 
+  2.181: where = ToolKit`ToolKitProtoSystemToolProtocol.ConditionallyEnabled.decodeMessage<A>(decoder:), address = 0x00000002a7b0c370, resolved, hit count = 0 
+  2.182: where = ToolKit`ToolKitProtoSystemToolProtocol.IntentSideEffectBehavior.decodeMessage<A>(decoder:), address = 0x00000002a7b0dc90, resolved, hit count = 0 
+  2.183: where = ToolKit`ToolKitProtoSystemToolProtocol.IntentSideEffectBehavior.Kind.decodeMessage<A>(decoder:), address = 0x00000002a7b0e570, resolved, hit count = 0 
+  2.184: where = ToolKit`ToolKitProtoSystemToolProtocol.ShowInAppStringSearchResults.decodeMessage<A>(decoder:), address = 0x00000002a7b4a68c, resolved, hit count = 0 
+  2.185: where = ToolKit`ToolKitProtoSystemToolProtocol.AppIntent.decodeMessage<A>(decoder:), address = 0x00000002a7b4a6ec, resolved, hit count = 0 
+  2.186: where = ToolKit`ToolKitProtoSystemToolProtocol.PlayVideo.decodeMessage<A>(decoder:), address = 0x00000002a7b4a674, resolved, hit count = 0 
+  2.187: where = ToolKit`ToolKitProtoAssistantToolSchemaDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7ae2360, resolved, hit count = 0 
+  2.188: where = ToolKit`ToolKitProtoToolDefinition.decodeMessage<A>(decoder:), address = 0x00000002a7b4a970, resolved, hit count = 0 
+  2.189: where = ToolKit`ToolKitProtoToolDefinition.Version1.ToolIcon.ToolExternalAsset.decodeMessage<A>(decoder:), address = 0x00000002a7b4a794, resolved, hit count = 0 
+  2.190: where = ToolKit`ToolKitProtoToolDefinition.Version1.ToolIcon.ToolSymbolIcon.decodeMessage<A>(decoder:), address = 0x00000002a7b20db0, resolved, hit count = 0 
+  2.191: where = ToolKit`ToolKitProtoToolDefinition.Version1.ToolIcon.decodeMessage<A>(decoder:), address = 0x00000002a7b1f690, resolved, hit count = 0 
+  2.192: where = ToolKit`ToolKitProtoToolDefinition.Version1.Deprecation.decodeMessage<A>(decoder:), address = 0x00000002a7b2193c, resolved, hit count = 0 
+  2.193: where = ToolKit`ToolKitProtoToolDefinition.Version1.decodeMessage<A>(decoder:), address = 0x00000002a7b14158, resolved, hit count = 0 
+  2.194: where = ToolKit`ToolKitProtoToolDefinition.Version1.Category.decodeMessage<A>(decoder:), address = 0x00000002a7b4a77c, resolved, hit count = 0 
+  2.195: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.ToolMetadata.decodeMessage<A>(decoder:), address = 0x00000002a7b4a74c, resolved, hit count = 0 
+  2.196: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.decodeMessage<A>(decoder:), address = 0x00000002a7b18f24, resolved, hit count = 0 
+  2.197: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.Relation.GreaterThan.decodeMessage<A>(decoder:), address = 0x00000002a7b1d5a8, resolved, hit count = 0 
+  2.198: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.Relation.decodeMessage<A>(decoder:), address = 0x00000002a7b198d8, resolved, hit count = 0 
+  2.199: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.Relation.DoesNotContain.decodeMessage<A>(decoder:), address = 0x00000002a7b4a4d0, resolved, hit count = 0 
+  2.200: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.Relation.Equals.decodeMessage<A>(decoder:), address = 0x00000002a7b4a488, resolved, hit count = 0 
+  2.201: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.Relation.Contains.decodeMessage<A>(decoder:), address = 0x00000002a7b4a4b8, resolved, hit count = 0 
+  2.202: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.Relation.LessThan.decodeMessage<A>(decoder:), address = 0x00000002a7b4a734, resolved, hit count = 0 
+  2.203: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.Relationship.Relation.NotEquals.decodeMessage<A>(decoder:), address = 0x00000002a7b4a4a0, resolved, hit count = 0 
+  2.204: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.decodeMessage<A>(decoder:), address = 0x00000002a7b178dc, resolved, hit count = 0 
+  2.205: where = ToolKit`ToolKitProtoToolDefinition.Version1.Parameter.BooleanMetadata.decodeMessage<A>(decoder:), address = 0x00000002a7b4a764, resolved, hit count = 0 
+  2.206: where = ToolKit`ToolKitProtoToolInvocation.decodeMessage<A>(decoder:), address = 0x00000002a7b36b8c, resolved, hit count = 0 
+  2.207: where = ToolKit`ToolKitProtoToolSummaryString.decodeMessage<A>(decoder:), address = 0x00000002a7adf2cc, resolved, hit count = 0 
+  2.208: where = ToolKit`ToolKitProtoToolSummaryString.Component.decodeMessage<A>(decoder:), address = 0x00000002a7adf8d8, resolved, hit count = 0 
+  2.209: where = ToolKit`ToolKitProtoToolDefinitionClosure.decodeMessage<A>(decoder:), address = 0x00000002a7b4a9a0, resolved, hit count = 0 
+  2.210: where = ToolKit`ToolKitProtoToolDefinitionClosure.Version1.decodeMessage<A>(decoder:), address = 0x00000002a7b3a048, resolved, hit count = 0 
+  2.211: where = ToolKit`ToolKitProtoToolInvocationOptions.UserIdentity.decodeMessage<A>(decoder:), address = 0x00000002a7b397b0, resolved, hit count = 0 
+  2.212: where = ToolKit`ToolKitProtoToolInvocationOptions.decodeMessage<A>(decoder:), address = 0x00000002a7b37ac8, resolved, hit count = 0 
+  2.213: where = ToolKit`ToolKitProtoToolDatabaseOpaqueValue.decodeMessage<A>(decoder:), address = 0x00000002a79a4844, resolved, hit count = 0 
+  2.214: where = ToolKit`ToolKitProtoToolInvocationSignature.decodeMessage<A>(decoder:), address = 0x00000002a7ae0108, resolved, hit count = 0 
+  2.215: where = ToolKit`ToolKitProtoToolInvocationSignature.ListOfRelations.decodeMessage<A>(decoder:), address = 0x00000002a7ae0710, resolved, hit count = 0 
+  2.216: where = ToolKit`ToolKitProtoFlowToolSchemaIdentifier.decodeMessage<A>(decoder:), address = 0x00000002a7b4a65c, resolved, hit count = 0 
+
+(lldb) quit

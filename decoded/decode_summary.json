@@ -1,0 +1,170 @@
+{
+  "database_sha256": "6d81e93772304ff00df64a975546c56795d53ce980c0b95f977eac091350fb5a",
+  "inventory_instance_count": 87795,
+  "native_error_count": 0,
+  "native_unknown_field_result_count": 0,
+  "planned_instance_count": 87795,
+  "schema_families": {
+    "EntityProperties.typeInstance": {
+      "column": "typeInstance",
+      "direct_schema": "ToolKitProtoTypeInstance",
+      "element_schema": null,
+      "instance_count": 2794,
+      "storage_kind": "direct_message",
+      "table": "EntityProperties"
+    },
+    "EnumerationCases.synonyms": {
+      "column": "synonyms",
+      "direct_schema": null,
+      "element_schema": null,
+      "instance_count": 38540,
+      "storage_kind": "repeated_string_envelope",
+      "table": "EnumerationCases"
+    },
+    "LaunchServicesState.persistentIdentifier": {
+      "column": "persistentIdentifier",
+      "direct_schema": null,
+      "element_schema": null,
+      "instance_count": 451,
+      "storage_kind": "raw_protobuf_bytes_field",
+      "table": "LaunchServicesState"
+    },
+    "LinkState.installIdentifier": {
+      "column": "installIdentifier",
+      "direct_schema": null,
+      "element_schema": null,
+      "instance_count": 89,
+      "storage_kind": "raw_protobuf_bytes_field",
+      "table": "LinkState"
+    },
+    "Parameters.relationships": {
+      "column": "relationships",
+      "direct_schema": null,
+      "element_schema": "ToolKitProtoToolDefinition.Version1.Parameter.Relationship",
+      "instance_count": 7535,
+      "storage_kind": "repeated_message_envelope",
+      "table": "Parameters"
+    },
+    "Parameters.typeInstance": {
+      "column": "typeInstance",
+      "direct_schema": "ToolKitProtoTypeInstance",
+      "element_schema": null,
+      "instance_count": 7535,
+      "storage_kind": "direct_message",
+      "table": "Parameters"
+    },
+    "PredicateTemplates.comparison": {
+      "column": "comparison",
+      "direct_schema": null,
+      "element_schema": "ToolKitProtoComparisonPredicate.Template",
+      "instance_count": 411,
+      "storage_kind": "repeated_message_envelope",
+      "table": "PredicateTemplates"
+    },
+    "SystemToolProtocols.protocol": {
+      "column": "protocol",
+      "direct_schema": "ToolKitProtoSystemToolProtocol",
+      "element_schema": null,
+      "instance_count": 4793,
+      "storage_kind": "direct_message",
+      "table": "SystemToolProtocols"
+    },
+    "SystemTypeProtocols.protocol": {
+      "column": "protocol",
+      "direct_schema": "ToolKitProtoSystemTypeProtocol",
+      "element_schema": null,
+      "instance_count": 1351,
+      "storage_kind": "direct_message",
+      "table": "SystemTypeProtocols"
+    },
+    "Tools.customIcon": {
+      "column": "customIcon",
+      "direct_schema": "ToolKitProtoToolDefinition.Version1.ToolIcon",
+      "element_schema": null,
+      "instance_count": 264,
+      "storage_kind": "direct_message",
+      "table": "Tools"
+    },
+    "Tools.outputTypeInstance": {
+      "column": "outputTypeInstance",
+      "direct_schema": "ToolKitProtoTypeInstance",
+      "element_schema": null,
+      "instance_count": 2400,
+      "storage_kind": "direct_message",
+      "table": "Tools"
+    },
+    "Tools.requirements": {
+      "column": "requirements",
+      "direct_schema": null,
+      "element_schema": "ToolKitProtoRuntimeRequirement",
+      "instance_count": 2400,
+      "storage_kind": "repeated_message_envelope",
+      "table": "Tools"
+    },
+    "TriggerParameters.relationships": {
+      "column": "relationships",
+      "direct_schema": null,
+      "element_schema": "ToolKitProtoToolDefinition.Version1.Parameter.Relationship",
+      "instance_count": 65,
+      "storage_kind": "repeated_message_envelope",
+      "table": "TriggerParameters"
+    },
+    "TriggerParameters.typeInstance": {
+      "column": "typeInstance",
+      "direct_schema": "ToolKitProtoTypeInstance",
+      "element_schema": null,
+      "instance_count": 65,
+      "storage_kind": "direct_message",
+      "table": "TriggerParameters"
+    },
+    "Triggers.outputTypeInstance": {
+      "column": "outputTypeInstance",
+      "direct_schema": "ToolKitProtoTypeInstance",
+      "element_schema": null,
+      "instance_count": 42,
+      "storage_kind": "direct_message",
+      "table": "Triggers"
+    },
+    "Triggers.requirements": {
+      "column": "requirements",
+      "direct_schema": null,
+      "element_schema": "ToolKitProtoRuntimeRequirement",
+      "instance_count": 42,
+      "storage_kind": "repeated_message_envelope",
+      "table": "Triggers"
+    },
+    "TypeCoercions.coercionDefinition": {
+      "column": "coercionDefinition",
+      "direct_schema": "ToolKitProtoCoercionDefinition",
+      "element_schema": null,
+      "instance_count": 746,
+      "storage_kind": "direct_message",
+      "table": "TypeCoercions"
+    },
+    "TypeDisplayRepresentations.synonyms": {
+      "column": "synonyms",
+      "direct_schema": null,
+      "element_schema": null,
+      "instance_count": 11876,
+      "storage_kind": "repeated_string_envelope",
+      "table": "TypeDisplayRepresentations"
+    },
+    "Types.id": {
+      "column": "id",
+      "direct_schema": "ToolKitProtoTypeIdentifier",
+      "element_schema": null,
+      "instance_count": 3428,
+      "storage_kind": "direct_message",
+      "table": "Types"
+    },
+    "Types.runtimeRequirements": {
+      "column": "runtimeRequirements",
+      "direct_schema": null,
+      "element_schema": "ToolKitProtoRuntimeRequirement",
+      "instance_count": 2968,
+      "storage_kind": "repeated_message_envelope",
+      "table": "Types"
+    }
+  },
+  "unique_native_decode_count": 12986
+}

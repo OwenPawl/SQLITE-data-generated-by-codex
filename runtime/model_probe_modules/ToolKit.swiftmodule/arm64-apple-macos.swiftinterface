@@ -1,0 +1,2167 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.4 (swiftlang-6.4.0.25.4 clang-2100.3.25.1)
+// swift-module-flags: -target arm64-apple-macosx27.0 -enable-objc-interop -enable-library-evolution -language-mode 6 -module-name ToolKit
+import Foundation
+import InternalSwiftProtobuf
+import Swift
+
+public struct ToolKitProtoAllPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoAppDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Device : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public enum Origin : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoAssistantSchemaIdentifier : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoAssistantSchemaVersion : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoAssistantToolSchemaDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoAssistantTypeSchemaDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Entity : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Enumeration : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoChangeset : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Partial : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Provenance : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoCoercionDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public enum CoercionDirection : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoComparisonPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Comparison : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Pair : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct Template : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+  }
+  public struct Template : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoCompoundPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public enum Operator : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoContainerDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Device : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public enum Origin : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+  public enum TypeEnum : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoContentItemClassDescriptor : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct LinkCodableContentItemClass : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct LinkEntityContentItemClass : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct LinkEnumContentItemClass : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoDisplayRepresentation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct AltText : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Static : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+  }
+  public struct DisplayValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Static : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public enum DisplayValueEnum : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+  public struct Image : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Static : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct Symbol : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+    }
+  }
+  public struct Storage : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Subtitle : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Static : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+  }
+}
+public struct ToolKitProtoEntityInstanceIdentifier : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct SyncedIdentifier : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoFlowToolSchemaIdentifier : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoIdSearchPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Template : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoIndexingEvent : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoIndexingLogEntry : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoIndexingPolicyResolution : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoIndexingReason : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoIndexingRequest : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoIndexingResponse : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoIndexingStep : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public enum Phase : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoLaunchServicesSnapshot : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct State : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Version : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoLinkSnapshot : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct State : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoModelRepresentation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Representation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct RepresentationComponent : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Label : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public enum Kind : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct TextValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct VisualValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct Transferable : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+    }
+  }
+}
+public struct ToolKitProtoPluginModelData : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoPullOperationEnd : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoPullOperationStart : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoPushDonationEnd : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoPushDonationStart : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public enum DonationType : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoQuery : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct AnyPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public enum SortOrder : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoRestrictionContext : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct CharacterTypedWith : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public enum ParameterMode : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+  public struct InInclusiveRange : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct InSet : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct ValueSet : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct ContentPropertyPossibleValues : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct DynamicEnumeration : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct DynamicTriggerEnumeration : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct LinkQuery : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+    }
+  }
+  public struct MeasurementExpressibleAs : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct RepresentableAs : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct TextTypedWith : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public enum AutocorrectionType : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+    public enum CapitalizationType : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+    public enum KeyboardType : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+  public enum DateExpressibleAs : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+  public enum PersonReachableAs : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoRuntimePlatformVersion : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoRuntimeRequirement : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct AvailabilityAnnotation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct DeviceCapability : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct MobileGestalt : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public enum DeviceCapabilityType : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+  public struct FeatureFlag : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public enum DeviceState : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoSampleInvocationDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoSearchableItemPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Template : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoStringSearchPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Template : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoSuggestedPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoSystemToolProtocol : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct AgentIntent : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public enum SupportedFeature : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+  public struct AppIntent : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct AssistantSchema : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct ConditionallyEnabled : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct EntityUpdating : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct FlowToolSchema : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct IntentSideEffect : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Behavior : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public enum Kind : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct StateChangeWithBehavior : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+  }
+  public struct IntentSideEffectBehavior : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Kind : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+  }
+  public struct IntentStateChange : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct PlayVideo : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct PropertyUpdater : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct ShowInAppStringSearchResults : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct SiriKitIntent : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct SynthesizedToolProtocol : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoSystemTypeProtocol : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct AssistantSchema : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct IntentUpdatableEntity : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct ModelRepresentationMetadata : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct PersistentFileIdentifiable : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoToolDatabaseOpaqueValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoToolDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Version1 : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Category : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct Deprecation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct Parameter : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct BooleanMetadata : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct Relationship : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        public struct Relation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+          public init()
+          public static let protoMessageName: Swift.String
+          public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+          public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+          public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+          public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+          public struct Contains : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+            public init()
+            public static let protoMessageName: Swift.String
+            public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+            public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+            public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+            public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+          }
+          public struct DoesNotContain : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+            public init()
+            public static let protoMessageName: Swift.String
+            public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+            public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+            public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+            public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+          }
+          public struct Equals : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+            public init()
+            public static let protoMessageName: Swift.String
+            public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+            public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+            public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+            public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+          }
+          public struct GreaterThan : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+            public init()
+            public static let protoMessageName: Swift.String
+            public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+            public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+            public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+            public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+          }
+          public struct LessThan : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+            public init()
+            public static let protoMessageName: Swift.String
+            public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+            public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+            public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+            public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+          }
+          public struct NotEquals : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+            public init()
+            public static let protoMessageName: Swift.String
+            public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+            public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+            public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+            public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+          }
+        }
+      }
+      public struct ToolMetadata : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public enum ParameterFlags : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct ToolIcon : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct ToolExternalAsset : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct ToolSymbolIcon : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public enum ToolSymbolIconStyle : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public enum AuthenticationPolicy : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+    public enum Flag : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+    public enum ToolType : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+    public enum VisibilityFlag : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+}
+public struct ToolKitProtoToolDefinitionClosure : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Version1 : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoToolInvocation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoToolInvocationOptions : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct UserIdentity : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public enum AccessLevel : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+  public enum AssistantDismissalPolicy : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+  public enum ConfirmationConditions : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+  public enum InteractionMode : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+  public enum InterfaceIdiom : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int { get }
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  }
+}
+public struct ToolKitProtoToolInvocationSignature : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct ListOfRelations : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoToolSummaryString : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Component : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoToolboxDump : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Metadata : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoTriggerDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Version1 : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public enum Flag : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+}
+public struct ToolKitProtoTypeDefinition : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Version1 : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Codable : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct Entity : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct Property : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        public struct SpotlightAttributes : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+          public init()
+          public static let protoMessageName: Swift.String
+          public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+          public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+          public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+          public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        }
+      }
+      public enum AuthenticationPolicy : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+      public enum RuntimeFlags : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct Enumeration : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct Case : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public enum Kind : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct Query : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct PredicateTemplates : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        public struct PredicateMetadata : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+          public init()
+          public static let protoMessageName: Swift.String
+          public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+          public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+          public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+          public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        }
+      }
+    }
+  }
+}
+public struct ToolKitProtoTypeDisplayRepresentation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoTypeIdentifier : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Attributed : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Builtin : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Codable : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Custom : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Primitive : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public enum MeasurementUnitType : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public init?(rawValue: Swift.Int)
+      public var rawValue: Swift.Int { get }
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    }
+  }
+}
+public struct ToolKitProtoTypeInstance : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Constrained : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Deferred : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Optional : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Restricted : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct Union : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoTypedValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct CodableValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct CollectionValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct DeferredValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct Storage : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct ActionParameterDefaultValueStorage : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct ContentItemPropertyStorage : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct EntityPropertyStorage : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+    }
+  }
+  public struct EntityIdentifierValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct EntityValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct ProtocolPropertyMap : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+  }
+  public struct EnumerationValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct ID : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct PrimitiveValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    public struct App : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct CurrencyAmount : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct DateComponents : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct Calendar : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public enum CalendarIdentifier : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct DateInterval : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct Decimal : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct Mantissa : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public enum Sign : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct Duration : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct File : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct Measurement : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+    public struct PaymentMethod : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public enum TypeEnum : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct Person : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct Handle : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        public enum TypeEnum : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+          public init()
+          public init?(rawValue: Swift.Int)
+          public var rawValue: Swift.Int { get }
+          public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        }
+      }
+      public struct NameComponents : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        public struct PhoneticRepresentation : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+          public init()
+          public static let protoMessageName: Swift.String
+          public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+          public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+          public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+          public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+        }
+      }
+    }
+    public struct Placemark : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public enum TypeEnum : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct RecurrenceRule : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      public struct RecurrenceRuleEnd : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct RecurrenceRuleMonth : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public struct RecurrenceRuleWeekday : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public static let protoMessageName: Swift.String
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+        public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+        public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+        public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+      }
+      public enum CalendarMatchingPolicy : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+      public enum CalendarRepeatedTimePolicy : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+      public enum LocaleWeekday : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+      public enum RecurrenceRuleFrequency : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+        public init()
+        public init?(rawValue: Swift.Int)
+        public var rawValue: Swift.Int { get }
+        public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      }
+    }
+    public struct Shortcut : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+      public init()
+      public static let protoMessageName: Swift.String
+      public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+      public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+      public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+      public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+    }
+  }
+  public struct Provenance : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+  public struct QueryValue : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoTypedValueResolvable : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoUniquePredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoVacuumOperationEnd : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoVacuumOperationStart : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoValidPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoValueSearchPredicate : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  public struct Template : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+    public init()
+    public static let protoMessageName: Swift.String
+    public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+    public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+    public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+    public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+  }
+}
+public struct ToolKitProtoWALOperationEnd : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public struct ToolKitProtoWALOperationStart : InternalSwiftProtobuf.Message, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+  public var unknownFields: InternalSwiftProtobuf.UnknownStorage
+  public mutating func decodeMessage<D>(decoder: inout D) throws where D : InternalSwiftProtobuf.Decoder
+  public func traverse<V>(visitor: inout V) throws where V : InternalSwiftProtobuf.Visitor
+}
+public enum ToolKitProtoModelRepresentationComponentKind : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int { get }
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+}
+public enum ToolKitProtoModelRepresentationLevel : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int { get }
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+}
+public enum ToolKitProtoRuntimePlatform : InternalSwiftProtobuf.Enum, InternalSwiftProtobuf._ProtoNameProviding {
+  public init()
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int { get }
+  public static let _protobuf_nameMap: InternalSwiftProtobuf._NameMap
+}
+public struct ToolFlag : Swift.OptionSet, Swift.CustomStringConvertible {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static var opensAppWhenRun: ToolKit.ToolFlag { get }
+  public static var isDiscontinued: ToolKit.ToolFlag { get }
+  public static var isUndiscoverable: ToolKit.ToolFlag { get }
+  public static var doesNotImplementPerform: ToolKit.ToolFlag { get }
+  public static var showsOpenWhenRun: ToolKit.ToolFlag { get }
+  public static var outputHasSnippet: ToolKit.ToolFlag { get }
+  public static var outputProvidesDialog: ToolKit.ToolFlag { get }
+  public static var isHomeResidentCompatible: ToolKit.ToolFlag { get }
+  public var allFlags: [ToolKit.ToolFlag] { get }
+  public var description: Swift.String { get }
+}
+public struct ToolVisibilityFlag : Swift.OptionSet, Swift.CustomStringConvertible {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static var shortcuts: ToolKit.ToolVisibilityFlag { get }
+  public static var assistant: ToolKit.ToolVisibilityFlag { get }
+  public static var visibleForShortcuts: ToolKit.ToolVisibilityFlag { get }
+  public static var visibleForAssistant: ToolKit.ToolVisibilityFlag { get }
+  public static var approved: ToolKit.ToolVisibilityFlag { get }
+  public static var spotlight: ToolKit.ToolVisibilityFlag { get }
+  public static var allCases: [ToolKit.ToolVisibilityFlag] { get }
+  public var description: Swift.String { get }
+}
+public struct TriggerFlag : Swift.OptionSet, Swift.CustomStringConvertible {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static var isAllowedToRunAutomatically: ToolKit.TriggerFlag { get }
+  public static var requiresNotification: ToolKit.TriggerFlag { get }
+  public static var isUserInitiated: ToolKit.TriggerFlag { get }
+  public static var allFlags: [ToolKit.TriggerFlag] { get }
+  public var description: Swift.String { get }
+}
+public struct ParameterDefinition {
+  public struct ParameterFlags : Swift.OptionSet {
+    public let rawValue: Swift.Int
+    public init(rawValue: Swift.Int)
+    public static var hidden: ToolKit.ParameterDefinition.ParameterFlags { get }
+    public static var synthesized: ToolKit.ParameterDefinition.ParameterFlags { get }
+    public static var allowsAttachments: ToolKit.ParameterDefinition.ParameterFlags { get }
+    public static var all: [ToolKit.ParameterDefinition.ParameterFlags] { get set }
+    public var description: Swift.String { get }
+  }
+}
+public struct EntityDefinition {
+  public struct RuntimeFlags : Swift.OptionSet {
+    public let rawValue: Swift.Int
+    public init(rawValue: Swift.Int)
+    public static var transientAppEntity: ToolKit.EntityDefinition.RuntimeFlags { get }
+  }
+}
+
+public protocol ToolDatabaseProvider {
+  func database() throws -> ToolKit.ToolDatabase
+}
+
+public class SharedToolDatabaseProvider : ToolKit.ToolDatabaseProvider {
+  public static var shared: ToolKit.SharedToolDatabaseProvider { get }
+  public func database() throws -> ToolKit.ToolDatabase
+}
+
+public final class ToolDatabase {
+  public func count(over query: ToolKit.ToolDefinitionQuery) throws -> Swift.Int
+  public func count(over query: ToolKit.TriggerDefinitionQuery) throws -> Swift.Int
+  public func iterate(over query: ToolKit.ToolDefinitionQuery, scope: ToolKit.ToolKitDatabaseRequestScope, locale: Foundation.Locale, block: (ToolKit.ToolDefinition) throws -> ()) throws
+  public func iterate(over query: ToolKit.TriggerDefinitionQuery, scope: ToolKit.ToolKitDatabaseRequestScope, locale: Foundation.Locale, block: (ToolKit.TriggerDefinition) throws -> ()) throws
+}
+
+public final class DirectToolMetadataProvider {
+  public init() throws
+  public func tools(matching query: ToolKit.ToolDefinitionQuery, locale: Foundation.Locale, scope: ToolKit.ToolKitDatabaseRequestScope) throws -> [ToolKit.ToolDefinition]
+  public func types(matching query: ToolKit.TypeDefinitionQuery, locale: Foundation.Locale, scope: ToolKit.ToolKitDatabaseRequestScope) throws -> [ToolKit.TypeDefinition]
+}
+
+public enum ToolKitDatabaseRequestScope {
+  case all
+  case max(Swift.Int)
+}
+
+public struct ToolDefinitionQuery {
+  public static func all() -> ToolKit.ToolDefinitionQuery
+  public var visibility: ToolKit.ToolVisibilityFilter { get set }
+  public var debugDescription: Swift.String { get }
+}
+
+public struct TriggerDefinitionQuery {
+  public static func all() -> ToolKit.TriggerDefinitionQuery
+  public var debugDescription: Swift.String { get }
+}
+
+public struct TypeDefinitionQuery {
+  public static func all() -> ToolKit.TypeDefinitionQuery
+}
+
+public struct ToolVisibilityFilter {
+  public static var any: ToolKit.ToolVisibilityFilter { get }
+  public static func `is`(_ flag: ToolKit.ToolVisibilityFlag) -> ToolKit.ToolVisibilityFilter
+  public var debugDescription: Swift.String { get }
+}
+
+public struct ToolDefinition {
+  public var id: Swift.String { get }
+  public var name: Swift.String { get }
+  public var flags: ToolKit.ToolFlag { get }
+  public var visibilityFlags: ToolKit.ToolVisibilityFlag { get }
+  public var parameters: [ToolKit.ParameterDefinition] { get }
+  public var hiddenParameters: [ToolKit.ParameterDefinition] { get }
+}
+
+public struct TriggerDefinition {
+  public var id: Swift.String { get }
+  public var name: Swift.String { get }
+  public var flags: ToolKit.TriggerFlag { get }
+  public var parameters: [ToolKit.ParameterDefinition] { get }
+}
+
+public enum TypeDefinition {
+  case entity(ToolKit.EntityDefinition)
+  case enumeration(ToolKit.EnumerationDefinition)
+  case dynamicEnumeration(ToolKit.DynamicEnumerationDefinition)
+  case query(ToolKit.QueryDefinition)
+  case codable(ToolKit.CodableDefinition)
+  case primitive(ToolKit.TypeIdentifier.PrimitiveTypeIdentifier)
+}
+
+public struct EnumerationDefinition {}
+public struct DynamicEnumerationDefinition {}
+public struct QueryDefinition {}
+public struct CodableDefinition {}
+public enum TypeIdentifier {
+  public enum PrimitiveTypeIdentifier {}
+}
+
+extension ToolKit.ParameterDefinition {
+  public var key: Swift.String { get }
+  public var name: Swift.String { get }
+  public var flags: ToolKit.ParameterDefinition.ParameterFlags { get }
+}
+
+extension ToolKit.EntityDefinition {
+  public var runtimeFlags: ToolKit.EntityDefinition.RuntimeFlags { get }
+}

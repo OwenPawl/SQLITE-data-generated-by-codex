@@ -1,0 +1,49 @@
+(lldb) command source -s 0 'runtime/verify_launchservices_identifiers.lldb'
+Executing commands in '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_launchservices_identifiers.lldb'.
+(lldb) settings set auto-confirm true
+(lldb) target create runtime/verify_identifier_semantics
+Current executable set to '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_identifier_semantics' (arm64).
+(lldb) breakpoint set --name '-[LSRecord initWithPersistentIdentifier:]' --auto-continue true --breakpoint-name ls_init_persistent
+Breakpoint 1: where = LaunchServices`-[LSRecord initWithPersistentIdentifier:], address = 0x0000000180f1a168
+(lldb) breakpoint set --name '-[LSRecord persistentIdentifier]' --auto-continue true --breakpoint-name ls_get_persistent
+Breakpoint 2: where = LaunchServices`-[LSRecord persistentIdentifier], address = 0x0000000180f19950
+(lldb) breakpoint set --name '-[LSBundleRecord bundleIdentifier]' --auto-continue true --breakpoint-name ls_get_bundle
+Breakpoint 3: where = LaunchServices`-[LSBundleRecord bundleIdentifier], address = 0x0000000180e281ac
+(lldb) breakpoint set --name '-[LSApplicationRecord initWithBundleIdentifier:allowPlaceholder:error:]' --auto-continue true --breakpoint-name ls_init_bundle
+Breakpoint 4: where = LaunchServices`-[LSApplicationRecord initWithBundleIdentifier:allowPlaceholder:error:], address = 0x0000000180de9668
+(lldb) process launch -o /dev/null -- inputs/raw/Tools-active.sqlite
+2026-07-21 02:58:36.487619-0700 verify_identifier_semantics[24420:4587818] [Metadata] -[_LNMetadataProviderXPC bundleRegistrationsWithError:]: XPC interrupted, retrying
+2026-07-21 02:58:36.488098-0700 verify_identifier_semantics[24420:4587818] [Metadata] -[_LNMetadataProviderXPC bundleRegistrationsWithError:]: XPC retry failed
+Process 24420 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/verify_identifier_semantics' (arm64)
+Process 24420 exited with status = 0 (0x00000000)
+(lldb) image list -b -f LaunchServices
+[  0] LaunchServices /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+(lldb) breakpoint list ls_init_persistent
+1: name = '-[LSRecord initWithPersistentIdentifier:]', locations = 1, resolved = 1, hit count = 451 Options: enabled auto-continue 
+  Names:
+    ls_init_persistent
+
+  1.1: where = LaunchServices`-[LSRecord initWithPersistentIdentifier:], address = 0x0000000186932168, resolved, hit count = 451 
+
+(lldb) breakpoint list ls_get_persistent
+2: name = '-[LSRecord persistentIdentifier]', locations = 1, resolved = 1, hit count = 824 Options: enabled auto-continue 
+  Names:
+    ls_get_persistent
+
+  2.1: where = LaunchServices`-[LSRecord persistentIdentifier], address = 0x0000000186931950, resolved, hit count = 824 
+
+(lldb) breakpoint list ls_get_bundle
+3: name = '-[LSBundleRecord bundleIdentifier]', locations = 1, resolved = 1, hit count = 451 Options: enabled auto-continue 
+  Names:
+    ls_get_bundle
+
+  3.1: where = LaunchServices`-[LSBundleRecord bundleIdentifier], address = 0x00000001868401ac, resolved, hit count = 451 
+
+(lldb) breakpoint list ls_init_bundle
+4: name = '-[LSApplicationRecord initWithBundleIdentifier:allowPlaceholder:error:]', locations = 1, resolved = 1, hit count = 451 Options: enabled auto-continue 
+  Names:
+    ls_init_bundle
+
+  4.1: where = LaunchServices`-[LSApplicationRecord initWithBundleIdentifier:allowPlaceholder:error:], address = 0x0000000186801668, resolved, hit count = 451 
+
+(lldb) quit

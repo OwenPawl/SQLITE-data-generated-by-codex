@@ -1,0 +1,13 @@
+settings set target.inline-breakpoint-strategy always
+settings set target.skip-prologue false
+
+process launch --stop-at-entry -i runtime/raw_identifier_batch.ndjson -o /dev/null -- batch
+image list -b -f ToolKit
+image list -b -f InternalSwiftProtobuf
+
+breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLaunchServicesSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name launch_services_state_decode
+breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLinkSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name link_state_decode
+continue
+
+breakpoint list launch_services_state_decode
+breakpoint list link_state_decode

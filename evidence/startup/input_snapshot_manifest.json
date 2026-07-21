@@ -1,0 +1,106 @@
+{
+  "all_content_matches": true,
+  "created_at": "2026-07-21T09:02:07.188668+00:00",
+  "records": {
+    "database": {
+      "content_match": true,
+      "size_match": true,
+      "snapshot": {
+        "mode": "0o444",
+        "mtime_ns": 1784622482435983389,
+        "path": "inputs/raw/Tools-active.sqlite",
+        "sha256": "6d81e93772304ff00df64a975546c56795d53ce980c0b95f977eac091350fb5a",
+        "size": 31576064
+      },
+      "source": {
+        "mode": "0o644",
+        "mtime_ns": 1784622482435983389,
+        "path": "/Users/owenpawling/Library/Shortcuts/ToolKit/Tools-prod.v78-37BD828A-2E09-4BFB-BF10-EAA344F2E703.sqlite",
+        "sha256": "6d81e93772304ff00df64a975546c56795d53ce980c0b95f977eac091350fb5a",
+        "size": 31576064
+      }
+    },
+    "database_lock": {
+      "content_match": true,
+      "size_match": true,
+      "snapshot": {
+        "mode": "0o444",
+        "mtime_ns": 1783271339472441217,
+        "path": "inputs/raw/Tools-active.sqlite.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      "source": {
+        "mode": "0o644",
+        "mtime_ns": 1783271339472441217,
+        "path": "/Users/owenpawling/Library/Shortcuts/ToolKit/Tools-prod.v78-37BD828A-2E09-4BFB-BF10-EAA344F2E703.sqlite.lock",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "database_shm": {
+      "content_match": true,
+      "size_match": true,
+      "snapshot": {
+        "mode": "0o444",
+        "mtime_ns": 1784616289528423550,
+        "path": "inputs/raw/Tools-active.sqlite-shm",
+        "sha256": "d3ef6fe81ca051c417cfef1f8d723a53497b60ff3f9d87a1cc19acae9018dad2",
+        "size": 32768
+      },
+      "source": {
+        "mode": "0o644",
+        "mtime_ns": 1784616289528423550,
+        "path": "/Users/owenpawling/Library/Shortcuts/ToolKit/Tools-prod.v78-37BD828A-2E09-4BFB-BF10-EAA344F2E703.sqlite-shm",
+        "sha256": "d3ef6fe81ca051c417cfef1f8d723a53497b60ff3f9d87a1cc19acae9018dad2",
+        "size": 32768
+      }
+    },
+    "database_wal": {
+      "content_match": true,
+      "size_match": true,
+      "snapshot": {
+        "mode": "0o444",
+        "mtime_ns": 1784622482436307684,
+        "path": "inputs/raw/Tools-active.sqlite-wal",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      },
+      "source": {
+        "mode": "0o644",
+        "mtime_ns": 1784622482436307684,
+        "path": "/Users/owenpawling/Library/Shortcuts/ToolKit/Tools-prod.v78-37BD828A-2E09-4BFB-BF10-EAA344F2E703.sqlite-wal",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    "starting_document": {
+      "content_match": true,
+      "size_match": true,
+      "snapshot": {
+        "mode": "0o444",
+        "mtime_ns": 1784623124436571814,
+        "path": "inputs/raw/starting_document.md",
+        "sha256": "de88136b84f6f2ca0fd836e4f9c55dcb776c9384bbf2f92c109492f5d469f262",
+        "size": 3063
+      },
+      "source": {
+        "mode": "0o644",
+        "mtime_ns": 1784623124436571814,
+        "path": "/Users/owenpawling/Downloads/tools_requirements_protobuf_structure (1).md",
+        "sha256": "de88136b84f6f2ca0fd836e4f9c55dcb776c9384bbf2f92c109492f5d469f262",
+        "size": 3063
+      }
+    }
+  },
+  "schema_version": "toolkit_input_snapshot.v1",
+  "snapshot_read_only": true,
+  "source_active": {
+    "is_symlink": true,
+    "lstat_mtime_ns": 1784622482434350289,
+    "lstat_size": 103,
+    "path": "/Users/owenpawling/Library/Shortcuts/ToolKit/Tools-active",
+    "resolved_path": "/Users/owenpawling/Library/Shortcuts/ToolKit/Tools-prod.v78-37BD828A-2E09-4BFB-BF10-EAA344F2E703.sqlite",
+    "symlink_target": "/Users/owenpawling/Library/Shortcuts/ToolKit/Tools-prod.v78-37BD828A-2E09-4BFB-BF10-EAA344F2E703.sqlite"
+  }
+}

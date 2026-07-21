@@ -1,0 +1,85 @@
+{
+  "artifacts": [
+    {
+      "description": "Concise exhaustive ToolKit protobuf, flag, and opaque-identifier report.",
+      "id": "final-markdown-report",
+      "kind": "report",
+      "notes": "",
+      "path": "reports/toolkit_protobuf_decoding_report.md",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:17:22Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "description": "Machine-readable complete coverage, schema, semantics, flags, and identifiers.",
+      "id": "final-json-report",
+      "kind": "machine_readable_report",
+      "notes": "",
+      "path": "reports/toolkit_protobuf_decoding_report.json",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:17:22Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "description": "All 216 messages, 868 fields, 43 oneofs, 48 enums, and 262 enum values with meanings and evidence.",
+      "id": "full-schema-ledger",
+      "kind": "schema_ledger",
+      "notes": "",
+      "path": "reports/protobuf_schema_ledger.md",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:17:23Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "description": "One record for every one of the 87,795 populated database BLOB instances.",
+      "id": "decoded-instance-ledger",
+      "kind": "exhaustive_ledger",
+      "notes": "",
+      "path": "decoded/blob_instances.jsonl",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:17:23Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "description": "SHA-256 manifest for key source, decoded, coverage, validation, and report artifacts.",
+      "id": "final-artifact-manifest",
+      "kind": "hash_manifest",
+      "notes": "",
+      "path": "evidence/final_artifact_manifest.json",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:17:24Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "description": "Exact inventory, build, decode, LLDB verification, report, and validation commands.",
+      "id": "reproduction-guide",
+      "kind": "reproduction_guide",
+      "notes": "",
+      "path": "reports/reproduction.md",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:17:24Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "description": "Typed whole-database comparison of the decoded snapshot and latest current source snapshot across all 36 tables, including physical SQLite header differences.",
+      "id": "source-drift-audit",
+      "kind": "source_drift_audit",
+      "notes": "",
+      "path": "coverage/source_drift_comparison.json",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:23:59Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "description": "Fail-closed 90-check validation over both source snapshots, full ledgers, flags, identifiers, reports, and LLDB evidence.",
+      "id": "final-validation",
+      "kind": "validation_report",
+      "notes": "",
+      "path": "evidence/final_validation.json",
+      "source_run_id": "run_20260721T084650Z_1b7ecd17",
+      "timestamp": "2026-07-21T10:23:59Z",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    }
+  ],
+  "schema_version": "artifacts.v1"
+}

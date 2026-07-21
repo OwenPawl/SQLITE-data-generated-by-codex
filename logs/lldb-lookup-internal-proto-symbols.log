@@ -1,0 +1,19 @@
+(lldb) command source -s 0 'runtime/lookup_internal_proto_symbols.lldb'
+Executing commands in '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/lookup_internal_proto_symbols.lldb'.
+(lldb) target create runtime/toolkit_native_decoder
+Current executable set to '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64).
+(lldb) process launch --stop-at-entry -o /dev/null -- defaults-all
+Process 20463 launched: '/Users/owenpawling/Documents/codex-long-runs/20260721-014635-shortcuts-toolkit-protobuf-decoding/runtime/toolkit_native_decoder' (arm64)
+(lldb) image lookup -rn 'serializedBytes' InternalSwiftProtobuf
+5 matches found in /System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/Versions/A/InternalSwiftProtobuf:
+        Address: InternalSwiftProtobuf[0x00000001d842ceb8] (InternalSwiftProtobuf.__TEXT.__text + 162608)
+        Summary: InternalSwiftProtobuf`InternalSwiftProtobuf.Message.init<τ_0_0 where τ_1_0: Foundation.ContiguousBytes>(serializedBytes: τ_1_0, extensions: Swift.Optional<InternalSwiftProtobuf.ExtensionMap>, partial: Swift.Bool, options: InternalSwiftProtobuf.BinaryDecodingOptions) throws -> τ_0_0
+        Address: InternalSwiftProtobuf[0x00000001d84b4224] (InternalSwiftProtobuf.__TEXT.__text + 716444)
+        Summary: InternalSwiftProtobuf`InternalSwiftProtobuf.Message.init<τ_0_0 where τ_1_0: InternalSwiftProtobuf.SwiftProtobufContiguousBytes>(serializedBytes: τ_1_0, extensions: Swift.Optional<InternalSwiftProtobuf.ExtensionMap>, partial: Swift.Bool, options: InternalSwiftProtobuf.BinaryDecodingOptions) throws -> τ_0_0
+        Address: InternalSwiftProtobuf[0x00000001d84b4084] (InternalSwiftProtobuf.__TEXT.__text + 716028)
+        Summary: InternalSwiftProtobuf`InternalSwiftProtobuf.Message.serializedBytes<τ_0_0 where τ_1_0: InternalSwiftProtobuf.SwiftProtobufContiguousBytes>(partial: Swift.Bool, options: InternalSwiftProtobuf.BinaryEncodingOptions) throws -> τ_1_0
+        Address: InternalSwiftProtobuf[0x00000001d842cb98] (InternalSwiftProtobuf.__TEXT.__text + 161808)
+        Summary: InternalSwiftProtobuf`InternalSwiftProtobuf.Message.merge<τ_0_0 where τ_1_0: Foundation.ContiguousBytes>(serializedBytes: τ_1_0, extensions: Swift.Optional<InternalSwiftProtobuf.ExtensionMap>, partial: Swift.Bool, options: InternalSwiftProtobuf.BinaryDecodingOptions) throws -> ()
+        Address: InternalSwiftProtobuf[0x00000001d84b4344] (InternalSwiftProtobuf.__TEXT.__text + 716732)
+        Summary: InternalSwiftProtobuf`InternalSwiftProtobuf.Message.merge<τ_0_0 where τ_1_0: InternalSwiftProtobuf.SwiftProtobufContiguousBytes>(serializedBytes: τ_1_0, extensions: Swift.Optional<InternalSwiftProtobuf.ExtensionMap>, partial: Swift.Bool, options: InternalSwiftProtobuf.BinaryDecodingOptions) throws -> ()
+(lldb) image lookup -rn 'BinaryDecoder' InternalSwiftProtobuf

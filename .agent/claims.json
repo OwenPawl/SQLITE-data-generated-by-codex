@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "claim": "All 87,795 populated BLOB instances in the supplied Tools-active snapshot are accounted for: 87,255 native protobuf-decoded instances and 540 flattened native bytes fields.",
+      "confidence": "high",
+      "id": "all-blobs-accounted",
+      "last_checked_at": "",
+      "notes": "",
+      "source_kind": "validation_report",
+      "source_path": "evidence/final_validation.json",
+      "status": "tested",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "claim": "The live ToolKit protobuf surface contains 216 messages, 868 fields, 43 oneof groups, 48 enums, and 262 named enum values; names and wire shapes were recovered through live name maps and generated decoder calls.",
+      "confidence": "high",
+      "id": "native-schema-recovered",
+      "last_checked_at": "",
+      "notes": "",
+      "source_kind": "schema_report",
+      "source_path": "reports/protobuf_schema_ledger.md",
+      "status": "tested",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "claim": "All 12,986 unique native protobuf messages decode with zero errors, zero unknown fields, and byte-identical canonical reserialization.",
+      "confidence": "high",
+      "id": "native-roundtrip-clean",
+      "last_checked_at": "",
+      "notes": "",
+      "source_kind": "decoded_corpus",
+      "source_path": "decoded/native_unique_messages.jsonl",
+      "status": "tested",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "claim": "All six persisted flag domains and all observed values have runtime-resolved members with zero unknown observed bits; native ToolKit models exactly reproduce tool, parameter, visibility, and entity-runtime flag storage.",
+      "confidence": "high",
+      "id": "flags-decoded",
+      "last_checked_at": "",
+      "notes": "",
+      "source_kind": "runtime_comparison",
+      "source_path": "decoded/native_model_flag_comparison.json",
+      "status": "tested",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "claim": "All 451 LaunchServices identifiers reconstruct exact native records and all 89 Link install identifiers exactly match live registered metadata; all 540 enclosing ToolKit state messages round-trip.",
+      "confidence": "high",
+      "id": "opaque-identifiers-decoded",
+      "last_checked_at": "",
+      "notes": "",
+      "source_kind": "final_report",
+      "source_path": "reports/toolkit_protobuf_decoding_report.json",
+      "status": "tested",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "claim": "All 216 native message types accept empty payloads with empty JSON, empty canonical encoding, and no unknown fields; the corpus also has no protobuf unknown fields or unresolved schema paths.",
+      "confidence": "high",
+      "id": "defaults-and-unknowns",
+      "last_checked_at": "",
+      "notes": "",
+      "source_kind": "runtime_summary",
+      "source_path": "decoded/native_message_defaults_summary.json",
+      "status": "tested",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    },
+    {
+      "claim": "A later current Tools-active snapshot with SHA-256 817be7a6...c6b is logically identical to the decoded snapshot across all 36 tables and every typed row; only SQLite header counters at offsets 27 and 95 advanced from 967 to 968.",
+      "confidence": "high",
+      "id": "active-source-equivalence",
+      "last_checked_at": "",
+      "notes": "",
+      "source_kind": "source_drift_audit",
+      "source_path": "coverage/source_drift_comparison.json",
+      "status": "tested",
+      "verification_command": "python3 scripts/validate_final_coverage.py"
+    }
+  ],
+  "schema_version": "claims.v1"
+}

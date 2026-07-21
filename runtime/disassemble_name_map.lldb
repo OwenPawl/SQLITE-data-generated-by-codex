@@ -1,0 +1,8 @@
+settings set auto-confirm true
+target create runtime/toolkit_loader
+breakpoint set --name toolkit_probe_ready
+run
+image lookup -rn 'ToolKitProtoTypeInstance.*_protobuf_nameMap'
+disassemble --name '$s7ToolKit0aB17ProtoTypeInstanceV17_protobuf_nameMap21InternalSwiftProtobuf05_NameH0VvgZ'
+disassemble --name '$s21InternalSwiftProtobuf8_NameMapVMa'
+quit

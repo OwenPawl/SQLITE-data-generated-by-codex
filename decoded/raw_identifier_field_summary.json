@@ -1,0 +1,10 @@
+{
+  "all_native_decodes_succeeded": true,
+  "failure_count": 0,
+  "family_counts": {
+    "LaunchServicesState": 451,
+    "LinkState": 89
+  },
+  "interpretation": "Each database BLOB is a raw bytes field flattened from the named ToolKit snapshot State message; it is not a standalone protobuf message.",
+  "row_count": 540
+}

@@ -1,0 +1,10 @@
+settings set auto-confirm true
+target create runtime/toolkit_loader
+breakpoint set --name toolkit_probe_ready
+run
+image list -b -f ToolKit
+expression -l swift -- import ToolKit
+expression -l swift -O -- ToolKit.ToolKitProtoTypeInstance.protoMessageName
+expression -l swift -O -- ToolKit.ToolKitProtoTypeInstance._protobuf_nameMap
+expression -l swift -O -- ToolKit.ToolKitProtoTypeInstance()
+quit

@@ -1,0 +1,3535 @@
+{
+  "combinations" : [
+    {
+      "description" : "flags: ()",
+      "family" : "ToolFlag",
+      "members" : [
+
+      ],
+      "rawValue" : 0,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun"
+      ],
+      "rawValue" : 1,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued"
+      ],
+      "rawValue" : 2,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued"
+      ],
+      "rawValue" : 3,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable"
+      ],
+      "rawValue" : 4,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable"
+      ],
+      "rawValue" : 5,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable"
+      ],
+      "rawValue" : 6,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable"
+      ],
+      "rawValue" : 7,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 8,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 9,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 10,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 11,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 12,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 13,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 14,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform"
+      ],
+      "rawValue" : 15,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 16,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 17,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 18,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 19,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 20,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 21,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 22,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 23,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 24,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 25,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 26,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 27,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 28,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 29,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 30,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun"
+      ],
+      "rawValue" : 31,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "outputHasSnippet"
+      ],
+      "rawValue" : 32,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 33,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 34,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 35,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 36,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 37,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 38,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 39,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 40,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 41,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 42,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 43,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 44,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 45,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 46,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 47,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 48,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 49,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 50,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 51,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 52,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 53,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 54,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 55,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 56,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 57,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 58,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 59,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 60,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 61,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 62,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet"
+      ],
+      "rawValue" : 63,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 64,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 65,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 66,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 67,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 68,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 69,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 70,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 71,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 72,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 73,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 74,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 75,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 76,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 77,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 78,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 79,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 80,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 81,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 82,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 83,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 84,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 85,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 86,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 87,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 88,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 89,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 90,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 91,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 92,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 93,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 94,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 95,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 96,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 97,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 98,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 99,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 100,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 101,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 102,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 103,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 104,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 105,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 106,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 107,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 108,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 109,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 110,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 111,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 112,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 113,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 114,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 115,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 116,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 117,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 118,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 119,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 120,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 121,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 122,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 123,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 124,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 125,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 126,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog"
+      ],
+      "rawValue" : 127,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 128,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 129,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 130,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 131,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 132,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 133,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 134,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 135,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 136,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 137,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 138,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 139,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 140,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 141,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 142,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 143,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 144,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 145,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 146,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 147,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 148,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 149,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 150,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 151,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 152,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 153,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 154,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 155,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 156,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 157,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 158,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 159,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 160,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 161,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 162,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 163,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 164,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 165,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 166,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 167,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 168,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 169,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 170,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 171,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 172,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 173,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 174,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 175,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 176,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 177,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 178,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 179,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 180,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 181,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 182,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 183,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 184,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 185,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 186,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 187,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 188,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 189,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 190,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 191,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 192,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 193,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 194,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 195,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 196,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 197,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 198,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 199,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 200,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 201,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 202,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 203,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 204,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 205,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 206,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 207,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 208,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 209,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 210,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 211,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 212,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 213,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 214,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 215,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 216,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 217,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 218,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 219,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 220,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 221,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 222,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 223,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 224,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 225,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 226,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 227,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 228,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 229,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 230,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 231,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 232,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 233,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 234,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 235,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 236,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 237,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 238,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 239,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 240,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 241,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 242,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 243,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 244,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 245,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 246,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 247,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 248,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 249,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 250,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 251,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 252,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 253,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 254,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "flags: (opensAppWhenRun, isDiscontinued, isUndiscoverable, doesNotImplementPerform, showsOpenWhenRun, outputHasSnippet, outputProvidesDialog, isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "members" : [
+        "opensAppWhenRun",
+        "isDiscontinued",
+        "isUndiscoverable",
+        "doesNotImplementPerform",
+        "showsOpenWhenRun",
+        "outputHasSnippet",
+        "outputProvidesDialog",
+        "isHomeResidentCompatible"
+      ],
+      "rawValue" : 255,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+
+      ],
+      "rawValue" : 0,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts"
+      ],
+      "rawValue" : 1,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.assistant]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "assistant"
+      ],
+      "rawValue" : 2,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts, .assistant]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts",
+        "assistant"
+      ],
+      "rawValue" : 3,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.approved]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "approved"
+      ],
+      "rawValue" : 4,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts, .approved]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts",
+        "approved"
+      ],
+      "rawValue" : 5,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.assistant, .approved]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "assistant",
+        "approved"
+      ],
+      "rawValue" : 6,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts, .assistant, .approved]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts",
+        "assistant",
+        "approved"
+      ],
+      "rawValue" : 7,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "spotlight"
+      ],
+      "rawValue" : 8,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts, .spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts",
+        "spotlight"
+      ],
+      "rawValue" : 9,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.assistant, .spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "assistant",
+        "spotlight"
+      ],
+      "rawValue" : 10,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts, .assistant, .spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts",
+        "assistant",
+        "spotlight"
+      ],
+      "rawValue" : 11,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.approved, .spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "approved",
+        "spotlight"
+      ],
+      "rawValue" : 12,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts, .approved, .spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts",
+        "approved",
+        "spotlight"
+      ],
+      "rawValue" : 13,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.assistant, .approved, .spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "assistant",
+        "approved",
+        "spotlight"
+      ],
+      "rawValue" : 14,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.shortcuts, .assistant, .approved, .spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "members" : [
+        "shortcuts",
+        "assistant",
+        "approved",
+        "spotlight"
+      ],
+      "rawValue" : 15,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "()",
+      "family" : "ParameterFlags",
+      "members" : [
+
+      ],
+      "rawValue" : 0,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "(hidden)",
+      "family" : "ParameterFlags",
+      "members" : [
+        "hidden"
+      ],
+      "rawValue" : 1,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "(synthesized)",
+      "family" : "ParameterFlags",
+      "members" : [
+        "synthesized"
+      ],
+      "rawValue" : 2,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "(hidden, synthesized)",
+      "family" : "ParameterFlags",
+      "members" : [
+        "hidden",
+        "synthesized"
+      ],
+      "rawValue" : 3,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "(allows attachments)",
+      "family" : "ParameterFlags",
+      "members" : [
+        "allowsAttachments"
+      ],
+      "rawValue" : 4,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "(hidden, allows attachments)",
+      "family" : "ParameterFlags",
+      "members" : [
+        "hidden",
+        "allowsAttachments"
+      ],
+      "rawValue" : 5,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "(synthesized, allows attachments)",
+      "family" : "ParameterFlags",
+      "members" : [
+        "synthesized",
+        "allowsAttachments"
+      ],
+      "rawValue" : 6,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "(hidden, synthesized, allows attachments)",
+      "family" : "ParameterFlags",
+      "members" : [
+        "hidden",
+        "synthesized",
+        "allowsAttachments"
+      ],
+      "rawValue" : 7,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[]",
+      "family" : "TriggerFlag",
+      "members" : [
+
+      ],
+      "rawValue" : 0,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.isAllowedToRunAutomatically]",
+      "family" : "TriggerFlag",
+      "members" : [
+        "isAllowedToRunAutomatically"
+      ],
+      "rawValue" : 1,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.requiresNotification]",
+      "family" : "TriggerFlag",
+      "members" : [
+        "requiresNotification"
+      ],
+      "rawValue" : 2,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.isAllowedToRunAutomatically, .requiresNotification]",
+      "family" : "TriggerFlag",
+      "members" : [
+        "isAllowedToRunAutomatically",
+        "requiresNotification"
+      ],
+      "rawValue" : 3,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.isUserInitiated]",
+      "family" : "TriggerFlag",
+      "members" : [
+        "isUserInitiated"
+      ],
+      "rawValue" : 4,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.isAllowedToRunAutomatically, .isUserInitiated]",
+      "family" : "TriggerFlag",
+      "members" : [
+        "isAllowedToRunAutomatically",
+        "isUserInitiated"
+      ],
+      "rawValue" : 5,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.requiresNotification, .isUserInitiated]",
+      "family" : "TriggerFlag",
+      "members" : [
+        "requiresNotification",
+        "isUserInitiated"
+      ],
+      "rawValue" : 6,
+      "unknownBits" : 0
+    },
+    {
+      "description" : "[.isAllowedToRunAutomatically, .requiresNotification, .isUserInitiated]",
+      "family" : "TriggerFlag",
+      "members" : [
+        "isAllowedToRunAutomatically",
+        "requiresNotification",
+        "isUserInitiated"
+      ],
+      "rawValue" : 7,
+      "unknownBits" : 0
+    },
+    {
+      "family" : "EntityDefinition.RuntimeFlags",
+      "members" : [
+
+      ],
+      "rawValue" : 0,
+      "unknownBits" : 0
+    },
+    {
+      "family" : "EntityDefinition.RuntimeFlags",
+      "members" : [
+        "transientAppEntity"
+      ],
+      "rawValue" : 1,
+      "unknownBits" : 0
+    }
+  ],
+  "namedFlags" : [
+    {
+      "description" : "flags: (opensAppWhenRun)",
+      "family" : "ToolFlag",
+      "name" : "opensAppWhenRun",
+      "rawValue" : 1
+    },
+    {
+      "description" : "flags: (isDiscontinued)",
+      "family" : "ToolFlag",
+      "name" : "isDiscontinued",
+      "rawValue" : 2
+    },
+    {
+      "description" : "flags: (isUndiscoverable)",
+      "family" : "ToolFlag",
+      "name" : "isUndiscoverable",
+      "rawValue" : 4
+    },
+    {
+      "description" : "flags: (doesNotImplementPerform)",
+      "family" : "ToolFlag",
+      "name" : "doesNotImplementPerform",
+      "rawValue" : 8
+    },
+    {
+      "description" : "flags: (showsOpenWhenRun)",
+      "family" : "ToolFlag",
+      "name" : "showsOpenWhenRun",
+      "rawValue" : 16
+    },
+    {
+      "description" : "flags: (outputHasSnippet)",
+      "family" : "ToolFlag",
+      "name" : "outputHasSnippet",
+      "rawValue" : 32
+    },
+    {
+      "description" : "flags: (outputProvidesDialog)",
+      "family" : "ToolFlag",
+      "name" : "outputProvidesDialog",
+      "rawValue" : 64
+    },
+    {
+      "description" : "flags: (isHomeResidentCompatible)",
+      "family" : "ToolFlag",
+      "name" : "isHomeResidentCompatible",
+      "rawValue" : 128
+    },
+    {
+      "description" : "[.shortcuts]",
+      "family" : "ToolVisibilityFlag",
+      "name" : "shortcuts",
+      "rawValue" : 1
+    },
+    {
+      "description" : "[.assistant]",
+      "family" : "ToolVisibilityFlag",
+      "name" : "assistant",
+      "rawValue" : 2
+    },
+    {
+      "description" : "[.shortcuts]",
+      "family" : "ToolVisibilityFlag",
+      "name" : "visibleForShortcuts",
+      "rawValue" : 1
+    },
+    {
+      "description" : "[.assistant]",
+      "family" : "ToolVisibilityFlag",
+      "name" : "visibleForAssistant",
+      "rawValue" : 2
+    },
+    {
+      "description" : "[.approved]",
+      "family" : "ToolVisibilityFlag",
+      "name" : "approved",
+      "rawValue" : 4
+    },
+    {
+      "description" : "[.spotlight]",
+      "family" : "ToolVisibilityFlag",
+      "name" : "spotlight",
+      "rawValue" : 8
+    },
+    {
+      "description" : "(hidden)",
+      "family" : "ParameterFlags",
+      "name" : "hidden",
+      "rawValue" : 1
+    },
+    {
+      "description" : "(synthesized)",
+      "family" : "ParameterFlags",
+      "name" : "synthesized",
+      "rawValue" : 2
+    },
+    {
+      "description" : "(allows attachments)",
+      "family" : "ParameterFlags",
+      "name" : "allowsAttachments",
+      "rawValue" : 4
+    },
+    {
+      "description" : "[.isAllowedToRunAutomatically]",
+      "family" : "TriggerFlag",
+      "name" : "isAllowedToRunAutomatically",
+      "rawValue" : 1
+    },
+    {
+      "description" : "[.requiresNotification]",
+      "family" : "TriggerFlag",
+      "name" : "requiresNotification",
+      "rawValue" : 2
+    },
+    {
+      "description" : "[.isUserInitiated]",
+      "family" : "TriggerFlag",
+      "name" : "isUserInitiated",
+      "rawValue" : 4
+    },
+    {
+      "family" : "EntityDefinition.RuntimeFlags",
+      "name" : "transientAppEntity",
+      "rawValue" : 1
+    }
+  ]
+}

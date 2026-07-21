@@ -1,0 +1,14 @@
+settings set target.inline-breakpoint-strategy always
+settings set target.skip-prologue false
+
+process launch --stop-at-entry -- decode ToolKitProtoLaunchServicesSnapshot.State 0a1c636f6d2e6170706c652e717569636b6c6f6f6b2e716c6d616e61676512240000000028220000080000005c45a393ee52482a8de7308e794705112822000000000000
+breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLaunchServicesSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name launch_services_state_decode
+breakpoint set --shlib ToolKit --func-regex 'ToolKitProtoLinkSnapshot.State.decodeMessage' --auto-continue true --breakpoint-name link_state_decode
+continue
+breakpoint list launch_services_state_decode
+breakpoint list link_state_decode
+
+process launch --stop-at-entry -- decode ToolKitProtoLinkSnapshot.State 0a2d636f6d2e6170706c652e646f6e6f74646973747572622e446f4e6f7444697374757262417070496e74656e74731220514528621d7d383bd30ab90abdd94101363c435b8dde20ed9938ec1510b57b41
+continue
+breakpoint list launch_services_state_decode
+breakpoint list link_state_decode
